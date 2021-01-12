@@ -1,0 +1,119 @@
+import Head from 'next/head'
+
+import {Link} from 'react-router-dom';
+
+import TopBar from '../components/topBar.js'
+import Title from "../components/title";
+import ProfileImage from '../components/profileImage'
+import utilStyles from '../styles/utils.module.css'
+import Section from '../components/section'
+
+export default function Home() {
+  
+  const [drawerOpened, setDrawerOpened] = React.useState(false)
+
+  const handleDrawerOpen = () => {
+  
+    setDrawerOpened(true);
+  
+  };
+
+  const handleDrawerClose = () => {
+
+    setDrawerOpened(false)
+
+  }
+  
+  return (
+     
+    <div>    
+      
+      <Head>
+        
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      
+      </Head>
+     
+      <div 
+        
+        align= "center" 
+        className={`${utilStyles.header}`}
+      
+      >
+        
+      <TopBar
+        
+          page={"home"} 
+          onOpenDrawer={handleDrawerOpen}
+          history={props.history}
+        
+        />
+
+      <Drawer
+
+        onClose={handleDrawerClose}
+        open={drawerOpened}
+        history={props.history}
+      
+      />
+              
+        <ProfileImage />
+
+        <Title>WERNER SCHYMALSKI</Title>   
+
+        <p  className={`${utilStyles.headingMd}`}>Programador web de Argentina</p>
+      
+      </div>    
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    
+      <Section title="" bg>
+        <p className={`${utilStyles.headingXl}`}>:)</p>
+        <br />
+        <br />
+        <p className={`${utilStyles.headingX2}`}>Soy un programador y diseñador web con mucha curiosidad y ganas de aprender cosas nuevas. </p>
+        <br />
+        <br />
+        <p className={`${utilStyles.headingX2}`}>Día a día busco conocer más y más cosas del backend y frontend de las páginas web y me gusta crear proyectos personales con lo que aprendo. A lo largo del tiempo he experimentado con varias tecnologías y lenguajes distintos y si bien algunos me gustan más que otros, no me caso con ninguno.</p>
+        <br />
+        <br />
+        
+        <img
+          src="/images/QR GitHub.png"
+          className={`${utilStyles.imgQR}`}
+          alt={"QR"}
+        />
+        
+        <p className={`${utilStyles.headingX3}`}>Para obtener más información de este programador y ver todos sus proyectos, visita
+        
+        <br />
+        <br />
+          
+         <a className={`${utilStyles.headingX3}`} target="_blank" href= "https://github.com/Desarrollos-Web-Urquiza">https://github.com/Desarrollos-Web-Urquiza</a>
+        
+        </p>
+            
+      </Section>
+
+      {/* <div className={utilStyles.sectionBg}> 
+
+        <div className={`${utilStyles.dF} ${utilStyles.flexWrap}`}>
+
+          <div className={`${utilStyles.mb20} ${utilStyles["col6"]}`}>
+            <div className={utilStyles.mb10} style={{display: 'flex', }}>
+              <p  className={`${utilStyles.headingMd}`}>Hola Mundo</p>
+            </div>
+          </div>
+
+        </div>
+        
+      </div> */}
+
+     
+    </div>
+  )
+}
