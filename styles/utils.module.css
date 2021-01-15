@@ -229,7 +229,7 @@
     content: '';
     position: absolute;
     left: -60%;
-    right: -1%;
+    right: -13%;
     top: -5%;
     /* width: 160%; */
     height: 176%;
@@ -237,6 +237,12 @@
     background: #0078d7;
     transform: rotateZ(-1.5deg);
    }  
+
+  .containerSection{
+
+    max-width: 100%;
+
+  }
   
 /* }  */
 

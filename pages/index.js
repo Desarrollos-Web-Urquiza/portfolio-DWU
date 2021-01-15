@@ -7,8 +7,9 @@ import Title from "../components/title";
 import ProfileImage from '../components/profileImage'
 import utilStyles from '../styles/utils.module.css'
 import Section from '../components/section'
+import Drawer from '../components/drawer'
 
-export default function Home() {
+export default function Home(props) {
   
   const [drawerOpened, setDrawerOpened] = React.useState(false)
 
@@ -33,6 +34,14 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       
       </Head>
+
+      <style jsx global>
+        {`
+          body {
+            overflow-x: hidden;            
+          }
+        `}
+      </style>
      
       <div 
         

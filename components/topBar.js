@@ -32,7 +32,7 @@ export default function TopBar({page, onOpenDrawer}) {
       <AppBar position="fixed" className={styles.appBar}>
         <Toolbar>
           <Container className={styles.container}>
-            <Grid container justify="space-between" alignItems="center">
+            <Grid container justify="space-around" alignItems="center">
               <Grid item xs={3}>
                 <Link href="/">
                   <a className={styles.logo}>
@@ -40,7 +40,7 @@ export default function TopBar({page, onOpenDrawer}) {
                   </a>
                 </Link>
               </Grid>
-              <Hidden smDown>
+              <Hidden mdDown>
                 <Grid item xs={9} className={styles.links}>
                   {menuItems.map(item => 
                     <Link key={item.id} href={item.link}>
@@ -56,7 +56,7 @@ export default function TopBar({page, onOpenDrawer}) {
                   )}
                 </Grid>
               </Hidden>
-              <Hidden mdUp>
+              <Hidden lgUp>
                 <IconButton 
                   edge="start"
                   color="inherit" aria-label="menu"
