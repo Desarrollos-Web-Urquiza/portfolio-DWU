@@ -46,6 +46,14 @@
 
 }
 
+.imgProject{
+
+  margin-top: 3em;
+  align-self: center;
+  height:150px;
+
+}
+
 .headingLg {
   font-size: 1.5rem;
   line-height: 3;
@@ -243,6 +251,83 @@
     max-width: 100%;
 
   }
+
+  
+.sectionBgMirror::before {
+  top: 0%;
+  transform: rotateZ(1.5deg);
+}
+
+@media(max-width: 950px)   {
+
+  .separator{
+
+    margin-top: 43em; 
+  
+  }
+}
+
+@media(min-width: 950px)   {
+
+  .separator{
+
+    margin-top: 25em; 
+  
+  }
+}
+
+@media(max-width: 400px)   {
+
+  .cardProject{
+
+    width: 340px;
+    height: 400px;
+    /* margin-top: 1em; */
+      
+  }
+
+}
+
+@media(min-width: 400px)   {
+
+  .cardProject{
+
+    width: 375px;
+    height: 400px;
+      
+  }
+
+}
+
+
+@media(max-width: 1186px)   {
+
+  .cardProjectMto{
+
+    margin-top: 5em;
+
+  }
+
+}
+
+
+.cardProjectHeader{
+
+  background-color: #c3c3c3 ;
+  width: 250px;
+  height: 50px;
+  color: #00a;
+    
+}
+
+.flexProject{
+
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+  align-content: space-between;
+  
+}
   
 /* }  */
 
@@ -274,8 +359,3 @@
   }
 } */
 
-/* 
-.sectionBgMirror::before {
-  top: 0%;
-  transform: rotateZ(1.5deg);
-} */
