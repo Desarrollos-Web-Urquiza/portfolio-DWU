@@ -6,21 +6,9 @@ import ProfileImage from '../components/profileImage'
 import utilStyles from '../styles/utils.module.css'
 import Section from '../components/section'
 import Drawer from '../components/drawer'
+import ProjectContainer from '../components/projectContainer'
 
-import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import { Typography } from '@material-ui/core';
-
-const CardProject = withStyles((theme) => ({
-  root: {
-
-    backgroundColor: '#00a',
-
-    '&:hover': {
-      backgroundColor: '#00a',
-    },
-  },
-}))(Card);
+import Projects from '../data/projects'
 
 export default function Home(props) {
   
@@ -131,124 +119,38 @@ export default function Home(props) {
 
     <div  className={`${utilStyles.separator}`}/>
 
-      <Section title="MIS PROYECTOS PERSONALES" > 
+      <Section title="PROYECTOS PERSONALES" >      
       
         <div className={`${utilStyles.flexProject}`} align="center">
-
-
-          <div style={{ flex: "auto" , flexWrap: "wrap", alignSelf: "space-around", marginRight:"15px"}} className={`${utilStyles.cardProjectMto}`}  >
-
-            <CardProject className={`${utilStyles.cardProject}`}>
             
-              <div align="center">
-              
-                <div className={`${utilStyles.cardProjectHeader}`}>     
-                
-                  {/* <Typography variant="h4"  align="center">Black Telephone</Typography> */}
-                  <h1  align="center">Examin.ar</h1>
-                
-                </div>
-              
-              </div>
+          {Projects.map(row=>
             
-              <div align="center">
-                
-                <img
-                  src="/images/Examin.ar.png"
-                  className={`${utilStyles.imgProject}`}
-                  alt={"BlackTelephone"}
-                />
-              
-              </div>
+            <div style={{ flex: "auto" , flexWrap: "wrap", alignSelf: "space-around", marginRight:"15px"}} className={`${utilStyles.cardProjectMto}`}  >
 
-              <p style={{color: "#c3c3c3", marginLeft: 20, fontSize: 20, marginTop: 20 }}>Mis primeros pasos como programador. Este proyecto lo comencé a desarrollar mientras cursaba mi escuela terciaria</p>
-          
-            </CardProject >
-          
-          </div>    
-          
-          <br />
-          <br />
-          <br />
-          
-          <div style={{ flex: "auto" , flexWrap: "wrap", alignSelf: "space-around", marginRight:"15px"}} className={`${utilStyles.cardProjectMto}`}>          
+              <ProjectContainer
 
-            <CardProject className={`${utilStyles.cardProject}`}>
+                title={row.title}
+                src={row.src}
+                alt={row.alt}
+                description={row.description}
+                    
+              />
             
-              <div align="center">
-              
-                <div className={`${utilStyles.cardProjectHeader}`}>     
-                
-                  {/* <Typography variant="h4"  align="center">Black Telephone</Typography> */}
-                  <h1  align="center">Black Telephone</h1>
-                
-                </div>
-              
-              </div>
-            
-              <div align="center">
-                
-                <img
-                  src="/images/BlackTelephone.png"
-                  className={`${utilStyles.imgProject}`}
-                  alt={"BlackTelephone"}
-                />
-              
-              </div>
-
-              <p style={{color: "#c3c3c3", marginLeft: 20, fontSize: 20, marginTop: 20 }}>Proyecto en el que busqué experimentar con React y también con JavaScript en el lado del frontend </p>
-          
-            </CardProject >
-          
-          </div>
-          
-          <br />
-          <br />
-          <br />
-          
-          <div style={{ flex: "auto" , flexWrap: "wrap", alignSelf: "space-around", marginRight:"15px"}} className={`${utilStyles.cardProjectMto}`}>
-
-            <CardProject className={`${utilStyles.cardProject}`}>
-            
-              <div align="center">
-              
-                <div className={`${utilStyles.cardProjectHeader}`}>     
-                
-                  {/* <Typography variant="h4"  align="center">Black Telephone</Typography> */}
-                  <h1  align="center">Expolearning</h1>
-                
-                </div>
-              
-              </div>
-            
-              <div align="center">
-                
-                <img
-                  src="/images/expolearning.png"
-                  className={`${utilStyles.imgProject}`}
-                  alt={"BlackTelephone"}
-                />
-              
-              </div>
-
-              <p style={{color: "#c3c3c3", marginLeft: 20, fontSize: 20, marginTop: 20 }}>Mi primera y única experiencia en el mundo del desarrollo de aplicaciones híbridas para dispositivos móviles 
-              
-              con React Native  </p>
-          
-            </CardProject >
-          
-          </div>
+            </div>  
+                        
+          )}        
         
         </div>
+      
       </Section>   
       
       <div  className={`${utilStyles.separator}`}/>
 
       <Section title="Hola Mundo" bg bgMirror> 
       
-      <p> Hola Mundo </p>
+        <p> Hola Mundo </p>
     
-    </Section>   
+      </Section>   
      
     </div>
   )

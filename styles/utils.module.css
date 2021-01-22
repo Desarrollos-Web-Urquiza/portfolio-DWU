@@ -251,7 +251,6 @@
     max-width: 100%;
 
   }
-
   
 .sectionBgMirror::before {
   top: 0%;
@@ -281,7 +280,7 @@
   .cardProject{
 
     width: 340px;
-    height: 400px;
+    height: 480px;
     /* margin-top: 1em; */
       
   }
@@ -293,12 +292,11 @@
   .cardProject{
 
     width: 375px;
-    height: 400px;
+    height: 480px;
       
   }
 
 }
-
 
 @media(max-width: 1186px)   {
 
@@ -309,7 +307,6 @@
   }
 
 }
-
 
 .cardProjectHeader{
 
@@ -348,7 +345,6 @@
     transform: rotateZ(-1.5deg);
   }
 } */
-
 
 /* @media(min-width: 450px)   {
 
