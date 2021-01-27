@@ -1,5 +1,3 @@
-import Head from 'next/head'
-
 import TopBar from '../components/topBar.js'
 import Title from "../components/title";
 import ProfileImage from '../components/profileImage'
@@ -30,12 +28,6 @@ export default function Home(props) {
      
     <div>    
       
-      <Head>
-        
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      
-      </Head>
-
       <style jsx global>
       
         {`
@@ -117,7 +109,7 @@ export default function Home(props) {
             
       </Section>
 
-    <div  className={`${utilStyles.separator}`}/>
+      <div  className={`${utilStyles.separator}`}/>
 
       <Section title="PROYECTOS PERSONALES" >      
       
@@ -133,6 +125,7 @@ export default function Home(props) {
                 src={row.src}
                 alt={row.alt}
                 description={row.description}
+                link={row.link}
                     
               />
             
@@ -144,9 +137,9 @@ export default function Home(props) {
       
       </Section>   
       
-      <div  className={`${utilStyles.separator}`}/>
+      <div  className={`${utilStyles.separatorSmall}`}/>
 
-      <Section title="Hola Mundo" bg bgMirror> 
+      <Section title="LENGUAJES Y TECNOLOGÍAS QUE USO" bg bgMirror W7> 
       
         <p> Hola Mundo </p>
     

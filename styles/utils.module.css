@@ -56,7 +56,7 @@
 
 .headingLg {
   font-size: 1.5rem;
-  line-height: 3;
+  line-height: 2;
   margin: 1rem 0;
 }
 
@@ -229,9 +229,6 @@
 .sectionBg {
   position: relative;
 }
-
-/* 
-@media(min-width: 770px)   { */
   
   .sectionBg::before {
     content: '';
@@ -257,6 +254,28 @@
   transform: rotateZ(1.5deg);
 }
 
+
+.sectionBgW7 {
+  position: relative;
+}
+  
+.sectionBgW7::before {
+  content: '';
+  position: absolute;
+  left: -60%;
+  right: -13%;
+  top: -5%;
+  height: 176%;
+  z-index: -1;
+  background: #00a;
+  transform: rotateZ(-1.5deg);
+ }  
+  
+.sectionBgMirrorW7::before {
+  top: 0%;
+  transform: rotateZ(1.5deg);
+}
+
 @media(max-width: 950px)   {
 
   .separator{
@@ -271,6 +290,24 @@
   .separator{
 
     margin-top: 25em; 
+  
+  }
+}
+
+@media(max-width: 950px)   {
+
+  .separatorSmall{
+
+    margin-top: 33em; 
+  
+  }
+}
+
+@media(min-width: 950px)   {
+
+  .separatorSmall{
+
+    margin-top: 15em; 
   
   }
 }

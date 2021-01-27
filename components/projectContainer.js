@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import utilStyles from '../styles/utils.module.css'
 
 import { withStyles } from '@material-ui/core/styles';
@@ -15,7 +17,7 @@ const CardProject = withStyles((theme) => ({
     },
   }))(Card);
 
-const ProjectContainer = ({title, src, alt, description}) => {
+const ProjectContainer = ({title, src, alt, description, link}) => {
   
   return (
     <div>
@@ -24,33 +26,40 @@ const ProjectContainer = ({title, src, alt, description}) => {
               
         <div align="center">
         
-            <div className={`${utilStyles.cardProjectHeader}`}>     
-            
-                <h1  align="center">{title}</h1>
-            
-            </div>
+          <div className={`${utilStyles.cardProjectHeader}`}>     
+          
+            <h1  align="center">{title}</h1>
+          
+          </div>
         
         </div>
         
         <div align="center">
             
-            <img
-                src={src}
-                className={`${utilStyles.imgProject}`}
-                alt={alt}
-            />
-        
+          <img
+            src={src}
+            className={`${utilStyles.imgProject}`}
+            alt={alt}
+          />
+      
         </div>
         
         <p style={{color: "#c3c3c3", marginLeft: 5, fontSize: 20, marginTop: 20 }}>{description} </p>
        
         <div style={{float: "right", marginRight: 10, marginTop: 10,}}>
           
+        {console.log(`/${link}`)}
+        <Link href= {`/${link}`}>
+        
           <Button variant="contained" color="default" >
-            MÁS INFO.
+            +MÁS INFO.
           </Button>
+        
+        </Link>
+         
 
         </div>
+      
       </CardProject >
 
     </div>
