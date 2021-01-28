@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
           type="image/png"
           sizes="32x32"
         />
-        <meta name="theme-color" content="#60a5fb" />
+        <meta name="theme-color" content="#00a" />
       </Head>
       <Component {...pageProps} />
     </div>

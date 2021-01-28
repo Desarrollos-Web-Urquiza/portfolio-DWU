@@ -5,8 +5,11 @@ import utilStyles from '../styles/utils.module.css'
 import Section from '../components/section'
 import Drawer from '../components/drawer'
 import ProjectContainer from '../components/projectContainer'
+import DevToolContainer from '../components/DevToolContainer'
+
 
 import Projects from '../data/projects'
+import DevTools from '../data/devtools'
 
 export default function Home(props) {
   
@@ -26,7 +29,7 @@ export default function Home(props) {
   
   return (
      
-    <div>    
+    <div className={`${utilStyles.mainDivContainer}`}>    
       
       <style jsx global>
       
@@ -141,8 +144,24 @@ export default function Home(props) {
 
       <Section title="LENGUAJES Y TECNOLOGÍAS QUE USO" bg bgMirror W7> 
       
-        <p> Hola Mundo </p>
-    
+      {DevTools.map(row=>
+            
+            // <div style={{ flex: "auto" , flexWrap: "wrap", alignSelf: "space-around", marginRight:"15px"}} className={`${utilStyles.cardProjectMto}`}  >
+
+              <DevToolContainer
+
+                title={row.title}
+                icon={row.icon}
+                alt={row.alt}
+                link={row.link}
+                description={row.description}
+                                    
+              />
+            
+            // </div>   
+                        
+          )}        
+      
       </Section>   
      
     </div>

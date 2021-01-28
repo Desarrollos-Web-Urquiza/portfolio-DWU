@@ -39,6 +39,18 @@
 
 }
 
+.mainDivContainer{
+
+  /* overflow-x: hidden;
+  overflow: hidden; */
+  /* width: 100%;    */
+
+  /* position: relative; */
+
+  
+  
+}
+
 .imgQR{
 
   float: left;
@@ -58,6 +70,13 @@
   font-size: 1.5rem;
   line-height: 2;
   margin: 1rem 0;
+}
+
+.headingLgGrey {
+  font-size: 1.5rem;
+  line-height: 2;
+  margin: 1rem 0;
+  color:#c3c3c3
 }
 
 .headingMd {
@@ -108,7 +127,7 @@
 }
 
 .toolIcon {
-  height: 1.3em;
+  height: 2.3em;
   position: relative;
   bottom: 3px;
 }
@@ -264,6 +283,7 @@
   position: absolute;
   left: -60%;
   right: -13%;
+  /* width: 200vw; */
   top: -5%;
   height: 176%;
   z-index: -1;
