@@ -19,13 +19,17 @@ const Section = ({children, title, bg, bgMirror, style = {},  W7, className = ''
   }
   
   return (
-    <div >
+    <div  style={{ marginLeft:  10}}>
+      
       <section 
         style={style}
         className={`${bgClassNames} ${utilStyles.mb20} ${utilStyles.headingMd} ${className}`}
       >
+      
         {title && <h2 className={ ` ${h2Style}`}>{title}</h2>}
+      
         {children}
+      
       </section>
     </div>
   )

@@ -30,16 +30,6 @@ export default function Home(props) {
   return (
      
     <div className={`${utilStyles.mainDivContainer}`}>    
-      
-      <style jsx global>
-      
-        {`
-          body {
-            overflow-x: hidden;            
-          }
-        `}
-      
-      </style>
      
       <div 
         

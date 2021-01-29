@@ -41,13 +41,11 @@
 
 .mainDivContainer{
 
-  /* overflow-x: hidden;
-  overflow: hidden; */
-  /* width: 100%;    */
-
-  /* position: relative; */
-
-  
+  overflow-x: hidden;
+  overflow: hidden; 
+  position: relative;
+  margin-left: -8px;
+  margin-right: -8px;
   
 }
 
@@ -336,10 +334,9 @@
 
   .cardProject{
 
-    width: 340px;
-    height: 480px;
-    /* margin-top: 1em; */
-      
+    width: 332px;
+    height: 500px;
+          
   }
 
 }

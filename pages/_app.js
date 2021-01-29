@@ -6,13 +6,16 @@ function MyApp({ Component, pageProps }) {
   
   return (
     <div>
+     
       <Head>
+        
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
           content="Portfolio de Desarrollos Web Urquiza"
         />
+        
         <title>DWU - Desarrollos Web Urquiza</title>
       
         <link
@@ -21,6 +24,7 @@ function MyApp({ Component, pageProps }) {
           type="image/png"
           sizes="16x16"
         />
+        
         <link
           href="/icons/icon-32.png"
           rel="icon"
@@ -28,8 +32,11 @@ function MyApp({ Component, pageProps }) {
           sizes="32x32"
         />
         <meta name="theme-color" content="#00a" />
+      
       </Head>
+      
       <Component {...pageProps} />
+    
     </div>
   )
 
