@@ -7,18 +7,7 @@ import Card from '@material-ui/core/Card';
 import Button from '@material-ui/core/Button';
 import { green, purple, grey } from '@material-ui/core/colors';
 
-const CardDevTool = withStyles((theme) => ({
-    root: {
-  
-      backgroundColor: grey[100],
-  
-      '&:hover': {
-        backgroundColor: grey[200],
-      },
-    },
-  }))(Card);
-
-const ProjectContainer = ({title, icon, alt, description, link}) => {
+const DevToolContainer = ({title, icon, alt, description, link}) => {
   
   return (
     <div>
@@ -31,7 +20,7 @@ const ProjectContainer = ({title, icon, alt, description, link}) => {
           rel="noopener noreferrer"
         >
         
-          <img className={`${utilStyles.toolIcon} ${utilStyles.mr10}` } style={{ marginTop: 40  }} src={icon} alt=""/>
+          <img className={`${utilStyles.toolIcon} ${utilStyles.mr10}` } style={{ marginTop: 40  }} src={icon} alt={alt}/>
           <p style={{ color: "#c3c3c3", fontSize: 30  }}>{title}</p>
         
         </a>
@@ -43,4 +32,4 @@ const ProjectContainer = ({title, icon, alt, description, link}) => {
     </div>
   )
 }
-export default ProjectContainer
+export default DevToolContainer

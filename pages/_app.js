@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
-          content="Portfolio de Desarrollos Web Urquiza"
+          content="Portfolio personal de Desarrollos Web Urquiza"
         />
         
         <title>DWU - Desarrollos Web Urquiza</title>

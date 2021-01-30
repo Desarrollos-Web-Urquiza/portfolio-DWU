@@ -4,7 +4,7 @@ export default [
       icon: "/images/logos/react.svg",
       alt:"React",
       link: "https://es.reactjs.org/",
-      description:'Mi framework SPA favorito. Me es muy útil con las librerías "create-react-app" y "Next.js".',
+      description:'Mi framework SPA favorito. Me es muy útil con las librerías "create-react-app" y "Next.js". También tuve un breve encuentro con React Native.',
     },
      {
       title:"Redux",
@@ -35,7 +35,7 @@ export default [
       icon:"/images/logos/nodejs.svg",
       alt:"Node",
       link: "https://nodejs.org/es/",
-      description:"Imposible estar dentro del ecosistema JavaScript y no toparse con él. Me ha servido utilizarlo con Express.js ",
+      description:"Imposible estar dentro del ecosistema JavaScript y no toparse con él. Sirve mucho utilizarlo con Express.js. ",
       
     },
     {
@@ -43,7 +43,7 @@ export default [
       icon:"/images/logos/php-1-logo.svg",
       alt:"PHP",
       link: "https://www.php.net/",
-      description:"Si bien casi siempre opto por usar JavaScript en el backend, PHP siempre está ahí para mí desde que lo aprendí desde ya hace mucho tiempo.",
+      description:"Si bien casi siempre opto por usar JavaScript en el backend, PHP siempre está ahí para mí desde que lo aprendí hace ya mucho tiempo.",
       
     },
 

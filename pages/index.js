@@ -1,3 +1,6 @@
+import Projects from '../data/projects'
+import DevTools from '../data/devtools'
+
 import TopBar from '../components/topBar.js'
 import Title from "../components/title";
 import ProfileImage from '../components/profileImage'
@@ -6,10 +9,6 @@ import Section from '../components/section'
 import Drawer from '../components/drawer'
 import ProjectContainer from '../components/projectContainer'
 import DevToolContainer from '../components/DevToolContainer'
-
-
-import Projects from '../data/projects'
-import DevTools from '../data/devtools'
 
 export default function Home(props) {
   
@@ -102,7 +101,7 @@ export default function Home(props) {
             
       </Section>
 
-      <div  className={`${utilStyles.separator}`}/>
+      <div  className={`${utilStyles.separatorSmall}`}/>
 
       <Section title="PROYECTOS PERSONALES" >      
       
@@ -133,10 +132,12 @@ export default function Home(props) {
       <div  className={`${utilStyles.separatorSmall}`}/>
 
       <Section title="LENGUAJES Y TECNOLOGÍAS QUE USO" bg bgMirror W7> 
-      
-      {DevTools.map(row=>
-            
-            // <div style={{ flex: "auto" , flexWrap: "wrap", alignSelf: "space-around", marginRight:"15px"}} className={`${utilStyles.cardProjectMto}`}  >
+
+        <div className={`${utilStyles.flexProject}`} >
+        
+          {DevTools.map(row=>
+                
+            <div style={{ flex: "auto" , flexWrap: "wrap", alignSelf: "space-around", marginRight:"15px"}} className={`${utilStyles.cardProjectMto}`}  >
 
               <DevToolContainer
 
@@ -148,11 +149,23 @@ export default function Home(props) {
                                     
               />
             
-            // </div>   
-                        
-          )}        
+            </div>   
+                            
+          )}
+            
+        </div>          
       
-      </Section>   
+      </Section>
+
+      {/* <div  className={`${utilStyles.separator}`}/> */}
+
+      <br />
+      <br />
+      <br />
+      
+      <Section title="EDUCACIÓN Y CERTIFICACIONES" >      
+      
+      </Section>      
      
     </div>
   )
