@@ -10,7 +10,7 @@ import Section from '../components/section'
 import Drawer from '../components/drawer'
 import ProjectContainer from '../components/projectContainer'
 import DevToolContainer from '../components/DevToolContainer'
-import EducationContainer from '../components/EducationContainer'
+import EducationContainer from '../components/educationContainer'
 
 export default function Home(props) {
   
