@@ -49,6 +49,7 @@ const ProjectContainer = ({title, src, alt, description, link}) => {
         <div style={{float: "right", marginRight: 10, marginTop: 10,}}>
           
         {console.log(`/${link}`)}
+        
         <Link href= {`/${link}`}>
         
           <Button variant="contained" color="default" >

@@ -1,14 +1,16 @@
 import Projects from '../data/projects'
 import DevTools from '../data/devtools'
 
-import TopBar from '../components/topBar.js'
-import Title from "../components/title";
-import ProfileImage from '../components/profileImage'
 import utilStyles from '../styles/utils.module.css'
+
+import TopBar from '../components/topBar.js'
+import ProfileImage from '../components/profileImage'
+import Title from "../components/title";
 import Section from '../components/section'
 import Drawer from '../components/drawer'
 import ProjectContainer from '../components/projectContainer'
 import DevToolContainer from '../components/DevToolContainer'
+import EducationContainer from '../components/EducationContainer'
 
 export default function Home(props) {
   
@@ -157,7 +159,7 @@ export default function Home(props) {
       
       </Section>
 
-      {/* <div  className={`${utilStyles.separator}`}/> */}
+      
 
       <br />
       <br />
@@ -165,6 +167,11 @@ export default function Home(props) {
       
       <Section title="EDUCACIÓN Y CERTIFICACIONES" >      
       
+        <br />
+        <br />
+
+        <EducationContainer />
+
       </Section>      
      
     </div>
