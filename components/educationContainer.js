@@ -15,13 +15,22 @@ const EducationContainer = ({title, src, alt, description, link}) => {
       
       <br />
 
-      <img
-        src="/images/AdSLogo.png"
-        className={`${utilStyles.imgQR}`}
-        alt={"Urq"}
-      />
+      <a 
+        style={{ textDecoration: "none"}}
+        href={"https://www.terciariourquiza.edu.ar/"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
 
-      <p className={`${utilStyles.headingX3Education}`}>Cursé en 3 años la carrera terciaria de Análisis de Sistemas y ese fue mi primer contacto con la progrmación.   </p>
+        <img
+          src="/images/AdSLogo.png"
+          className={`${utilStyles.imgQR}`}
+          alt={"Urquiza"}
+        />
+
+      </a>
+
+      <p className={`${utilStyles.headingX3Education} `}>Cursé la carrera terciaria de Análisis de Sistemas. Ese fue mi primer contacto con la programación y la creación de páginas web.  </p>
 
       <br />
       <br />
@@ -31,17 +40,26 @@ const EducationContainer = ({title, src, alt, description, link}) => {
       <br />
       <br />
       
-      <div  align= "center"  className={`${utilStyles.titleEducation}`}><b>Diseñador Web Site  -  NASA Computación</b></div>
+      <div  align= "center"  className={`${utilStyles.titleEducation} ${utilStyles.titleNASA}`} ><b>Diseñador Web Site  -  NASA Computación</b></div>
      
       <br />
      
-      <img
-        src="/images/NASAcomputacion.png"
-        className={`${utilStyles.imgQR}`}
-        alt={"Urq"}
-      />
+      <a 
+        style={{ textDecoration: "none"}}
+        href={"https://www.nasacomputacion.com.ar/"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
 
-      <p className={`${utilStyles.headingX3Education}`}>Profundicé mis conocimientos haciendo un curso extra. Busqué mejorar mi frontend y obtener habilidades de maquetación y diseño web. </p>
+        <img
+          src="/images/NASAcomputacion.png"
+          className={`${utilStyles.imgQR}`}
+          alt={"NASA"}
+        />
+     
+      </a>
+      
+      <p className={`${utilStyles.headingX3Education}`}>Profundicé mis conocimientos haciendo un curso extra. Busqué mejorar mi frontend obteniendo habilidades de maquetación y diseño web. </p>
 
 
     </div>
