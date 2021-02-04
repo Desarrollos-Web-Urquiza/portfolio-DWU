@@ -12,8 +12,8 @@ export default [
   //   id: '1'
   // },
   {
-    name: 'Servicios',
-    link: '/servicios',
+    name: 'Proyectos',
+    link: '/Proyectos',
     alt: 'Nuestros servicios',
     id: '2'
   },

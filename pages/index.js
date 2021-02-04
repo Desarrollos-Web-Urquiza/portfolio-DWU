@@ -11,6 +11,7 @@ import Drawer from '../components/drawer'
 import ProjectContainer from '../components/projectContainer'
 import DevToolContainer from '../components/DevToolContainer'
 import EducationContainer from '../components/educationContainer'
+import WorkContainer from '../components/workContainer'
 
 export default function Home(props) {
   
@@ -159,8 +160,6 @@ export default function Home(props) {
       
       </Section>
 
-      
-
       <br />
       <br />
       <br />
@@ -172,6 +171,21 @@ export default function Home(props) {
 
         <EducationContainer />
 
+      </Section>      
+                  
+      <div  className={`${utilStyles.separator}`}/>
+
+      <Section title="EXPERIENCIA LABORAL" bg W7 >      
+        
+        <br />
+        <br />
+        <WorkContainer /> 
+
+        <br />
+        <br />
+        <br />
+        <br /> <br />
+       
       </Section>      
      
     </div>

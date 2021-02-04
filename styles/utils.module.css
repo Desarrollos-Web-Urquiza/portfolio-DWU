@@ -56,6 +56,13 @@ color: #fefefe;
 
 }
 
+.imgOkNube{
+
+  height:200px;
+  /* background-color: #fcfcfc; */
+
+}
+
 .imgEducation{
 
   /* float: left; */
@@ -67,7 +74,7 @@ color: #fefefe;
 
   .titleEducation{
 
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.3;
     font-weight: 100;
     letter-spacing: -0.05rem;
@@ -385,20 +392,33 @@ color: #fefefe;
   }
 }
 
-@media(max-width: 400px)   {
+
+@media(max-width: 370px)   {
 
   .cardProject{
 
     width: 332px;
     height: 500px;
     margin-left: -10px;
-
-          
+              
   }
 
 }
 
-@media(min-width: 400px)   {
+@media(min-width: 370px)   {
+
+  .cardProject{
+
+    width: 332px;
+    height: 500px;
+    margin-left: 8px;
+    margin-right: 8px;
+              
+  }
+
+}
+
+@media(min-width: 410px)   {
 
   .cardProject{
 

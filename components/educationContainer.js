@@ -1,10 +1,4 @@
-import Link from 'next/link'
-
 import utilStyles from '../styles/utils.module.css'
-
-import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import Typography from '@material-ui/core/Typography';
 
 const EducationContainer = ({title, src, alt, description, link}) => {
   
@@ -60,7 +54,6 @@ const EducationContainer = ({title, src, alt, description, link}) => {
       </a>
       
       <p className={`${utilStyles.headingX3Education}`}>Profundicé mis conocimientos haciendo un curso extra. Busqué mejorar mi frontend obteniendo habilidades de maquetación y diseño web. </p>
-
 
     </div>
   )

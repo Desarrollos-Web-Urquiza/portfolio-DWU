@@ -1,11 +1,4 @@
-import Link from 'next/link'
-
 import utilStyles from '../styles/utils.module.css'
-
-import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import Button from '@material-ui/core/Button';
-import { green, purple, grey } from '@material-ui/core/colors';
 
 const DevToolContainer = ({title, icon, alt, description, link}) => {
   

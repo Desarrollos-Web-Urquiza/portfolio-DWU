@@ -12,7 +12,7 @@ const CardProject = withStyles((theme) => ({
       backgroundColor: '#00a',
   
       '&:hover': {
-        backgroundColor: '#00a',
+        backgroundColor: '#00007e',
       },
     },
   }))(Card);

@@ -1,9 +1,7 @@
-// import App from 'next/app'
 import Head from 'next/head'
 
 function MyApp({ Component, pageProps }) {
-  
-  
+    
   return (
     <div>
      
@@ -31,6 +29,7 @@ function MyApp({ Component, pageProps }) {
           type="image/png"
           sizes="32x32"
         />
+        
         <meta name="theme-color" content="#00a" />
       
       </Head>
@@ -39,8 +38,6 @@ function MyApp({ Component, pageProps }) {
     
     </div>
   )
-
-
 
 }
 
