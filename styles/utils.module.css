@@ -217,6 +217,7 @@ color: #fefefe;
 
 .dF {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .aICenter {
@@ -309,24 +310,24 @@ color: #fefefe;
   position: relative;
 }
   
-  .sectionBg::before {
-    content: '';
-    position: absolute;
-    left: -60%;
-    right: -13%;
-    top: -5%;
-    /* width: 160%; */
-    height: 146%;
-    z-index: -1;
-    background: #0078d7;
-    transform: rotateZ(-1.5deg);
-   }  
+.sectionBg::before {
+  content: '';
+  position: absolute;
+  left: -60%;
+  right: -13%;
+  top: -5%;
+  /* width: 160%; */
+  height: 146%;
+  z-index: -1;
+  background: #0078d7;
+  transform: rotateZ(-1.5deg);
+  }  
 
-  .containerSection{
+.containerSection{
 
-    max-width: 100%;
+  max-width: 100%;
 
-  }
+}
   
 .sectionBgMirror::before {
   top: 0%;

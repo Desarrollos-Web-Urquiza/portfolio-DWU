@@ -57,7 +57,9 @@ export default ({page, onClose, open, history}) => {
                 name={link.name}
                 alt={link.alt}
                 className={styles.link}
-                onClick={() => history.push((link.link).toString() ) }
+                // onClick={() => history.push((link.link).toString() ) } 
+                onClick={onClose}
+                href={link.link}
               >
             
                 {link.name}

@@ -12,6 +12,7 @@ import ProjectContainer from '../components/projectContainer'
 import DevToolContainer from '../components/DevToolContainer'
 import EducationContainer from '../components/educationContainer'
 import WorkContainer from '../components/workContainer'
+import Footer from '../components/footer'
 
 export default function Home(props) {
   
@@ -56,7 +57,7 @@ export default function Home(props) {
         
         />
               
-        <ProfileImage />
+        <ProfileImage img={"/images/Perfil.png"} />
 
         <Title>WERNER SCHYMALSKI</Title>   
 
@@ -101,14 +102,16 @@ export default function Home(props) {
           <a className={`${utilStyles.headingX3}`} target="_blank" href= "https://github.com/Desarrollos-Web-Urquiza">https://github.com/Desarrollos-Web-Urquiza</a>
         
         </p>
-            
+        
       </Section>
-
-      <div  className={`${utilStyles.separatorSmall}`}/>
-
+      
+      <div id="projects" />
+      
+      <div className={`${utilStyles.separatorSmall}`}/>
+      
       <Section title="PROYECTOS PERSONALES" >      
       
-        <div className={`${utilStyles.flexProject}`} align="center">
+        <div  className={`${utilStyles.flexProject}`} align="center">
             
           {Projects.map(row=>
             
@@ -186,7 +189,11 @@ export default function Home(props) {
         <br />
         <br /> <br />
        
-      </Section>      
+      </Section> 
+
+      <div  className={`${utilStyles.separatorSmall}`}/>
+
+      <Footer />     
      
     </div>
   )
