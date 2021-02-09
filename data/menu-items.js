@@ -13,7 +13,7 @@ export default [
   },
   {
     name: 'Contacto',
-    link: '/contacto',
+    link: '/contact',
     alt: 'Contactarse con Electro 3',
     id: '2'
   },

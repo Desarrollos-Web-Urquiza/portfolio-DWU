@@ -21,11 +21,14 @@ const ProjectContainer = ({title, src, alt, description, link}) => {
   
   return (
     <div>
-        
+      
+      <br />
+      <br />
+      
       <CardProject className={`${utilStyles.cardProject}`}>
               
         <div align="center">
-        
+          
           <div className={`${utilStyles.cardProjectHeader}`}>     
           
             <h1  align="center">{title}</h1>

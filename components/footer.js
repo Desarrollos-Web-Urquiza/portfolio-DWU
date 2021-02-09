@@ -6,9 +6,10 @@ import ProfileImage from '../components/profileImage'
 const Footer = ({profileImage, contactLink, name}) => {
   
   return(
-    <div className={`${styles.footer}`}>
-      <div className={`${styles.footerContent} ${utilStyles.sectionBg}`}>
-        <div className={styles.container}>
+    
+    <div className={`${styles.footer}`} >
+      <div  className={`${styles.footerContent} ${utilStyles.sectionFooter}`}>
+        <div className={styles.container} >
           
           <div className={`${utilStyles.dF} ${utilStyles.mb20}`}>
             <div className={utilStyles.mr15}>
@@ -20,20 +21,10 @@ const Footer = ({profileImage, contactLink, name}) => {
               {contactLink}
             </div>
           </div>
-
-          {/* <a 
-            className={`${utilStyles.textInherit} ${utilStyles.dF} ${utilStyles.jCCenter} ${utilStyles.aICenter}`}
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{color: 'black', opacity: 0.5}}
-          >
-            Powered by{' '}
-            <img src="/images/logos/vercel.svg" alt="Vercel Logo" className={styles.footerLogo} />
-          </a> */}
         </div>
       </div>
     </div>
+      
   )
 }
 export default Footer

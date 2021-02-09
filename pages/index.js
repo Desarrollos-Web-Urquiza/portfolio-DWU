@@ -104,11 +104,16 @@ export default function Home(props) {
         </p>
         
       </Section>
-      
-      <div id="projects" />
-      
+           
       <div className={`${utilStyles.separatorSmall}`}/>
-      
+     
+      <div id="projects" />
+     
+      <br />
+      <br />
+      <br />
+      <br />
+     
       <Section title="PROYECTOS PERSONALES" >      
       
         <div  className={`${utilStyles.flexProject}`} align="center">
