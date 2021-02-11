@@ -48,8 +48,54 @@ export default function Contact(props) {
         open={drawerOpened}
         history={props.history}
       
-      />
+      />      
       
+      <div 
+        
+        align= "center" 
+        className={`${utilStyles.header}`}
+      
+      >
+        <ProfileImage img={"/images/Perfil.png"} />
+
+        <h2>WERNER SCHYMALSKI</h2>   
+
+      </div>
+
+      <br />
+      <br />
+      <br />
+     
+      <Section title="CONTACTO" >     
+        
+        <div align="center">
+          
+          <div style={{ width:  "6.1em"}}>
+
+            <a className={`${utilStyles.textInherit} `}
+              style={{ textDecoration: "none"}}
+              href="https://github.com/Desarrollos-Web-Urquiza"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            
+              <img
+                src="/images/logos/github.svg"
+                className={`${utilStyles.imgContact}`}
+                alt={"OkNube"}
+              />
+
+            </a>
+
+            <p className={`${utilStyles.textContact}`}><b>GitHub</b></p>       
+
+          </div>
+          <p>https://github.com/Desarrollos-Web-Urquiza</p>
+        
+        </div>
+      
+      </Section>   
+
       <div  className={`${utilStyles.separator}`}/>
 
       <Footer />     

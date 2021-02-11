@@ -6,6 +6,7 @@ const DevToolContainer = ({title, icon, alt, description, link}) => {
     <div>
         
       <div className={`${utilStyles.mb20} ${utilStyles.col6} ${utilStyles.p03}`}>
+        
         <a className={`${utilStyles.textInherit} ${utilStyles.dF}`}
           style={{ textDecoration: "none"}}
           href={link}

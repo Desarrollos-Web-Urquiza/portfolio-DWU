@@ -63,6 +63,21 @@ color: #fefefe;
 
 }
 
+.imgContact{
+
+  /* float: left; */
+  height: 40px;
+  /* margin-right: 2.8rem; */
+
+}
+
+.textContact{
+
+  float: right;
+  
+
+}
+
 .imgEducation{
 
   /* float: left; */
