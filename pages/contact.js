@@ -19,15 +19,11 @@ export default function Contact(props) {
   const [drawerOpened, setDrawerOpened] = React.useState(false)
 
   const handleDrawerOpen = () => {
-  
     setDrawerOpened(true);
-  
   };
 
   const handleDrawerClose = () => {
-
     setDrawerOpened(false)
-
   }
   
   return (
@@ -78,26 +74,35 @@ export default function Contact(props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-            
               <img
                 src="/images/logos/github.svg"
                 className={`${utilStyles.imgContact}`}
                 alt={"OkNube"}
               />
-
             </a>
-
-            <p className={`${utilStyles.textContact}`}><b>GitHub</b></p>       
-
+            <p className={`${utilStyles.textContact}`}><b>GitHub</b></p>   
           </div>
-          <p>https://github.com/Desarrollos-Web-Urquiza</p>
-        
+          <a 
+            style={{ textDecoration: "none"}}
+            href="https://github.com/Desarrollos-Web-Urquiza"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className={`${utilStyles.pContact}`}>https://github.com/Desarrollos-Web-Urquiza</p>          
+          </a>
         </div>
+        
+        <br />
+        <br />
       
       </Section>   
-
-      <div  className={`${utilStyles.separator}`}/>
-
+      
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      
       <Footer />     
      
     </div>

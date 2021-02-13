@@ -64,18 +64,18 @@ color: #fefefe;
 }
 
 .imgContact{
-
   /* float: left; */
   height: 40px;
   /* margin-right: 2.8rem; */
+}
 
+.pContact{
+  font-size: 1.2em;
+  color: #0070f2;
 }
 
 .textContact{
-
   float: right;
-  
-
 }
 
 .imgEducation{
