@@ -7,7 +7,7 @@ export default [
   },
   {
     name: 'Proyectos',
-    link: '#projects',
+    link: '/#projects',
     alt: 'Nuestros servicios',
     id: '1'
   },

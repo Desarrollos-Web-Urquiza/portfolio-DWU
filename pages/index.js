@@ -83,7 +83,7 @@ export default function Home(props) {
         <br />
         <br />
         
-        <p className={`${utilStyles.headingX2}`}>Día a día busco conocer más y más cosas del backend y frontend de las páginas web y me gusta crear proyectos personales con lo que aprendo. A lo largo del tiempo he experimentado con varias tecnologías y lenguajes distintos y si bien algunos me gustan más que otros, no me caso con ninguno.</p>
+        <p className={`${utilStyles.headingX2}`}>Día a día busco conocer más y más información del backend y frontend de las páginas web y me gusta crear proyectos personales con lo que aprendo. A lo largo del tiempo he experimentado con varias tecnologías y lenguajes distintos y si bien algunos me gustan más que otros, no me caso con ninguno.</p>
         
         <br />
         <br />
@@ -107,7 +107,7 @@ export default function Home(props) {
            
       <div className={`${utilStyles.separatorSmall}`}/>
      
-      <div id="projects" />
+      <div id="projects"/>
      
       <br />
       <br />

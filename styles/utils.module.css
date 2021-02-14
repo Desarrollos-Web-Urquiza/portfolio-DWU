@@ -69,9 +69,17 @@ color: #fefefe;
   /* margin-right: 2.8rem; */
 }
 
-.pContact{
-  font-size: 1.2em;
-  color: #0070f2;
+@media(min-width: 391px)   {
+  .pContact{
+    font-size: 1.2em;
+    color: #0070f2;
+  }
+}
+
+@media(max-width: 391px)   {
+  .pContact{
+    color: #0070f2;
+  }
 }
 
 .textContact{
@@ -89,6 +97,8 @@ color: #fefefe;
 
   .titleEducation{
 
+    margin-left: 8px;
+    margin-right: 8px;
     font-size: 18px;
     line-height: 1.3;
     font-weight: 100;

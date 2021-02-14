@@ -1,17 +1,11 @@
-import Projects from '../data/projects'
-import DevTools from '../data/devtools'
+import contactData from '../data/contactData'
 
 import utilStyles from '../styles/utils.module.css'
 
 import TopBar from '../components/topBar.js'
 import ProfileImage from '../components/profileImage'
-import Title from "../components/title";
 import Section from '../components/section'
 import Drawer from '../components/drawer'
-import ProjectContainer from '../components/projectContainer'
-import DevToolContainer from '../components/DevToolContainer'
-import EducationContainer from '../components/educationContainer'
-import WorkContainer from '../components/workContainer'
 import Footer from '../components/footer'
 
 export default function Contact(props) {
@@ -63,45 +57,39 @@ export default function Contact(props) {
       <br />
      
       <Section title="CONTACTO" >     
-        
-        <div align="center">
-          
-          <div style={{ width:  "6.1em"}}>
-
-            <a className={`${utilStyles.textInherit} `}
+        {contactData.map(row=>
+          <div align="center">
+            <div style={{ width:  "7em", marginTop: 25}}>
+              <a className={`${utilStyles.textInherit} `}
+                style={{ textDecoration: "none"}}
+                href={row.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={row.img}
+                  className={`${utilStyles.imgContact}`}
+                  alt={row.alt}
+                />
+              </a>
+              <p className={`${utilStyles.textContact}`}><b>{row.title}</b></p>   
+            </div>
+            <a 
               style={{ textDecoration: "none"}}
-              href="https://github.com/Desarrollos-Web-Urquiza"
+              href={row.href}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="/images/logos/github.svg"
-                className={`${utilStyles.imgContact}`}
-                alt={"OkNube"}
-              />
+              <p className={`${utilStyles.pContact}`}>{row.link}</p>          
             </a>
-            <p className={`${utilStyles.textContact}`}><b>GitHub</b></p>   
+            <br />
           </div>
-          <a 
-            style={{ textDecoration: "none"}}
-            href="https://github.com/Desarrollos-Web-Urquiza"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className={`${utilStyles.pContact}`}>https://github.com/Desarrollos-Web-Urquiza</p>          
-          </a>
-        </div>
-        
-        <br />
-        <br />
+          
+        )}
       
       </Section>   
       
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <div style={{  marginTop: 150}} />
       
       <Footer />     
      
