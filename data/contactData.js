@@ -5,6 +5,7 @@ export default [
       alt:"GitHub",
       link: "https://github.com/Desarrollos-Web-Urquiza",
       href: "https://github.com/Desarrollos-Web-Urquiza",
+      styleClass: "contactMailGithub"
     },
     
     {
@@ -13,6 +14,7 @@ export default [
       alt:"email",
       link: "desarrollos_web_urquiza@hotmail.com",
       href: "mailto:desarrollos_web_urquiza@hotmail.com",
+      styleClass: "contactMailGithub"
     }, 
     
     {
@@ -21,6 +23,7 @@ export default [
       alt:"Linkedin",
       link: "https://www.linkedin.com/in/desarrollos-web-urquiza/",
       href: "https://www.linkedin.com/in/desarrollos-web-urquiza/",
+      styleClass: "contactLinkedin"
     },
     
   ]

@@ -44,9 +44,9 @@ export default function Contact(props) {
         align= "center" 
         className={`${utilStyles.header}`}
       >
-        <ProfileImage img={"/images/Perfil.png"} />
+        <ProfileImage img={"/images/BlackTelephone2.png"} />
 
-        <h2>WERNER SCHYMALSKI</h2>   
+        <h2>Black Telephone</h2>   
 
       </div>
 

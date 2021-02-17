@@ -24,7 +24,7 @@ const EducationContainer = ({title, src, alt, description, link}) => {
 
       </a>
 
-      <p className={`${utilStyles.headingX3Education} `}>Cursé la carrera terciaria de Análisis de Sistemas. Ese fue mi primer contacto con la programación y la creación de páginas web.  </p>
+      <p className={`${utilStyles.headingX3Education} `}>Cursé completa la carrera terciaria de Análisis de Sistemas. Ese fue mi primer contacto con la programación y la creación de páginas web.  </p>
 
       <br />
       <br />
@@ -34,7 +34,7 @@ const EducationContainer = ({title, src, alt, description, link}) => {
       <br />
       <br />
       
-      <div  align= "center"  className={`${utilStyles.titleEducation} ${utilStyles.titleNASA}`} ><b>Diseñador Web Site  -  NASA Computación</b></div>
+      <div  align= "center"  className={`${utilStyles.titleEducation} ${utilStyles.titleNASA}`} ><b>Diseñador Web Site  -  Nasa Computación</b></div>
      
       <br />
      
