@@ -23,27 +23,27 @@ export default function Contact(props) {
   return (
      
     <div className={`${utilStyles.mainDivContainer}`}>    
-    
-      <TopBar
-        
-        page={"home"} 
-        onOpenDrawer={handleDrawerOpen}
-        history={props.history}
-        
-      />
-
-      <Drawer
-
-        onClose={handleDrawerClose}
-        open={drawerOpened}
-        history={props.history}
-      
-      />      
-      
       <div 
-        align= "center" 
-        className={`${utilStyles.header}`}
-      >
+          align= "center" 
+          className={`${utilStyles.header}`}
+        >
+        <TopBar
+          
+          page={"contact"} 
+          onOpenDrawer={handleDrawerOpen}
+          history={props.history}
+          
+        />
+
+        <Drawer
+
+          onClose={handleDrawerClose}
+          open={drawerOpened}
+          history={props.history}
+        
+        />      
+        
+      
         <ProfileImage img={"/images/Perfil.png"} />
 
         <h2>WERNER SCHYMALSKI</h2>   
