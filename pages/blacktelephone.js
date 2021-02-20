@@ -1,12 +1,10 @@
-import contactData from '../data/contactData'
-
 import utilStyles from '../styles/utils.module.css'
 
 import TopBar from '../components/topBar.js'
 import ProfileImage from '../components/profileImage'
-import Section from '../components/section'
 import Drawer from '../components/drawer'
 import Footer from '../components/footer'
+import VideoContainer from '../components/videoContainer'
 
 export default function Contact(props) {
   
@@ -44,11 +42,12 @@ export default function Contact(props) {
           history={props.history}
         
         />      
+        
         <a 
-            style={{ textDecoration: "none"}}
-            href={"https://black-telephone.vercel.app/"}
-            target="_blank"
-            rel="noopener noreferrer"
+          style={{ textDecoration: "none"}}
+          href={"https://black-telephone.vercel.app/"}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <ProfileImage img={"/images/BlackTelephone2.png"} />
         </a>
@@ -64,6 +63,7 @@ export default function Contact(props) {
       <div className={utilStyles.container}>
        
         <h2 align="center">Datos generales</h2>
+        
         <p  className={utilStyles.letterProject}>
           <b>Sitio web:     </b>  
           <a 
@@ -72,9 +72,10 @@ export default function Contact(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-              <p className={`${utilStyles.pContact}`}>https://black-telephone.vercel.app/</p>
+            <p className={`${utilStyles.pContact}`}>https://black-telephone.vercel.app/</p>
           </a>
         </p>
+       
         <p  className={utilStyles.letterProject}>
           <b>GitHub:</b> 
           <a 
@@ -86,16 +87,20 @@ export default function Contact(props) {
             <p className={`${utilStyles.pContact}`}>https://github.com/Desarrollos-Web-Urquiza/black-telephone</p>
           </a>
         </p>
+        
         <p  className={utilStyles.letterProject}>
           <b>Tecnologías utilizadas:   </b> 
-          <i> Firebase, Redux, Material UI, Pure-react-carousel y Framer-motion</i>
+          <i> React, Firebase, Redux, Material UI, Pure-react-carousel y Framer-motion</i>
         </p>
+       
         <br />
+       
         <p  className={utilStyles.letterProject}>
           Luego de dar mis primeros pasos con React Native vi la necesidad de pasar a aprender el framework aplicado a la web, que en sí es mi verdadera especialidad. Realmente no fue un cambio muy drástico, porque React sigue siendo React ya sea para webs o para apps.
         </p>
+      
         <p  className={utilStyles.letterProject}>
-         Así que me propuse hacer un proyecto dedicado a una empresa de call center ficticia llamada "Black Telephone". 
+          Así que me propuse hacer un proyecto dedicado a una empresa de call center ficticia llamada "Black Telephone". 
         </p>
 
         <p  className={utilStyles.letterProject}>
@@ -115,19 +120,27 @@ export default function Contact(props) {
         </div>
         
         <h2 align="center"  style={{  marginTop: 100}}>Landing page</h2>
-        <div align="center" >
-          <div style={{  maxWidth: 550}}>
-            <video 
-              autoPlay
-              muted
-              loop
-              src={"/videos/black-telephone-landing.mp4"}
-              className={utilStyles.projectIcon}
-              alt={"name"}
-              style={{width: "100%", height: "100%"}}
-            />
-          </div>
-        </div>
+        
+        <VideoContainer src={"/videos/black-telephone-landing.mp4"} alt={"black-telephone-landing"} />
+
+        <p  className={utilStyles.letterProject}  style={{  marginTop: 50}}>
+          Mentiría si dijera que esta landing page está hecha 100% por mí, porque en realidad la base la saqué de otro repositorio de GitHub que no hice yo. 
+        </p>
+        
+        <p  className={utilStyles.letterProject}  >
+          El carousel ya estaba hecho, pero le modifiqué sus estilos para que visto de cierto modo parezca un teléfono y haga juego con la temática del sitio. Además el componente del TopBar es el mismo que usé en este portfolio, solo le voy cambiando el color de fondo, los logos y los links. 
+          <br />  <br /> 
+          Luego, el estilo de los recuadros que se ven más abajo ya estaban definidos pero les agregué iconos diferentes inspirados en los que encontré en otra página. El contenido de la página sí lo hice yo pero también está inspirado en un componente ya hecho. Por último, el footer es un calco en el que solo le cambié la información y colores de fondo.
+        </p>
+    
+        <p  className={utilStyles.letterProject}  >
+          Todo esto demuestra (además de mi carencia de grandes habilidades UI/UX😅) que estoy acostumbrado a trabajar con código ajeno para poder adaptarlo a mis necesidades y luego reciclarlo en el mismo proyecto o en otros. La carencia antes mencionada me obliga constantemente a usar librerías o plantillas ya hechas como algunas de las que mencionaré más adelante.
+        </p>
+
+        <p  className={utilStyles.letterProject}  >
+          Leer y tratar de entender el código de los demás fue un principio fundamental en mi aprendizaje que aceleró mucho el proceso de acostumbrarme al framework.
+        </p>
+
       </div>
       
       <div style={{  marginTop: 300}} />
