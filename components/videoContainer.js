@@ -1,10 +1,9 @@
 import utilStyles from '../styles/utils.module.css'
 
-const VideoContainer = ({src, alt}) => {
-  
+const VideoContainer = ({src, alt, size}) => {
   return (
     <div align="center">
-      <div style={{  maxWidth: 600}}>
+      <div style={{  maxWidth: size }}>
         <video 
           autoPlay
           muted

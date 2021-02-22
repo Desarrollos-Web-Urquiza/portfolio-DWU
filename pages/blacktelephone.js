@@ -113,22 +113,29 @@ export default function Contact(props) {
           <p  className={utilStyles.letterProject}>
             <li>Dar publicidad a la empresa mostrando su información básica</li> 
             <br />
-            <li>Crear un sistema para enviar y registrar los informes del trabajo de los empleados</li>
+            <li>Crear un sistema para posibilitar el trabajo en equipo de los empleados en la modalidad "home office" </li>
             <br />
-            <li>Crear otro sistema para posibilitar el trabajo en equipo de los empleados en la modalidad "home office" </li>
+            <li>Crear otro sistema para enviar y registrar los informes del trabajo de los empleados</li>
           </p>
         </div>
         
         <h2 align="center"  style={{  marginTop: 100}}>Landing page</h2>
         
-        <VideoContainer src={"/videos/black-telephone-landing.mp4"} alt={"black-telephone-landing"} />
+        <VideoContainer src={"/videos/black-telephone-landing.mp4"} alt={"black-telephone-landing"} size={600} />
 
         <p  className={utilStyles.letterProject}  style={{  marginTop: 50}}>
           Mentiría si dijera que esta landing page está hecha 100% por mí, porque en realidad la base la saqué de otro repositorio de GitHub que no hice yo. 
         </p>
         
         <p  className={utilStyles.letterProject}  >
-          El carousel ya estaba hecho, pero le modifiqué sus estilos para que visto de cierto modo parezca un teléfono y haga juego con la temática del sitio. Además el componente del TopBar es el mismo que usé en este portfolio, solo le voy cambiando el color de fondo, los logos y los links. 
+          El carousel ya estaba hecho con la librería 
+          <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://www.npmjs.com/package/pure-react-carousel"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > "Pure-react-carousel"</a>, 
+          pero le modifiqué sus estilos para que visto de cierto modo parezca un teléfono y haga juego con la temática del sitio. Además el componente del TopBar es el mismo que usé en este portfolio, solo le voy cambiando el color de fondo, los logos y los links. 
           <br />  <br /> 
           Luego, el estilo de los recuadros que se ven más abajo ya estaban definidos pero les agregué iconos diferentes inspirados en los que encontré en otra página. El contenido de la página sí lo hice yo pero también está inspirado en un componente ya hecho. Por último, el footer es un calco en el que solo le cambié la información y colores de fondo.
         </p>
@@ -141,11 +148,46 @@ export default function Contact(props) {
           Leer y tratar de entender el código de los demás fue un principio fundamental en mi aprendizaje que aceleró mucho el proceso de acostumbrarme al framework.
         </p>
 
+        <h2 align="center"  style={{  marginTop: 100}}>Sistema de llamadas</h2>
+        
+        <p  className={utilStyles.letterProject}  >
+          Esta empresa ficticia tiene un problema que se soluciona con el sistema que creé.
+        </p>
+        <p  className={utilStyles.letterProject}  >
+          El problema es el siguiente:  
+        </p>
+        <p  className={utilStyles.letterProject}  >
+          En vista de la creciente ola del COVID-19, los empleados necesitan hacer los llamados de telemarketing desde su casa en modalidad "home office". Pero para asegurarse de que cumplan con sus jornadas laborales, un gerente debe supervisar y dirigir a grupos de empleados para que estos llamen de forma cooperativa y en grupo a un listado de números telefónicos mientras están conectados entre sí mediante alguna APP para videollamadas como por ejemplo Zoom o Skype.
+        </p>
+        <p  className={utilStyles.letterProject}  >
+          Cada listado de números son archivos de Excel los cuales se les conocerá con el nombre de "Territorios" y estarán ordenados por números. Estos archivos y el sistema será manipulado únicamente por el gerente. Dichos "territorios", serán cargados al sistema de la siguiente manera...
+        </p>
+
+        <VideoContainer src={"/videos/black-telephone-input.mp4"} alt={"black-telephone-landing"} size={800} />
+        
+        <br />
+        
+        <p  className={utilStyles.letterProject}  >
+          Para poder importar el archivo de Excel al sistema, primero lo transformo a formato JSON con una librería muy útil llamada <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://www.npmjs.com/package/xlsx"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > "xlsx"</a>. Una vez transformada la hoja de cálculo a JSON la imprimo en la web valiéndome de un componente React de tabla que me provee otra librería llamada <a 
+          style={{ textDecoration: "none", color: "#0070f2"}}
+          href={"https://material-ui.com/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        > "Material UI"</a>. Esta librería fue muy útil para enriquecer toda la interfaz de usuario de este proyecto, debido a que provee muchísimos componentes ya hechos y listos para usar.
+        </p>
+        
+        <p  className={utilStyles.letterProject}  >
+          Pasemos ahora a hablar de las funciones con las que cuenta este sistema una vez que la hoja de cálculo fue importada.
+        </p>
       </div>
-      
+
       <div style={{  marginTop: 300}} />
-     
-      
+          
       <Footer />     
      
     </div>
