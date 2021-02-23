@@ -187,22 +187,48 @@ export default function Contact(props) {
 
         <br />
 
-        <p  className={utilStyles.letterProject}  >
-          El sistema va a permitir por un lado <b>"Mostrar número"</b>, que básicamente lo que haría es abrir todos los datos de la persona a la que se va a llamar en una pestaña del navegador a parte para que el gerente pueda compatir su pantalla (mediante alguna APP para videollamadas) y pueda así mostrarle al empleado a qué persona y número debe llamar. El checkbox de la columna  <b>"Hecho"</b>  sirve para ir registrando el progreso de la lista e ir marcando todos los números que ya fueron llamados, mientras que el botón de <b>"Google Maps"</b> sirve para localizar en el mapa la dirección de la persona a la que se llamará en caso de que se necesite saber más información del lugar en donde vive. 
-        </p>
+        <VideoContainer src={"/videos/black-telephone-call-system.mp4"} alt={"black-telephone-landing"} size={800} />
+
+        <br />
         
         <p  className={utilStyles.letterProject}  >
-          Por el otro lado, tenemos el botón de la columna <b>"No en casa"</b>
+          El sistema por un lado nos provee las siguientes funciones: 
+        </p>
+
+        <p  className={utilStyles.letterProject}  >
+          <b>Mostrar número:</b> básicamente lo que haría es abrir todos los datos de la persona a la que se va a llamar en una pestaña del navegador aparte para que el gerente pueda compatir su pantalla (mediante alguna APP para videollamadas) y pueda así mostrarle al empleado a qué persona y número debe llamar.  
+        </p>
+
+        <p  className={utilStyles.letterProject}  >
+          <b>Hecho:</b> en su columna hay un checkbox que sirve para ir registrando el progreso de la lista e ir marcando todos los números que ya fueron llamados
+        </p>
+
+        <p  className={utilStyles.letterProject}  >
+          <b>Google Maps:</b> el símbolo de esta columna sirve para localizar en el mapa la dirección de la persona a la que se llamará en caso de que se necesite saber más información del lugar en donde vive.  
+        </p>
+
+        <p  className={utilStyles.letterProject}  >
+          Por el otro lado, tenemos también el botón de la columna <b>"No en casa"</b>
         </p>
 
         <br />
 
+        <VideoContainer src={"/videos/black-telephone-noHouse.mp4"} alt={"black-telephone-landing"} size={800} />
+
+        <br />
+
         <p  className={utilStyles.letterProject}  >
-          Si tocamos ese botón, se nos agregarán los datos de la persona a otra tabla también llamada "No en casa". Esa lista servirá para tener un registro organizado de todos los números telefónicos que no atendieron la primera vez y posibilitará descargarlos en un nueva hoja de cáluculo para volver a llamarlos en otra ocasión.
+          Si tocamos ese botón, se nos agregarán los datos de la persona a otra tabla también llamada "No en casa". Esa lista servirá para tener un registro organizado de todos los números telefónicos que no atendieron la primera vez y posibilitará descargarlos en un nueva hoja de cálculo para volver a llamarlos en otra ocasión.
         </p>
         <p  className={utilStyles.letterProject}  >
           Finalmente, el sistema de llamadas también nos provee el botón <b>"TURNOS"</b>
         </p>
+
+        <br />
+
+          <VideoContainer src={"/videos/black-telephone-shifts.mp4"} alt={"black-telephone-landing"} size={900} />
+
+        <br />
       </div>
 
       <div style={{  marginTop: 300}} />
