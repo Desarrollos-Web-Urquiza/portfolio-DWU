@@ -184,6 +184,25 @@ export default function Contact(props) {
         <p  className={utilStyles.letterProject}  >
           Pasemos ahora a hablar de las funciones con las que cuenta este sistema una vez que la hoja de cálculo fue importada.
         </p>
+
+        <br />
+
+        <p  className={utilStyles.letterProject}  >
+          El sistema va a permitir por un lado <b>"Mostrar número"</b>, que básicamente lo que haría es abrir todos los datos de la persona a la que se va a llamar en una pestaña del navegador a parte para que el gerente pueda compatir su pantalla (mediante alguna APP para videollamadas) y pueda así mostrarle al empleado a qué persona y número debe llamar. El checkbox de la columna  <b>"Hecho"</b>  sirve para ir registrando el progreso de la lista e ir marcando todos los números que ya fueron llamados, mientras que el botón de <b>"Google Maps"</b> sirve para localizar en el mapa la dirección de la persona a la que se llamará en caso de que se necesite saber más información del lugar en donde vive. 
+        </p>
+        
+        <p  className={utilStyles.letterProject}  >
+          Por el otro lado, tenemos el botón de la columna <b>"No en casa"</b>
+        </p>
+
+        <br />
+
+        <p  className={utilStyles.letterProject}  >
+          Si tocamos ese botón, se nos agregarán los datos de la persona a otra tabla también llamada "No en casa". Esa lista servirá para tener un registro organizado de todos los números telefónicos que no atendieron la primera vez y posibilitará descargarlos en un nueva hoja de cáluculo para volver a llamarlos en otra ocasión.
+        </p>
+        <p  className={utilStyles.letterProject}  >
+          Finalmente, el sistema de llamadas también nos provee el botón <b>"TURNOS"</b>
+        </p>
       </div>
 
       <div style={{  marginTop: 300}} />
