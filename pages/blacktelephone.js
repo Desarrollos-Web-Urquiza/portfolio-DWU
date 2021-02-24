@@ -90,7 +90,7 @@ export default function Contact(props) {
         
         <p  className={utilStyles.letterProject}>
           <b>Tecnologías utilizadas:   </b> 
-          <i> React, Firebase, Redux, Material UI, Pure-react-carousel y Framer-motion</i>
+          <i> React, Firebase, Redux, Material UI, React Beautiful dnd, Pure-react-carousel y Framer-motion</i>
         </p>
        
         <br />
@@ -220,15 +220,40 @@ export default function Contact(props) {
         <p  className={utilStyles.letterProject}  >
           Si tocamos ese botón, se nos agregarán los datos de la persona a otra tabla también llamada "No en casa". Esa lista servirá para tener un registro organizado de todos los números telefónicos que no atendieron la primera vez y posibilitará descargarlos en un nueva hoja de cálculo para volver a llamarlos en otra ocasión.
         </p>
+        
         <p  className={utilStyles.letterProject}  >
-          Finalmente, el sistema de llamadas también nos provee el botón <b>"TURNOS"</b>
+         <div style={{ float: "left", marginTop: 15 }}> Finalmente, el sistema de llamadas también nos provee el botón  </div>
+          <img
+            src="/images/shifts-button.png"
+            // style={{width: 120, height: 50, marginLeft: 10 }}
+            className={utilStyles.shiftsButton}
+            alt={"shifts-button"}
+          />        
         </p>
+        
 
         <br />
 
           <VideoContainer src={"/videos/black-telephone-shifts.mp4"} alt={"black-telephone-landing"} size={900} />
 
         <br />
+
+        <p  className={utilStyles.letterProject}  >
+          Al tocar el botón, se nos abrirá una ventana en la que podremos ir ingresando el orden de personas que están llamando para poder establecer los turnos a tener en cuenta cuando se dé vuelta la ronda de llamadas. 
+        </p>
+        
+        <p  className={utilStyles.letterProject}  >
+          Si la persona hace más de una llamada, con el botón <b>"+"</b> se le agregará un telefonito al nombre de la persona indicando que llamó más de una vez.
+        </p>
+        
+        <p  className={utilStyles.letterProject}  >
+          Para modificar el orden de los turnos, se pueden arrastrar los nombres. Esto es gracias a una librería llamada <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://github.com/atlassian/react-beautiful-dnd"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > "React Beautiful dnd"</a>.
+        </p>
       </div>
 
       <div style={{  marginTop: 300}} />
