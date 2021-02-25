@@ -90,7 +90,7 @@ export default function Contact(props) {
         
         <p  className={utilStyles.letterProject}>
           <b>Tecnologías utilizadas:   </b> 
-          <i> React, Firebase, Redux, Material UI, React Beautiful dnd, Pure-react-carousel y Framer-motion</i>
+          <i> React, Create-react-app, Firebase, Redux, Material UI, React Beautiful dnd, Pure-react-carousel y Framer-motion</i>
         </p>
        
         <br />
@@ -163,7 +163,7 @@ export default function Contact(props) {
           Cada listado de números son archivos de Excel los cuales se les conocerá con el nombre de "Territorios" y estarán ordenados por números. Estos archivos y el sistema será manipulado únicamente por el gerente. Dichos "territorios", serán cargados al sistema de la siguiente manera...
         </p>
 
-        <VideoContainer src={"/videos/black-telephone-input.mp4"} alt={"black-telephone-landing"} size={800} />
+        <VideoContainer src={"/videos/black-telephone-input.mp4"} alt={"black-telephone-input"} size={800} />
         
         <br />
         
@@ -187,7 +187,7 @@ export default function Contact(props) {
 
         <br />
 
-        <VideoContainer src={"/videos/black-telephone-call-system.mp4"} alt={"black-telephone-landing"} size={800} />
+        <VideoContainer src={"/videos/black-telephone-call-system.mp4"} alt={"black-telephone-call-system"} size={800} />
 
         <br />
         
@@ -213,7 +213,7 @@ export default function Contact(props) {
 
         <br />
 
-        <VideoContainer src={"/videos/black-telephone-noHouse.mp4"} alt={"black-telephone-landing"} size={800} />
+        <VideoContainer src={"/videos/black-telephone-noHouse.mp4"} alt={"black-telephone-noHouse"} size={800} />
 
         <br />
 
@@ -234,16 +234,16 @@ export default function Contact(props) {
 
         <br />
 
-          <VideoContainer src={"/videos/black-telephone-shifts.mp4"} alt={"black-telephone-landing"} size={900} />
+          <VideoContainer src={"/videos/black-telephone-shifts.mp4"} alt={"black-telephone-shifts"} size={900} />
 
         <br />
 
         <p  className={utilStyles.letterProject}  >
-          Al tocar el botón, se nos abrirá una ventana en la que podremos ir ingresando el orden de personas que están llamando para poder establecer los turnos a tener en cuenta cuando se dé vuelta la ronda de llamadas. 
+          Al tocar ese botón, se nos abrirá una ventana en la que podremos ir ingresando el orden de empleados que están llamando para poder establecer los turnos a tener en cuenta cuando se dé vuelta la ronda de llamadas. 
         </p>
         
         <p  className={utilStyles.letterProject}  >
-          Si la persona hace más de una llamada, con el botón <b>"+"</b> se le agregará un telefonito al nombre de la persona indicando que llamó más de una vez.
+          Si el empleado hace más de una llamada, con el botón <b>"+"</b> se le agregará un telefonito al nombre de la persona indicando que llamó más de una vez.
         </p>
         
         <p  className={utilStyles.letterProject}  >
@@ -254,7 +254,42 @@ export default function Contact(props) {
             rel="noopener noreferrer"
           > "React Beautiful dnd"</a>.
         </p>
+        
+        <h2 align="center"  style={{  marginTop: 100}}>Sistema de informes de trabajo</h2>
+
+        <p  className={utilStyles.letterProject}  >
+          Debido a una cuestión estadística, a esta empresa ficticia le gustaría contar con un formulario que permita encuestar a cada uno de sus empleados todos los meses y poder registrar sus respuestas de forma ordenada.
+        </p>
+        
+        <p  className={utilStyles.letterProject}  >
+          Y precisamente para eso sirve el formulario de la sección <b>"Informar"</b> de la página
+        </p>
+
+        <VideoContainer src={"/videos/black-telephone-inform.mp4"} alt={"black-telephone-inform"} size={900} />
+       
+        <br />
+       
+        <p  className={utilStyles.letterProject}  >
+          Como se puede ver, el formulario le hace una serie de validaciones a su contenido antes de que este sea enviado.
+        </p>
+
+        <p  className={utilStyles.letterProject}  >
+          Puntualmente evalúa que se cumplan las siguiente condiciones:
+        </p>
+
+        <div style={{marginLeft: 15}}>
+          <p className={utilStyles.letterProject}>
+            <li>No se debe dejar ningún input obligatorio vacío</li> 
+            <br />
+            <li>Si pone un cero en la parte de horas trabajadas, también debe hacerlo en los otros campos</li>
+            <br />
+            <li>La misma persona no puede enviar más de un informe en un mismo mes</li>
+          </p>
+        </div>
+
       </div>
+
+      
 
       <div style={{  marginTop: 300}} />
           

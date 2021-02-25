@@ -3,7 +3,7 @@ export default [
       title:"Examin.ar",
       src:"/images/Examin.ar.png",
       alt:"Examin.ar",
-      description:"Mis primeros pasos como programador. Este proyecto lo comencé a desarrollar mientras cursaba mi escuela terciaria",
+      description:"Mis primeros pasos como programador. Este proyecto de PHP lo comencé a desarrollar mientras cursaba mi escuela terciaria",
       link: "examinar"
     },
     {
@@ -11,7 +11,7 @@ export default [
       title:"Expolearning",
       src:"/images/expolearning.png",
       alt:"Expolearning",
-      description:"Mi primera y única experiencia en el mundo del desarrollo de aplicaciones híbridas para dispositivos móviles",
+      description:"Mi primera y única experiencia en el mundo del desarrollo de aplicaciones híbridas para dispositivos móviles con React Native",
       link: "expolearning"
     
     },

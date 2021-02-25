@@ -60,7 +60,6 @@ const ProjectContainer = ({title, src, alt, description, link}) => {
           </Button>
         
         </Link>
-         
 
         </div>
       

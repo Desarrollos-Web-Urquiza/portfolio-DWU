@@ -245,21 +245,26 @@
   font-size: 22px;
 }
 
-
-@media(max-width: 725px)   {
+@media(max-width: 715px)   {
   .shiftsButton {
     width: 120px;
     height: 50px;
-    margin-top: 50px;
-    
+    margin-top: 25px;
   }
 }
 
-@media(min-width: 725px)   {
+@media(max-width: 724px)   {
   .shiftsButton {
     width: 120px;
     height: 50px;
-    
+    margin-top: 25px;
+  }
+}
+
+@media(min-width: 715px)   {
+  .shiftsButton {
+    width: 120px;
+    height: 50px;
     margin-left: 10px;
   }
 }
