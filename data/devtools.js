@@ -19,7 +19,7 @@ export default [
       icon:"/images/logos/firebase.svg",
       alt:"Firebase",
       link: "https://firebase.google.com/",
-      description:"Mi BD noSQL por excelencia. Utilizo sus servicios de Base de Datos, Hosting y Storage. ",
+      description:"Mi base de datos noSQL por excelencia. Utilizo sus servicios de Base de Datos, Hosting y Storage. ",
     
     },
     {
@@ -27,7 +27,7 @@ export default [
       icon:"/images/logos/mysql.svg",
       alt:"MySQL",
       link: "https://www.mysql.com/",
-      description:"Fue mi primera experiencia con Bases de Datos. Me gusta su flexibilidad con distintos lenguajes y sistemas SGBD así como su integración con la sintaxis SQL. ",
+      description:"Fue mi primera experiencia con bases de datos. Me gusta su flexibilidad con distintos lenguajes y sistemas SGBD así como su integración con la sintaxis SQL. ",
       
     },
     {

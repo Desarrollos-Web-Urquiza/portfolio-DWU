@@ -286,7 +286,84 @@ export default function Contact(props) {
             <li>La misma persona no puede enviar más de un informe en un mismo mes</li>
           </p>
         </div>
+        
+        <br />
 
+        <p  className={utilStyles.letterProject}  >
+          Luego de validar las respuestas y enviarlas estas se guardan en la base de datos de <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://firebase.google.com/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > Firebase</a>, que es un servicio de Google que tiene muchísimas utilidades, y se pueden ver en la página <b>"Estadísticas"</b>
+        </p>
+        
+        <br />
+       
+        <VideoContainer src={"/videos/black-telephone-statistics.mp4"} alt={"black-telephone-statistics"} size={900} />
+
+        <br />
+
+        <p  className={utilStyles.letterProject}  >
+          Vemos que los informes se pueden filtrar por mes y que también se pueden elminar individual o grupalmente en base a un mes específico.
+        </p>
+
+        <p  className={utilStyles.letterProject}  >
+          Además, podemos modificar cada informe de la siguiente manera
+        </p>
+        
+
+        <br />
+
+        <VideoContainer src={"/videos/black-telephone-edit.mp4"} alt={"black-telephone-edit"} size={900} />
+        
+        <br />
+        
+        <p  className={utilStyles.letterProject}  >
+          Este formulario para editar hace exactamente las mismas validaciones que el anterior que usábamos para registrarlos.
+        </p>
+
+        <p  className={utilStyles.letterProject}  >
+          El efecto de transición que se puede ver en esta sección y en todo el sitio web es gracias a una librería llamada <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://www.framer.com/motion/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > "Framer-motion"</a>.
+        </p>
+
+        <p  className={utilStyles.letterProject}  >
+          De esta manera completamos el <b>CRUD</b> de todo el sistema de informes de trabajo. 
+        </p>
+
+        <h2 align="center"  style={{  marginTop: 100}}>Otras características de Black Telephone</h2>
+
+        <p  className={utilStyles.letterProject}  >
+          Algunos detalles extras sobre cómo utilizo React en todo este proyecto es el uso de los <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://es.reactjs.org/docs/state-and-lifecycle.html#adding-lifecycle-methods-to-a-class"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > ciclos de vida</a> junto a los componentes de clase de React en el "Sistema de informes de trabajo". Esto es así porque en principio aprendí a usar las versiones viejas del framework.
+        </p>
+
+        <p  className={utilStyles.letterProject}  >
+          Luego al crear el "Sistema de llamadas", empecé a usar los <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://es.reactjs.org/docs/hooks-intro.html"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > Hooks</a> y componentes funcionales de React. Así que estoy familiarizado con ambas versiones de React.
+        </p>       
+
+        <p  className={utilStyles.letterProject}  >
+          Además destaco el uso de la librería <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://es.redux.js.org/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > Redux </a> la cual uso principalmente en la parte de los informes. En realidad, es mejor evitar usarlo y utilizar solo los estados locales de los componentes, pero aun así sigue siendo bastante útil para esparcir el estado en toda la app de una forma rápida.
+        </p>         
       </div>
 
       
