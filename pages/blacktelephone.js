@@ -262,7 +262,7 @@ export default function Contact(props) {
         </p>
         
         <p  className={utilStyles.letterProject}  >
-          Y precisamente para eso sirve el formulario de la sección <b>"Informar"</b> de la página
+          Y precisamente para eso sirve el formulario de la sección <b>"Informar"</b>
         </p>
 
         <VideoContainer src={"/videos/black-telephone-inform.mp4"} alt={"black-telephone-inform"} size={900} />
