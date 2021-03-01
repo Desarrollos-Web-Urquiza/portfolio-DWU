@@ -200,7 +200,7 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}  >
-          <b>Hecho:</b> en su columna hay un checkbox que sirve para ir registrando el progreso de la lista e ir marcando todos los números que ya fueron llamados
+          <b>Hecho:</b> en su columna hay un checkbox que sirve para ir registrando el progreso de la lista e ir marcando todos los números que ya fueron llamados.
         </p>
 
         <p  className={utilStyles.letterProject}  >
@@ -353,7 +353,7 @@ export default function Contact(props) {
             href={"https://es.reactjs.org/docs/hooks-intro.html"}
             target="_blank"
             rel="noopener noreferrer"
-          > Hooks</a> y componentes funcionales de React. Así que estoy familiarizado con ambas versiones de React.
+          > Hooks</a> y componentes funcionales. Así que estoy familiarizado con ambas versiones de React.
         </p>       
 
         <p  className={utilStyles.letterProject}  >
@@ -365,8 +365,6 @@ export default function Contact(props) {
           > Redux </a> la cual uso principalmente en la parte de los informes. En realidad, es mejor evitar usarlo y utilizar solo los estados locales de los componentes, pero aun así sigue siendo bastante útil para esparcir el estado en toda la app de una forma rápida.
         </p>         
       </div>
-
-      
 
       <div style={{  marginTop: 300}} />
           

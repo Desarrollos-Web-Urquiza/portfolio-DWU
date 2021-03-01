@@ -105,7 +105,7 @@ export default function Contact(props) {
         </p>
       
         <p  className={utilStyles.letterProject}>
-          En mi caso, la APP "expolearning" está hecha para dispotivos con Android 5 o superior. Y gracias a Expo fue fácil desarrollarla, ya que es una muy buena alternativa menos compleja que otros servicios como Android Studio.
+          En mi caso, la APP "expolearning" está hecha para dispositivos con Android 5 o superior. Y gracias a Expo fue fácil desarrollarla, ya que es una muy buena alternativa menos compleja que otros servicios como Android Studio.
         </p>
 
         <p  className={utilStyles.letterProject}>
@@ -114,6 +114,30 @@ export default function Contact(props) {
 
         <br />
         
+        <h2 align="center">Registro e inicio de sesión</h2>
+        
+        <br />
+       
+        
+        <p  className={utilStyles.letterProject}>
+          El primer paso para poder usar La APP es registrarse y loguearse
+        </p>
+       
+        <br />
+
+        <VideoContainer src={"/videos/expolearning-register-login.mp4"} alt={"expolearning-register-login"} size={2000} />
+        
+        <br /> 
+        
+        <p  className={utilStyles.letterProject}>
+          El registro del usuario lo hago a través de la base de datos noSQL que me provee <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://firebase.google.com/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > Firebase</a>, que es uno de los servicios que tiene esta tecnologia de Google.
+        </p>
+
         <h2 align="center"  style={{  marginTop: 100}}></h2>
               
       </div>
