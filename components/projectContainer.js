@@ -47,8 +47,10 @@ const ProjectContainer = ({title, src, alt, description, link}) => {
       
         </div>
         
-        <p style={{color: "#c3c3c3", marginLeft: 5, fontSize: 20, marginTop: 20 }}>{description} </p>
-       
+        <div style={{ height:  150 }}>
+          <p style={{color: "#c3c3c3", marginLeft: 5, fontSize: 20, marginTop: 20 }}>{description} </p>
+        </div>
+        
         <div style={{float: "right", marginRight: 10, marginTop: 10,}}>
           
         {console.log(`/${link}`)}

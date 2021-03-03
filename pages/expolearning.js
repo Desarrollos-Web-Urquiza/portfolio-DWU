@@ -96,16 +96,16 @@ export default function Contact(props) {
         <br />
        
         <p  className={utilStyles.letterProject}>
-          Fue mi primera y única  experiencia con el framework React Native y como su nombre lo indica, creé esta APP para poder aprender a usar la plataforma <a 
+          Fue mi primera y única  experiencia con React Native y como su nombre lo indica, creé esta APP para poder aprender a usar <a 
             style={{ textDecoration: "none", color: "#0070f2"}}
             href={"https://expo.io/"}
             target="_blank"
             rel="noopener noreferrer"
-          >Expo</a>  que sirve principalemente para desarrollar y desplegar un proyecto hecho en React Native y poder compilarlo para poder instalarlo en dispositivos Android o iOS. 
+          >Expo</a>. Esta plataforma sirve principalemente para desarrollar y desplegar un proyecto hecho en React Native además de compilarlo para poder instalarlo en dispositivos Android o iOS. 
         </p>
       
         <p  className={utilStyles.letterProject}>
-          En mi caso, la APP "expolearning" está hecha para dispositivos con Android 5 o superior. Y gracias a Expo fue fácil desarrollarla, ya que es una muy buena alternativa menos compleja que otros servicios como Android Studio.
+          En mi caso, la APP "expolearning" está hecha para dispositivos con Android 5 o superior. Y gracias a Expo fue fácil desarrollarla, ya que es una muy buena alternativa a otros servicios más complejos como Android Studio.
         </p>
 
         <p  className={utilStyles.letterProject}>
@@ -135,7 +135,7 @@ export default function Contact(props) {
             href={"https://firebase.google.com/"}
             target="_blank"
             rel="noopener noreferrer"
-          > Firebase</a>, que es uno de los servicios que tiene esta tecnologia de Google.
+          > Firebase</a>, que es uno de los servicios que tiene esta tecnología de Google.
         </p>
 
         <p  className={utilStyles.letterProject}>
@@ -153,7 +153,7 @@ export default function Contact(props) {
         <br /> 
 
         <p  className={utilStyles.letterProject}>
-          De entrada se le dará la bienvenida en la parte del "Home" y luego podrá ir intercambiando de secciones mediante el componente footer. Este y la mayoría de los componentes de esta aplicación, son parte de lo que ofrece la librería  <a 
+          De entrada se le dará la bienvenida en la parte del "Home" y luego podrá ir intercambiando secciones mediante los iconos del componente footer. Este y la mayoría de los componentes de esta aplicación, son parte de lo que ofrece la librería  <a 
             style={{ textDecoration: "none", color: "#0070f2"}}
             href={"https://nativebase.io/"}
             target="_blank"
@@ -167,12 +167,30 @@ export default function Contact(props) {
             href={"https://reactnavigation.org/"}
             target="_blank"
             rel="noopener noreferrer"
-          > React Navigation</a>, la cual nos permite manejar las rutas de una forma muy sencilla y similar a como lo haríamos con otras librerías para la web como <a 
+          > React Navigation</a>, la cual nos permite manejar las rutas de una forma muy sencilla y similar a como lo haríamos con otras librerías para la web muy conocidas como <a 
           style={{ textDecoration: "none", color: "#0070f2"}}
           href={"https://www.npmjs.com/package/react-router-dom"}
           target="_blank"
           rel="noopener noreferrer"
-        > "react-router-dom"</a> que yo he utilizado en otras páginas.
+        > "react-router-dom"</a>.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Ahora ya estamos listos para crear nuestra primera nota.
+        </p>
+
+        <br />
+        
+        <h2 align="center">Gestión de las notas</h2>
+
+        <br />
+
+        <ExpoVideo src={"/videos/expolearning-register-note.mp4"} alt={"expolearning-register-note"}  />
+
+        <br />
+
+        <p  className={utilStyles.letterProject}>
+          Como vemos, hacer una nota es muy sencillo. Solo ingresamos el título de la nota, su contenido y tocamos el botón "REGISTRAR NOTA".
         </p>
 
         <h2 align="center"  style={{  marginTop: 100}}></h2>

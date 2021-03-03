@@ -389,21 +389,21 @@
   transform: rotateZ(90deg);
 }
 
-@media(min-width: 400px)   {
+@media(min-width: 480px)   {
   .expolearningVideoSize{
     width: 100%;
-    height: 100%;
+    height: 90%;
   }
 }
 
-@media(max-width: 650px)   {
+@media(max-width: 600px)   {
   .expolearningVideoSize{
-    width: 125%;
-    height: 100%;
+    width: 120%;
+    height: 90%;
   }
 }
 
-@media(max-width: 400px)   {
+@media(max-width: 480px)   {
   .expolearningVideoSize{
     width: 150%;
     height: 100%;
