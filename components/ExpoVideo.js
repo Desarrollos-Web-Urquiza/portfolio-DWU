@@ -5,9 +5,14 @@ const ExpoVideo = ({ src, alt }) => {
     <div align="center">
       <div 
         className={utilStyles.expolearningVideoRotate} 
-        style={{ marginTop: 150}}
+        style={{ marginTop: 150 }}
       >
         <div style={{  maxWidth: 700 }}>
+          {/* <img
+            src="/images/smartphone-mark.webp"
+            className={ `${utilStyles.expolearningCelularRotate}` } 
+            alt={"smartphone-mark"}
+          /> */}
           <video 
             autoPlay
             muted
@@ -15,6 +20,7 @@ const ExpoVideo = ({ src, alt }) => {
             src={src}
             className={utilStyles.expolearningVideoSize}
             alt={alt}
+            style={{ border: "solid" }}
           />
         </div>
       </div>

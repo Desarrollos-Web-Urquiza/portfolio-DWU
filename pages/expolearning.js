@@ -101,7 +101,7 @@ export default function Contact(props) {
             href={"https://expo.io/"}
             target="_blank"
             rel="noopener noreferrer"
-          >Expo</a>. Esta plataforma sirve principalemente para desarrollar y desplegar un proyecto hecho en React Native además de compilarlo para poder instalarlo en dispositivos Android o iOS. 
+          >Expo</a>. Esta plataforma sirve principalmente para desarrollar y desplegar un proyecto hecho en React Native y compilarlo para poder instalarlo en dispositivos Android o iOS. 
         </p>
       
         <p  className={utilStyles.letterProject}>
@@ -109,7 +109,7 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}>
-          La APP es bastante sencilla, sirve para registrarse, iniciar sesión y empezar a registrar notas a modo de recordatorios.
+          La APP es bastante simple, sirve para registrarse, iniciar sesión y empezar a crear notas a modo de recordatorios.
         </p>
 
         <br />
@@ -118,7 +118,6 @@ export default function Contact(props) {
         
         <br />
        
-        
         <p  className={utilStyles.letterProject}>
           El primer paso para poder usar la APP es registrarse y loguearse
         </p>
@@ -175,14 +174,16 @@ export default function Contact(props) {
         > "react-router-dom"</a>.
         </p>
 
-        <p  className={utilStyles.letterProject}>
-          Ahora ya estamos listos para crear nuestra primera nota.
-        </p>
-
         <br />
         
         <h2 align="center">Gestión de las notas</h2>
-
+        
+        <br />
+              
+        <p  className={utilStyles.letterProject}>
+          Ahora ya estamos listos para crear nuestra primera nota.
+        </p>
+       
         <br />
 
         <ExpoVideo src={"/videos/expolearning-register-note.mp4"} alt={"expolearning-register-note"}  />
@@ -190,14 +191,35 @@ export default function Contact(props) {
         <br />
 
         <p  className={utilStyles.letterProject}>
-          Como vemos, hacer una nota es muy sencillo. Solo ingresamos el título de la nota, su contenido y tocamos el botón "REGISTRAR NOTA".
+          Como vemos, hacer una nota es muy sencillo. Solo ingresamos el título de la nota, su contenido y tocamos el botón "REGISTRAR NOTA". 
         </p>
+
+        <p  className={utilStyles.letterProject}>
+          Para hacer persistir la nota la guardamos en la misma base de datos en donde están los usuarios. La registramos con el "id_user" para que luego al entrar a "Mis notas" se pueda filtrar y solo se impriman aquellas que sean del usuario logueado.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Dicho ID lo obtengo cuando el usuario inicia sesión y lo traslado al componente para crear notas mendiante <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://es.redux.js.org/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > Redux </a>. Uso esta librería para esparcir este dato a todas las partes de la aplicación en donde lo necesito.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Después de todo esto, podemos <b>editar</b> o <b>eliminar</b> nuestras notas.
+        </p>
+
+        <br />
+
+        <ExpoVideo src={"/videos/expolearning-edit-delete.mp4"} alt={"expolearning-edit-delete"}  />
+
+        <br />      
 
         <h2 align="center"  style={{  marginTop: 100}}></h2>
               
       </div>
-
-      
 
       <div style={{  marginTop: 300}} />
           

@@ -389,6 +389,18 @@
   transform: rotateZ(90deg);
 }
 
+.expolearningCelularRotate {
+  transform:  rotateZ(-0.25turn);
+  position: absolute;
+  margin-left: 150px;
+  margin-top: -150px;
+  /* width: 10%; */
+  /* height: 90%; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+}
+
 @media(min-width: 480px)   {
   .expolearningVideoSize{
     width: 100%;
