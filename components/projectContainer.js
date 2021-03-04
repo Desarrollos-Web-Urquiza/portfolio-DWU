@@ -8,11 +8,11 @@ import Button from '@material-ui/core/Button';
 
 const CardProject = withStyles((theme) => ({
     root: {
-  
-      backgroundColor: '#00a',
+      
+      backgroundColor: 'rgb(0,0,170, 1)',
   
       '&:hover': {
-        backgroundColor: '#00007e',
+        backgroundColor: 'rgb(0,0,126, 1)',
       },
     },
   }))(Card);
