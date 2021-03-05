@@ -166,7 +166,7 @@ export default function Contact(props) {
             href={"https://reactnavigation.org/"}
             target="_blank"
             rel="noopener noreferrer"
-          > React Navigation</a>, la cual nos permite manejar las rutas de una forma muy sencilla y similar a como lo haríamos con otras librerías para la web muy conocidas como <a 
+          > React Navigation</a>, la cual nos permite manejar las rutas de una forma muy sencilla y similar a como lo haríamos con otras librerías para la web más conocidas como <a 
           style={{ textDecoration: "none", color: "#0070f2"}}
           href={"https://www.npmjs.com/package/react-router-dom"}
           target="_blank"
@@ -195,7 +195,7 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}>
-          Para hacer persistir la nota la guardamos en la misma base de datos en donde están los usuarios. La registramos con el "id_user" para que luego al entrar a "Mis notas" se pueda filtrar y solo se impriman aquellas que sean del usuario logueado.
+          Para hacer persistir la nota esta se guarda en la misma base de datos en donde están registrados los usuarios. Se registrará con el "id_user" para que luego al entrar a "Mis notas" se pueda filtrar y solo se impriman aquellas notas que sean del usuario logueado.
         </p>
 
         <p  className={utilStyles.letterProject}>
@@ -208,14 +208,34 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}>
-          Después de todo esto, podemos <b>editar</b> o <b>eliminar</b> nuestras notas.
+          Después de todo esto, también podemos <b>editar</b> o <b>eliminar</b> nuestras notas.
         </p>
 
         <br />
 
         <ExpoVideo src={"/videos/expolearning-edit-delete.mp4"} alt={"expolearning-edit-delete"}  />
 
-        <br />      
+        <br /> 
+
+        <h2 align="center">Otros datos sobre Expolearning</h2>     
+        
+        <p  className={utilStyles.letterProject}>
+          No tenemos que olvidar que esta APP me sirvió como mi primera experiencia en React y que, como ya expliqué antes, está hecha solo para aprender. 
+        </p>  
+
+        <p  className={utilStyles.letterProject}>
+          Debido a eso, tengo que admitir que este proyecto podría mejorarse en muchos aspectos, como en algunos estilos y en ciertas formas de usar el framework. Además la APP tiene algunos bugs, aunque estos no la vuelven inutilizable. 
+        </p>  
+
+        <p  className={utilStyles.letterProject}>
+          De todos modos, este proyecto me mostró la versatilidad que tiene JavaScript y cómo solo con él se puede programar en tantas plataformas distintas. 
+        </p>
+        <p  className={utilStyles.letterProject}>
+          Sin lugar a dudas, desarrollar esta APP me dio las bases que necesitaba para poder empezar a profundizar más en este maravilloso mundo del frontend.
+        </p>
+
+
+
 
         <h2 align="center"  style={{  marginTop: 100}}></h2>
               
