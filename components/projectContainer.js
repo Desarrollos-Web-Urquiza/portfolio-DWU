@@ -25,7 +25,7 @@ const ProjectContainer = ({title, src, alt, description, link}) => {
       <br />
       <br />
       
-      <CardProject className={`${utilStyles.cardProject}`}>
+      <CardProject className={utilStyles.cardProject} style={{ backgroundColor: 'rgb(0,0,170, 1)' }}>
               
         <div align="center">
           

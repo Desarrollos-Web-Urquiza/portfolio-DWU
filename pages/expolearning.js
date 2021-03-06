@@ -224,7 +224,7 @@ export default function Contact(props) {
         </p>  
 
         <p  className={utilStyles.letterProject}>
-          Debido a eso, tengo que admitir que este proyecto podría mejorarse en muchos aspectos, como en algunos estilos y en ciertas formas de usar el framework. Además la APP tiene algunos bugs, aunque estos no la vuelven inutilizable. 
+          Debido a eso, tengo que admitir que este proyecto podría mejorarse en muchos aspectos, como en algunos estilos y en ciertas formas de usar el framework. Además la APP tiene algunos bugs, pero aún así estos no la vuelven inutilizable. 
         </p>  
 
         <p  className={utilStyles.letterProject}>
