@@ -160,9 +160,13 @@ export default function Contact(props) {
           En vista de la creciente ola del COVID-19, los empleados necesitan hacer los llamados de telemarketing desde su casa en modalidad "home office". Pero para asegurarse de que cumplan con sus jornadas laborales, un gerente debe supervisar y dirigir a grupos de empleados para que estos llamen de forma cooperativa y en grupo a un listado de números telefónicos mientras están conectados entre sí mediante alguna APP para videollamadas como por ejemplo Zoom o Skype.
         </p>
         <p  className={utilStyles.letterProject}  >
-          Cada listado de números son archivos de Excel los cuales se les conocerá con el nombre de "Territorios" y estarán ordenados por números. Estos archivos y el sistema será manipulado únicamente por el gerente. Dichos "territorios", serán cargados al sistema de la siguiente manera...
+          Cada listado de números son archivos de Excel los cuales se les conocerá con el nombre de "Territorios" y estarán ordenados por números. Estos archivos y el sistema será manipulado únicamente por el gerente. 
         </p>
-
+       
+        <p  className={utilStyles.letterProject}  >
+          Dichos "territorios", serán cargados al sistema de la siguiente manera... 
+        </p>
+       
         <VideoContainer src={"/videos/black-telephone-input.mp4"} alt={"black-telephone-input"} size={800} />
         
         <br />
