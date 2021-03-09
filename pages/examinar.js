@@ -116,14 +116,17 @@ export default function Contact(props) {
           {/* El sitio tiene principalmente tres usos: por un lado sirve para el visitante que quiere conocer de qué se trata el sistema de Examin.ar y por el otro es ya para el profesor que iniciará sesión y utilizará el servicio. Además, sirve para los administradores del sitio que darán de alta o baja a las cuentas de los profesores. */}
           El sitio tiene principalmente tres usos:
         </p>
-          
-        <p  className={utilStyles.letterProject}>
+
+        <div style={{marginLeft: 15}}>
+          <p  className={utilStyles.letterProject}>
             <li>Al visitante común le servirá para conocer de qué se trata el sistema de Examin.ar y solicitar el servicio</li> 
             <br />
             <li>A los profesores les servirá para loguearse y usar el sistema</li>
             <br />
             <li>Los administradores del sitio podrán gestionar las cuentas de los profesores y agregar novedades al sitio</li>
-        </p>
+          </p>
+        </div>
+
         
         <br />
 
@@ -198,7 +201,89 @@ export default function Contact(props) {
           Tiene un formulario de "Contacto" para pedir más información o para solicitar el servicio y la sección de "Beneficios" mostrará porqué alguien debería comprar una cuenta premium. 
         </p>
 
+        <br />
+
+        <h2 align="center">Sección del profesor</h2>
+
+        <p  className={utilStyles.letterProject}>
+          El profesor que utilizará el servicio debe ir a "Iniciar sesión" para entrar en la sección de la página que le permitirá usar el sistema de evaluaciones online.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Para probarlo, podemos usar como ejemplo el usuario "Profesor1" cuya contraseña es "1234".
+        </p>
+        
+        <br/>
+
+        <VideoContainer src={"/videos/examinar-new.mp4"} alt={"examinar-new"} size={900} />
+
+        <br/>
+
+        <p  className={utilStyles.letterProject}>
+          Una vez adentro de su sección, ya empezamos a hacer uso de PHP no solo buscando el usuario y contraseña en la base de datos, si no también mediante el objeto  <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://www.php.net/manual/es/reserved.variables.session.php"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > "$_SESSION"</a>.
+        </p>
+
+        
+        <p  className={utilStyles.letterProject}>
+          En ese objeto se guardará los datos del usuario que acaba de loguearse y nos permitirá hacer una verificación de su inicio de sesión por cada página que visite. Si copió la URL e intenta ingresar a alguna parte de esta sección sin haber iniciado sesión se lo redirecciona al login.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Hablemos ahora sobre cómo funciona el sistema de evaluaciones online.
+        </p>
+       
+        <p  className={utilStyles.letterProject}>
+          El primer paso sería <b>crear</b> una escuela, un curso y un alumno. 
+        </p>
+
+        <br/>
+
+        <VideoContainer src={"/videos/examinar-new.mp4"} alt={"examinar-new"} size={900} />
+
+        <br/>
+
+        <p  className={utilStyles.letterProject}>
+          El DNI del alumno nos permitirá diferenciarlo de los demás en caso de que existan otros alumnos con los mismos nombres.
+        </p>
+        
+        <p  className={utilStyles.letterProject}>
+          Después de eso, el próximo paso sería <b>generar evaluación</b>.
+        </p>
+
+        
+        <br/>
+
+        <VideoContainer src={"/videos/examinar-new.mp4"} alt={"examinar-new"} size={900} />
+
+        <br/>
+
+        <p  className={utilStyles.letterProject}>
+         Como vemos, es muy sencillo. Solo especificamos el título, cantidad de preguntas y las preguntas propiamente dichas.
+        </p>
+        
+        <p  className={utilStyles.letterProject}>
+         Ahora lo que quedaría sería que ese alumno que registramos anteriormente pueda <b>rendir la evaluación</b> que acabamos de crear.
+        </p>
+
+        <br/>
+
+        <VideoContainer src={"/videos/examinar-new.mp4"} alt={"examinar-new"} size={900} />
+
+        <br/>
+
+        <p  className={utilStyles.letterProject}>
+         Solo tenemos que asegurarnos de que el alumno que seleccionemos coincida con el número de de DNI. Luego solo queda que el alumno conteste las preguntas.
+        </p>
+
+
       </div>
+
+     
 
       <div style={{  marginTop: 300}} />
           

@@ -533,8 +533,7 @@
   .cardProject{
     width: 332px;
     height: 530px;
-    margin-left: -10px;
-    background-color: rgb(0,0,170, 1);     
+    margin-left: -10px;  
   }
 }
 
@@ -542,8 +541,7 @@
   .cardProject{
     width: 332px;
     height: 530px;
-    margin-left: -10px;
-    background-color: rgb(0,0,170, 1);        
+    margin-left: -10px;     
   }
 }
 
@@ -553,8 +551,7 @@
     width: 332px;
     height: 530px;
     margin-left: 8px;
-    margin-right: 8px;
-    background-color: rgb(0,0,170, 1);         
+    margin-right: 8px;      
   }
 
 }
@@ -563,8 +560,7 @@
 
   .cardProject{
     width: 375px;
-    height: 530px;
-    background-color: rgb(0,0,170, 1);    
+    height: 530px; 
   }
 
 }
