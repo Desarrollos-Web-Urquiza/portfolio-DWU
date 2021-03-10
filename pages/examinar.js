@@ -95,7 +95,7 @@ export default function Contact(props) {
         
         <p  className={utilStyles.letterProject}>
           <b>Tecnologías utilizadas:   </b> 
-          <i> PHP, Boostrap, SQL, MySQL, phpMyAdmin y HTML</i>
+          <i> PHP, Boostrap, SQL, MySQL, phpMyAdmin, CSS y HTML</i>
         </p>
        
         <br />
@@ -215,7 +215,7 @@ export default function Contact(props) {
         
         <br/>
 
-        <VideoContainer src={"/videos/examinar-new.mp4"} alt={"examinar-new"} size={900} />
+        <VideoContainer src={"/videos/examinar-login-profesor.mp4"} alt={"examinar-login-profesor"} size={900} />
 
         <br/>
 
@@ -243,7 +243,7 @@ export default function Contact(props) {
 
         <br/>
 
-        <VideoContainer src={"/videos/examinar-new.mp4"} alt={"examinar-new"} size={900} />
+        <VideoContainer src={"/videos/examinar-profesor-create.mp4"} alt={"examinar-profesor-create"} size={900} />
 
         <br/>
 
@@ -258,7 +258,7 @@ export default function Contact(props) {
         
         <br/>
 
-        <VideoContainer src={"/videos/examinar-new.mp4"} alt={"examinar-new"} size={900} />
+        <VideoContainer src={"/videos/examinar-generate-evaluation.mp4"} alt={"examinar-generate-evaluation"} size={900} />
 
         <br/>
 
@@ -272,12 +272,30 @@ export default function Contact(props) {
 
         <br/>
 
-        <VideoContainer src={"/videos/examinar-new.mp4"} alt={"examinar-new"} size={900} />
+        <VideoContainer src={"/videos/examinar-take-evaluation.mp4"} alt={"examinar-take-evaluation"} size={900} />
 
         <br/>
 
         <p  className={utilStyles.letterProject}>
          Solo tenemos que asegurarnos de que el alumno que seleccionemos coincida con el número de de DNI. Luego solo queda que el alumno conteste las preguntas.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+         Cuando el alumno empiece a rendir el examen y a contestar las preguntas, la sesión de PHP se va a romper. Por lo que si el alumno quiere volver a atrás para usar la cuenta del profesor, no va a poder.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+         Para poder ver las respuestas del alumno, vamos a <b>Mis alumnos</b>.
+        </p>
+        
+        <br/>
+
+        <VideoContainer src={"/videos/examinar-my-students.mp4"} alt={"examinar-my-students"} size={900} />
+
+        <br/>
+
+        <p  className={utilStyles.letterProject}>
+         Una vez dentro de esta página, seleccionamos el alumno y tocamos la evaluación que deseamos ver. Además vemos que también podemos editar o eliminar el alumno. 
         </p>
 
 
