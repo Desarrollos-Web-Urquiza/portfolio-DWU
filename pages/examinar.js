@@ -95,7 +95,7 @@ export default function Contact(props) {
         
         <p  className={utilStyles.letterProject}>
           <b>Tecnologías utilizadas:   </b> 
-          <i> PHP, Boostrap, SQL, MySQL, phpMyAdmin, CSS y HTML</i>
+          <i> PHP, Boostrap, MySQL y phpMyAdmin</i>
         </p>
        
         <br />
@@ -105,7 +105,7 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}>
-          Por aquel entonces solo contaba con el conocimiento básico que me habían enseñado en los años anteriores, por lo que tenía poca o nula experiencia haciendo proyectos de programación. Así que en esa época realizar una web como esta fue todo una desafío para mí. 
+          Por aquel entonces solo contaba con el conocimiento básico que me habían enseñado en los años anteriores, por lo que tenía poca o nula experiencia haciendo proyectos de programación. Así que realizar una web como esta fue todo una desafío para mí en esa época. 
         </p>
 
         <p  className={utilStyles.letterProject}>
@@ -114,20 +114,19 @@ export default function Contact(props) {
 
         <p  className={utilStyles.letterProject}>
           {/* El sitio tiene principalmente tres usos: por un lado sirve para el visitante que quiere conocer de qué se trata el sistema de Examin.ar y por el otro es ya para el profesor que iniciará sesión y utilizará el servicio. Además, sirve para los administradores del sitio que darán de alta o baja a las cuentas de los profesores. */}
-          El sitio tiene principalmente tres usos:
+          El sitio tiene principalmente estos usos:
         </p>
 
         <div style={{marginLeft: 15}}>
           <p  className={utilStyles.letterProject}>
             <li>Al visitante común le servirá para conocer de qué se trata el sistema de Examin.ar y solicitar el servicio</li> 
             <br />
-            <li>A los profesores les servirá para loguearse y usar el sistema</li>
+            <li>Los profesores podrán loguearse y usar las distintas funciones para registrar alumnos y crear evaluaciones</li>
             <br />
-            <li>Los administradores del sitio podrán gestionar las cuentas de los profesores y agregar novedades al sitio</li>
+            <li>Los alumnos utilizarán el sistema para rendir una evaluación </li>
           </p>
         </div>
 
-        
         <br />
 
         <h2 align="center">La primera versión de Examin.ar</h2>
@@ -198,7 +197,7 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}>
-          Tiene un formulario de "Contacto" para pedir más información o para solicitar el servicio y la sección de "Beneficios" mostrará porqué alguien debería comprar una cuenta premium. 
+          Tiene un formulario de <b>"Contacto"</b> para pedir más información o para solicitar el servicio. La sección de <b>"Beneficios"</b> mostrará porqué alguien debería comprar una cuenta premium y la parte de <b>"Novedades"</b> es para estar al tanto de las noticias relacionadas al sitio. 
         </p>
 
         <br />
@@ -228,10 +227,13 @@ export default function Contact(props) {
           > "$_SESSION"</a>.
         </p>
 
-        
         <p  className={utilStyles.letterProject}>
           En ese objeto se guardará los datos del usuario que acaba de loguearse y nos permitirá hacer una verificación de su inicio de sesión por cada página que visite. Si copió la URL e intenta ingresar a alguna parte de esta sección sin haber iniciado sesión se lo redirecciona al login.
         </p>
+
+        <br />
+       
+        <h2 align="center">Funciones del sistema de evaluaciones online</h2>
 
         <p  className={utilStyles.letterProject}>
           Hablemos ahora sobre cómo funciona el sistema de evaluaciones online.
@@ -277,11 +279,11 @@ export default function Contact(props) {
         <br/>
 
         <p  className={utilStyles.letterProject}>
-         Solo tenemos que asegurarnos de que el alumno que seleccionemos coincida con el número de de DNI. Luego solo queda que el alumno conteste las preguntas.
+         Solo tenemos que asegurarnos de que el nombre que seleccionemos coincida con el número de DNI. Luego solo queda que el alumno conteste las preguntas.
         </p>
 
         <p  className={utilStyles.letterProject}>
-         Cuando el alumno empiece a rendir el examen y a contestar las preguntas, la sesión de PHP se va a romper. Por lo que si el alumno quiere volver a atrás para usar la cuenta del profesor, no va a poder.
+         Cuando el alumno empiece a rendir el examen y a contestar las preguntas, la sesión de PHP se va a romper. Por lo que si el alumno quiere volver atrás para usar la cuenta del profesor, no va a poder.
         </p>
 
         <p  className={utilStyles.letterProject}>
@@ -295,9 +297,42 @@ export default function Contact(props) {
         <br/>
 
         <p  className={utilStyles.letterProject}>
-         Una vez dentro de esta página, seleccionamos el alumno y tocamos la evaluación que deseamos ver. Además vemos que también podemos editar o eliminar el alumno. 
+          Una vez dentro de esta página, seleccionamos el alumno y tocamos la evaluación que deseamos ver. 
         </p>
 
+        <p  className={utilStyles.letterProject}>
+          Además vemos que también podemos editar o eliminar el alumno. 
+        </p>
+        
+        <br />
+
+        <h2 align="center">Otras características de Examin.ar</h2>
+
+        <p  className={utilStyles.letterProject}>
+         La versión de PHP que utilicé en este proyecto en un principio fue la 5, pero después la actualicé a la 7. Aunque los cambios fueron solamente algunos detalles menores como llamar a MySQL con <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://www.php.net/manual/es/class.mysqli.php"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > "mysqli"</a>.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+         La base de datos MySQL que usé para guardar los datos de usuario y todo lo referente a evaluaciones y alumnos usa como SGBD a <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://www.phpmyadmin.net/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > phpMyAdmin</a>. 
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Como este fue mi primer proyecto, hay varias cosas que se podrían mejorar. Como por ejemplo, la duplicación de código, la falta de estructura en los archivos, mala indentación, etc.
+        </p>
+        
+        <p  className={utilStyles.letterProject}>
+          Además, en vez de usar solo PHP puro como en este proyecto, hubiera sido mucho mejor integrar frameworks como por ejemplo Laravel. Actualmente me encuentro aprendiéndolo y considerando la posible implementación en este proyecto más adelante. 
+        </p>
 
       </div>
 
