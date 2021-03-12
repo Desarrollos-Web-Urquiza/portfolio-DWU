@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from 'react';
+
 import Projects from '../data/projects'
 import DevTools from '../data/devtools'
 
@@ -16,7 +18,9 @@ import Footer from '../components/footer'
 
 export default function Home(props) {
   
-  const [drawerOpened, setDrawerOpened] = React.useState(false)
+  const [drawerOpened, setDrawerOpened] = useState(false)
+
+  const [count, setCount] = useState(0)
 
   const handleDrawerOpen = () => {
   
@@ -29,6 +33,20 @@ export default function Home(props) {
     setDrawerOpened(false)
 
   }
+
+  // const counter = () => {
+
+  //   if(count > 100)  {
+  //     setCount(0)
+  //   } else {
+  //     setCount(count + 1)
+  //   }
+    
+  // }
+
+  // useEffect(() => {
+  //   setInterval(counter(), 1000);
+  // }, []);
   
   return (
      
@@ -85,9 +103,14 @@ export default function Home(props) {
         
         <p className={`${utilStyles.headingX2}`}>Día a día busco conocer más y más información del backend y frontend de las páginas web y me gusta crear proyectos personales con lo que aprendo. A lo largo del tiempo he experimentado con varias tecnologías y lenguajes distintos y si bien algunos me gustan más que otros, no me caso con ninguno.</p>
         
+        {/* <br />
+        <br /> */}
+
+        {/* <p className={`${utilStyles.headingX2}`}>{count}% curiosidad</p> */}
+
         <br />
         <br />
-        
+                
         <img
           src="/images/QR GitHub.png"
           className={`${utilStyles.imgQR}`}

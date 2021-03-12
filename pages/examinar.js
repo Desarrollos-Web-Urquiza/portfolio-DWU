@@ -105,7 +105,7 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}>
-          Por aquel entonces solo contaba con el conocimiento básico que me habían enseñado en los años anteriores, por lo que tenía poca o nula experiencia haciendo proyectos de programación. Así que realizar una web como esta fue todo una desafío para mí en esa época. 
+          Por aquel entonces solo contaba con el conocimiento básico que me habían enseñado en los años anteriores, por lo que tenía poca o nula experiencia haciendo proyectos de programación. Así que realizar una web como esta en esa época fue todo una desafío para mí. 
         </p>
 
         <p  className={utilStyles.letterProject}>
@@ -265,11 +265,11 @@ export default function Contact(props) {
         <br/>
 
         <p  className={utilStyles.letterProject}>
-         Como vemos, es muy sencillo. Solo especificamos el título, cantidad de preguntas y las preguntas propiamente dichas.
+         Como vemos, es muy sencillo. Solo especificamos el título de la evaluación, cantidad de preguntas y las preguntas propiamente dichas.
         </p>
         
         <p  className={utilStyles.letterProject}>
-         Ahora lo que quedaría sería que ese alumno que registramos anteriormente pueda <b>rendir la evaluación</b> que acabamos de crear.
+         Ahora lo que seguiría sería que ese alumno que registramos anteriormente pueda <b>rendir la evaluación</b> que acabamos de crear.
         </p>
 
         <br/>
@@ -301,7 +301,7 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}>
-          Además vemos que también podemos editar o eliminar el alumno. 
+          Además vemos que también podemos <b>editar</b> o <b>eliminar</b> el alumno. 
         </p>
         
         <br />
@@ -331,7 +331,11 @@ export default function Contact(props) {
         </p>
         
         <p  className={utilStyles.letterProject}>
-          Además, en vez de usar solo PHP puro como en este proyecto, hubiera sido mucho mejor integrar frameworks como por ejemplo Laravel. Actualmente me encuentro aprendiéndolo y considerando la posible implementación en este proyecto más adelante. 
+          Además, en vez de usar solo PHP puro como en este proyecto, hubiera sido mucho mejor integrar frameworks como por ejemplo Laravel. Actualmente me encuentro aprendiéndolo y considerando su posible implementación en este proyecto. 
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Como se puede ver, hoy por hoy no cuento con un conocimiento muy avanzado en PHP. Pero conozco lo más básico del lenguaje y gracias a mi estudio de Laravel estoy intentando aprender más.
         </p>
 
       </div>
