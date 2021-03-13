@@ -1,5 +1,7 @@
 import utilStyles from '../styles/utils.module.css'
 
+import Link from 'next/link'
+
 import TopBar from '../components/topBar.js'
 import ProfileImage from '../components/profileImage'
 import Drawer from '../components/drawer'
@@ -84,13 +86,76 @@ export default function Contact(props) {
         <br />
        
         <p  className={utilStyles.letterProject}>
-          Mi primer trabajo real fue colaborando para un proyecto llamado OkNube.
+          Mi primer trabajo real como programador fue colaborando para un proyecto llamado <b>OkNube</b>.   
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          OkNube es una startup que se propuso la creación de un sistema que te permita diseñar tu propia tienda online con la que puedas comercializar principalmente en la ciudad de San Juan, Argentina.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Dentro de OkNube trabajé en un principio como un asistente en la parte del backend, pero al final terminé participando en muchos otros aspectos del proyecto.
+        </p>
+
+         <p  className={utilStyles.letterProject}>
+          Si bien en el equipo de trabajo usábamos GitHub, lo que de verdad utilizábamos para mezclar el código era el servicio <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://aws.amazon.com/es/cloud9/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > AWS Cloud9.</a> De esa forma trabajábamos de manera remota estando a kilómetros de distancia.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          A continuación explicaré algunas de las tareas que me fueron asignadas dentro de este trabajo.
         </p>
 
         <br />
 
-        <h2 align="center">Mi trabajo en OkNube</h2>
+        <h2 align="center">Plantilla para e-mails</h2>
+
+        <p  className={utilStyles.letterProject}>
+          Se me pidió que realizara un template para los correos electrónicos que recibirían los usuarios que soliciten tener una cuenta en el sistema.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Me pidieron que lo haga con un pequeño framework  llamado <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://mjml.io/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > MJML</a> que sirve para hacer ese tipo de cosas mendiante HTML y CSS.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          El resultado fue el siguiente
+        </p>
+
+        <br />
         
+        <div align="center"> 
+          <Link href= {"/images/e-mail-template.png"}>
+            <a target="_blank" >
+              <img
+                src="/images/e-mail-template.png"
+                className={utilStyles.projectVideo}
+                style={{  maxWidth: 500, border: "solid", borderColor: "black" }}
+                alt={"e-mail-template"}
+              />
+            </a>
+          </Link>
+        </div>
+        
+        <br />
+        
+        <p  className={utilStyles.letterProject}>
+          El código de MJML se puede ver <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://mjml.io/try-it-live/B1thzjtCV"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > aquí</a>.
+        </p>
 
       </div>
 

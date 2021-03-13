@@ -8,14 +8,20 @@ export default [
   {
     name: 'Proyectos',
     link: '/#projects',
-    alt: 'Nuestros servicios',
+    alt: 'Proyectos personales',
     id: '1'
+  },
+  {
+    name: 'Experiencia',
+    link: '/#experience',
+    alt: 'Experiencia laboral',
+    id: '2'
   },
   {
     name: 'Contacto',
     link: '/contact',
-    alt: 'Contactarse con Electro 3',
-    id: '2'
+    alt: 'Contacto',
+    id: '3'
   },
  
 

@@ -201,13 +201,21 @@ export default function Home(props) {
         <br />
 
         <EducationContainer />
-
-      </Section>      
-                  
-      <div  className={`${utilStyles.separator}`}/>
-
-      <Section title="EXPERIENCIA LABORAL" bg W7 >      
         
+      </Section>      
+
+      <div  className={`${utilStyles.separatorSmall}`}/>
+      
+      <div id="experience"/>
+     
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      
+      <Section title="EXPERIENCIA LABORAL" bg W7 >      
+      
         <br />
         <br />
         <WorkContainer /> 
