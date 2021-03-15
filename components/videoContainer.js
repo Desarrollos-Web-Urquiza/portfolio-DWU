@@ -14,6 +14,7 @@ const VideoContainer = ({src, alt, size}) => {
               loop
               src={src}
               className={utilStyles.projectVideo}
+              style={{ border: "solid", borderColor: "black" }}
               alt={alt}
             />
           </a>

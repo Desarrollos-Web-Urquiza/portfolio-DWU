@@ -157,6 +157,14 @@ export default function Contact(props) {
           > aquí</a>.
         </p>
 
+        <br />
+        
+        {/* <h2 align="center">Subir archivos a AWS S3</h2>
+
+        <p  className={utilStyles.letterProject}>
+          Otra cosa que también me pidieron hacer, es investigar cómo funciona el servicio de AWS S3
+        </p> */}
+
       </div>
 
      

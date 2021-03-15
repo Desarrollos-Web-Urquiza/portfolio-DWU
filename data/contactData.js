@@ -7,7 +7,14 @@ export default [
       href: "https://github.com/Desarrollos-Web-Urquiza",
       styleClass: "contactMailGithub"
     },
-    
+    {
+      title:"Stack Overflow ES",
+      img: "/images/stackoverflowES.png",
+      alt:"SO-ES",
+      link: "https://es.stackoverflow.com/desarrollos-web-urquiza",
+      href: "https://es.stackoverflow.com/users/212265/desarrollos-web-urquiza",
+      styleClass: "contactStackOverflow"
+    }, 
     {
       title:"E-mail",
       img: "/images/logos/correo-electronico.svg",
