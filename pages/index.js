@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import CountUp from 'react-countup';
 
 import Projects from '../data/projects'
 import DevTools from '../data/devtools'
@@ -34,20 +35,6 @@ export default function Home(props) {
 
   }
 
-  // const counter = () => {
-
-  //   if(count > 100)  {
-  //     setCount(0)
-  //   } else {
-  //     setCount(count + 1)
-  //   }
-    
-  // }
-
-  // useEffect(() => {
-  //   setInterval(counter(), 1000);
-  // }, []);
-  
   return (
      
     <div className={`${utilStyles.mainDivContainer}`}>    
@@ -103,11 +90,19 @@ export default function Home(props) {
         
         <p className={`${utilStyles.headingX2}`}>Día a día busco conocer más y más información del backend y frontend de las páginas web y me gusta crear proyectos personales con lo que aprendo. A lo largo del tiempo he experimentado con varias tecnologías y lenguajes distintos y si bien algunos me gustan más que otros, no me caso con ninguno.</p>
         
-        {/* <br />
-        <br /> */}
+        <br />
+        <br /> 
 
-        {/* <p className={`${utilStyles.headingX2}`}>{count}% curiosidad</p> */}
-
+       
+        <CountUp
+          end={100}
+          duration={45}
+          className={`${utilStyles.headingX2}`}
+          style={{float: "left"}}
+        />
+        
+        <p className={`${utilStyles.headingX2}`}>% curiosidad</p>
+        
         <br />
         <br />
                 

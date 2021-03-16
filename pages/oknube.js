@@ -3,7 +3,6 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 import TopBar from '../components/topBar.js'
-import ProfileImage from '../components/profileImage'
 import Drawer from '../components/drawer'
 import Footer from '../components/footer'
 import VideoContainer from '../components/videoContainer'
@@ -115,7 +114,7 @@ export default function Contact(props) {
         <h2 align="center">Plantilla para e-mails</h2>
 
         <p  className={utilStyles.letterProject}>
-          Se me pidió que realizara un template para los correos electrónicos que recibirían los usuarios que soliciten tener una cuenta en el sistema.
+          Se me pidió que diseñara un template para los correos electrónicos que recibirían los usuarios que soliciten tener una cuenta en el sistema.
         </p>
 
         <p  className={utilStyles.letterProject}>
