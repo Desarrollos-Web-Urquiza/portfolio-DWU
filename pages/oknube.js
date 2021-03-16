@@ -158,11 +158,29 @@ export default function Contact(props) {
 
         <br />
         
-        {/* <h2 align="center">Subir archivos a AWS S3</h2>
+        <h2 align="center">Subir archivos a AWS S3</h2>
 
         <p  className={utilStyles.letterProject}>
-          Otra cosa que también me pidieron hacer, es investigar cómo funciona el servicio de AWS S3
-        </p> */}
+          Otra cosa que también me pidieron hacer, fue investigar cómo funciona el servicio de <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://aws.amazon.com/es/s3/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > AWS S3</a>.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Si bien hasta hoy desconozco los detalles de su integración completa, basado en información que encontré en internet hice una muy simple API que permitiría hacer copias de seguridad de nuestro sistema mediante el servicio que provee AWS S3.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Al terminarla la subí a <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://github.com/Desarrollos-Web-Urquiza/Subir-Archivos-a-AWS-S3/blob/master/index.js"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > GitHub</a>, obviamente sin las credenciales correspondientes.
+        </p>
 
       </div>
 
