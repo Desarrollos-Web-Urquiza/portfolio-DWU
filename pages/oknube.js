@@ -182,9 +182,60 @@ export default function Contact(props) {
           > GitHub</a>, obviamente sin las credenciales correspondientes.
         </p>
 
-      </div>
+        <br />
+        
+        <h2 align="center">Tareas de testeo y depuración de errores</h2>
 
-     
+        <p  className={utilStyles.letterProject}>
+          También tuve la tarea de evaluar la experiencia de usuario del sistema, detectando errores y proponiendo posibles mejoras.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Cuando detectaba un bug mi trabajo era tratar de arreglarlo en caso de que pudiera, y si no podía como mínimo debía realizar un informe del error como el que se ve en la siguiente imagen.
+        </p>
+
+        <br />
+
+        <div align="center"> 
+          <Link href= {"/images/error-oknube.png"}>
+            <a target="_blank" >
+              <img
+                src="/images/error-oknube.png"
+                className={utilStyles.projectVideo}
+                style={{  maxWidth: 650, border: "solid", borderColor: "black" }}
+                alt={"e-mail-template"}
+              />
+            </a>
+          </Link>
+        </div>
+
+        <br />
+
+        <p  className={utilStyles.letterProject}>
+          Como se puede ver, en este caso el error tenía que ver con el componente <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://www.webcomponents.org/element/@polymer/iron-icon"}
+            target="_blank"
+            rel="noopener noreferrer"
+            > "iron-icon"</a> que era parte de un framework llamado <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://www.polymer-project.org/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > Polymer</a> que usábamos en el sistema para manejar el frontend.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Si bien la mayoría de las veces me encargaba de la parte del backend del proyecto, también aprendí algo muy básico de Polymer. Así que a veces aportaba pistas para resolver errores realicionados a eso.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Pero igual no sería hasta mucho tiempo después cuando aprendí React que empecé a especializarme más en el frontend.
+        </p>
+
+        <br />
+
+      </div>
 
       <div style={{  marginTop: 300}} />
           
