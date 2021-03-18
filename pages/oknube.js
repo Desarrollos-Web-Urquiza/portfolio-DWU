@@ -102,7 +102,7 @@ export default function Contact(props) {
             href={"https://aws.amazon.com/es/cloud9/"}
             target="_blank"
             rel="noopener noreferrer"
-          > AWS Cloud9.</a> De esa forma trabajábamos de manera remota estando a kilómetros de distancia.
+          > AWS Cloud9.</a> De esa forma trabajábamos juntos de manera remota estando a kilómetros de distancia.
         </p>
 
         <p  className={utilStyles.letterProject}>
@@ -226,15 +226,35 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}>
-          Si bien la mayoría de las veces me encargaba de la parte del backend del proyecto, también aprendí algo muy básico de Polymer. Así que a veces aportaba pistas para resolver errores realicionados a eso.
+          Si bien la mayoría de las veces me encargaba de la parte del backend, también aprendí algo muy básico de Polymer. Así que a veces aportaba pistas para resolver errores relacionados a eso.
         </p>
 
         <p  className={utilStyles.letterProject}>
           Pero igual no sería hasta mucho tiempo después cuando aprendí React que empecé a especializarme más en el frontend.
         </p>
-
+        
         <br />
+        
+        <h2 align="center">Mis otros trabajos en OkNube</h2>
 
+        <p  className={utilStyles.letterProject}>
+          Además de los trabajos ya mencionados tuve muchos otros más. Pero no es fácil explicarlos todos en esta página.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          De todas formas, mencionaré algunos de ellos de forma breve:
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          <b>Documentar el sistema:</b> se me encargó la tarea de crear un "manual para el usuario". Tuve que explicar paso a paso cómo usar el sistema para despejar cualquier pregunta frecuente que el usuario pudiera llegar a tener.  
+          <br />
+          <br />
+          <b>Trabajos de investigación:</b> en ocasiones tuve que investigar ciertas tecnologías web para copiar alguna de sus funcionalidades para la implementación en nuestro sistema. Otra investigación que me tocó hacer también fue la que le hice al funcionamiento de otras páginas competidoras dentro de nuestro rubro analizando algunos de sus detalles técnicos.   
+          <br />
+          <br />
+          <b>Categorías de Mercado Libre:</b> fue una ejecución de acciones recursivas que implicaban copiar algunos datos del frontend de la página de Mercado Libre a fin de obtener determinada información sobre marcas inspeccionando su código, especialmente de motos y autos, que luego serían procesados a fin de poder incluirlas en la sección de “categorías” de productos en nuestro sitio web.
+        </p>
+    
       </div>
 
       <div style={{  marginTop: 300}} />
