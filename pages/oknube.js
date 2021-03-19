@@ -249,10 +249,18 @@ export default function Contact(props) {
           <b>Documentar el sistema:</b> se me encargó la tarea de crear un "manual para el usuario". Tuve que explicar paso a paso cómo usar el sistema para despejar cualquier pregunta frecuente que el usuario pudiera llegar a tener.  
           <br />
           <br />
-          <b>Trabajos de investigación:</b> en ocasiones tuve que investigar ciertas tecnologías web para copiar alguna de sus funcionalidades para la implementación en nuestro sistema. Otra investigación que me tocó hacer también fue la que le hice al funcionamiento de otras páginas competidoras dentro de nuestro rubro analizando algunos de sus detalles técnicos.   
+          <b>Trabajos de investigación:</b> en ocasiones tuve que investigar ciertas tecnologías web para copiar alguna de sus funcionalidades y que así podamos implementarlas en nuestro sistema. Otra investigación que me tocó hacer también fue la que le hice al funcionamiento de otras páginas competidoras dentro de nuestro rubro analizando algunos de sus detalles técnicos.   
           <br />
           <br />
-          <b>Categorías de Mercado Libre:</b> fue una ejecución de acciones recursivas que implicaban copiar algunos datos del frontend de la página de Mercado Libre a fin de obtener determinada información sobre marcas inspeccionando su código, especialmente de motos y autos, que luego serían procesados a fin de poder incluirlas en la sección de “categorías” de productos en nuestro sitio web.
+          <b>Categorías de Mercado Libre:</b> fue una ejecución de acciones recursivas que implicaban copiar algunos datos del frontend de la página de Mercado Libre inspeccionando su código a fin de obtener determinada información sobre marcas, especialmente de motos y autos, que luego serían procesadas para poder incluirlas en la sección de “categorías” de productos de nuestro sitio web.
+          <br />
+          <br />
+          <b>Implementación de Logs:</b> tuve que analizar los métodos (Post, Put, Delete, etc.) de ciertas APIs y en base a eso agregarle algunas funciones que se encargaban de registrar <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://es.wikipedia.org/wiki/Log_(inform%C3%A1tica)"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > logs</a>.
         </p>
     
       </div>
