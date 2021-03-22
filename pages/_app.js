@@ -13,7 +13,12 @@ function MyApp({ Component, pageProps }) {
           name="description"
           content="Portfolio personal de Desarrollos Web Urquiza"
         />
-        
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300&family=Mukta+Malar:wght@300&family=Mukta:wght@300&family=Ruda:wght@500&family=Sintony&display=swap" rel="stylesheet" />
+                        
         <title>DWU - Desarrollos Web Urquiza</title>
       
         <link
@@ -33,7 +38,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#00a" />
       
       </Head>
-      
+            
       <Component {...pageProps} />
     
     </div>

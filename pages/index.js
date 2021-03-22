@@ -78,49 +78,53 @@ export default function Home(props) {
     
       <Section title="" bg>
         
-        <p className={`${utilStyles.headingXl}`}>:)</p>
-        
-        <br />
-        <br />
-        
-        <p className={`${utilStyles.headingX2}`}>Soy un programador y diseñador web con mucha curiosidad y ganas de aprender cosas nuevas. </p>
-        
-        <br />
-        <br />
-        
-        <p className={`${utilStyles.headingX2}`}>Día a día busco conocer más y más información del backend y frontend de las páginas web y me gusta crear proyectos personales con lo que aprendo. A lo largo del tiempo he experimentado con varias tecnologías y lenguajes distintos y si bien algunos me gustan más que otros, no me caso con ninguno.</p>
-        
-        <br />
-        <br /> 
+        <div>
 
-       
-        <CountUp
-          end={100}
-          duration={45}
-          className={`${utilStyles.headingX2}`}
-          style={{float: "left"}}
-        />
-        
-        <p className={`${utilStyles.headingX2}`}>% curiosidad</p>
-        
-        <br />
-        <br />
-                
-        <img
-          src="/images/QR GitHub.png"
-          className={`${utilStyles.imgQR}`}
-          alt={"QR"}
-        />
-        
-        <p className={`${utilStyles.headingX3}`}>Para obtener más información de este programador y ver todos sus proyectos, visita
-        
+          <p className={`${utilStyles.headingXl}`}>:)</p>
+          
           <br />
           <br />
-            
-          <a className={`${utilStyles.headingX3}`} target="_blank" href= "https://github.com/Desarrollos-Web-Urquiza">https://github.com/Desarrollos-Web-Urquiza</a>
+          
+          <p className={`${utilStyles.headingX2}`}>Soy un programador y diseñador web con mucha curiosidad y ganas de aprender cosas nuevas. </p>
+          
+          <br />
+          <br />
+          
+          <p className={`${utilStyles.headingX2}`}>Día a día busco conocer más y más información del backend y frontend de las páginas web y me gusta crear proyectos personales con lo que aprendo. A lo largo del tiempo he experimentado con varias tecnologías y lenguajes distintos y si bien algunos me gustan más que otros, no me caso con ninguno.</p>
+          
+          <br />
+          <br /> 
+
         
-        </p>
-        
+          <CountUp
+            end={100}
+            duration={45}
+            className={`${utilStyles.headingX2}`}
+            style={{float: "left"}}
+          />
+          
+          <p className={`${utilStyles.headingX2}`}>% curiosidad</p>
+          
+          <br />
+          <br />
+                  
+          <img
+            src="/images/QR GitHub.png"
+            className={`${utilStyles.imgQR}`}
+            alt={"QR"}
+          />
+          
+          <p className={`${utilStyles.headingX3}`}>Para obtener más información de este programador y ver todos sus proyectos, visita
+          
+            <br />
+            <br />
+              
+            <a className={`${utilStyles.headingX3}`} target="_blank" href= "https://github.com/Desarrollos-Web-Urquiza">https://github.com/Desarrollos-Web-Urquiza</a>
+          
+          </p>
+          
+        </div>
+
       </Section>
            
       <div className={`${utilStyles.separatorSmall}`}/>

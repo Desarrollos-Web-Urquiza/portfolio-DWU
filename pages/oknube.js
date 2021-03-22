@@ -68,7 +68,7 @@ export default function Contact(props) {
       
       <div className={utilStyles.container}>
        
-        <h2 align="center">Datos generales</h2>
+        <h2 align="center" className={utilStyles.subtitleProject} >Datos generales</h2>
         
         <p  className={utilStyles.letterProject}>
           <b>Sitio web:     </b>  
@@ -111,7 +111,7 @@ export default function Contact(props) {
 
         <br />
 
-        <h2 align="center">Plantilla para e-mails</h2>
+        <h2 align="center" className={utilStyles.subtitleProject} >Plantilla para e-mails</h2>
 
         <p  className={utilStyles.letterProject}>
           Se me pidió que diseñara un template para los correos electrónicos que recibirían los usuarios que soliciten tener una cuenta en el sistema.
@@ -158,7 +158,7 @@ export default function Contact(props) {
 
         <br />
         
-        <h2 align="center">Subir archivos a AWS S3</h2>
+        <h2 align="center" className={utilStyles.subtitleProject} >Subir archivos a AWS S3</h2>
 
         <p  className={utilStyles.letterProject}>
           Otra cosa que también me pidieron hacer, fue investigar cómo funciona el servicio de <a 
@@ -184,7 +184,7 @@ export default function Contact(props) {
 
         <br />
         
-        <h2 align="center">Tareas de testeo y depuración de errores</h2>
+        <h2 align="center" className={utilStyles.subtitleProject} >Tareas de testeo y depuración de errores</h2>
 
         <p  className={utilStyles.letterProject}>
           También tuve la tarea de evaluar la experiencia de usuario del sistema, detectando errores y proponiendo posibles mejoras.
@@ -235,10 +235,10 @@ export default function Contact(props) {
         
         <br />
         
-        <h2 align="center">Mis otros trabajos en OkNube</h2>
+        <h2 align="center" className={utilStyles.subtitleProject}>Mis otros trabajos en OkNube</h2>
 
         <p  className={utilStyles.letterProject}>
-          Además de los trabajos ya mencionados tuve muchos otros más. Pero no es fácil explicarlos todos en esta página.
+          Además de los trabajos ya mencionados también tuve muchos otros más. Pero no es fácil explicarlos todos en esta página.
         </p>
 
         <p  className={utilStyles.letterProject}>

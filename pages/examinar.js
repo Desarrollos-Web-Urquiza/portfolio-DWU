@@ -67,7 +67,7 @@ export default function Contact(props) {
       
       <div className={utilStyles.container}>
        
-        <h2 align="center">Datos generales</h2>
+        <h2 align="center" className={utilStyles.subtitleProject}>Datos generales</h2>
         
         <p  className={utilStyles.letterProject}>
           <b>Sitio web:     </b>  
@@ -129,7 +129,7 @@ export default function Contact(props) {
 
         <br />
 
-        <h2 align="center">La primera versión de Examin.ar</h2>
+        <h2 align="center" className={utilStyles.subtitleProject}>La primera versión de Examin.ar</h2>
         
         <p  className={utilStyles.letterProject}>
           Como no tenía un conocimiento de CSS muy avanzado, la estética del sitio era muy mala.  
@@ -159,7 +159,7 @@ export default function Contact(props) {
 
         <br />
 
-        <h2 align="center">Rediseño del sitio</h2>
+        <h2 align="center" className={utilStyles.subtitleProject}>Rediseño del sitio</h2>
 
         <p  className={utilStyles.letterProject}>
           Pasó el tiempo, terminé mi terciario, y comencé a profundizar más en mis conocimientos de diseño web.
@@ -202,7 +202,7 @@ export default function Contact(props) {
 
         <br />
 
-        <h2 align="center">Sección del profesor</h2>
+        <h2 align="center" className={utilStyles.subtitleProject}>Sección del profesor</h2>
 
         <p  className={utilStyles.letterProject}>
           El profesor que utilizará el servicio debe ir a "Iniciar sesión" para entrar en la sección de la página que le permitirá usar el sistema de evaluaciones online.
@@ -233,7 +233,7 @@ export default function Contact(props) {
 
         <br />
        
-        <h2 align="center">Funciones del sistema de evaluaciones online</h2>
+        <h2 align="center" className={utilStyles.subtitleProject}>Funciones del sistema de evaluaciones online</h2>
 
         <p  className={utilStyles.letterProject}>
           Hablemos ahora sobre cómo funciona el sistema de evaluaciones online.
@@ -306,7 +306,7 @@ export default function Contact(props) {
         
         <br />
 
-        <h2 align="center">Otras características de Examin.ar</h2>
+        <h2 align="center" className={utilStyles.subtitleProject}>Otras características de Examin.ar</h2>
 
         <p  className={utilStyles.letterProject}>
          La versión de PHP que utilicé en este proyecto en un principio fue la 5, pero después la actualicé a la 7. Aunque los cambios fueron solamente algunos detalles menores como llamar a MySQL con <a 

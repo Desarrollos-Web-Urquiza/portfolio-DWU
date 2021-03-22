@@ -62,7 +62,7 @@ export default function Contact(props) {
       
       <div className={utilStyles.container}>
        
-        <h2 align="center">Datos generales</h2>
+        <h2 align="center" className={utilStyles.subtitleProject}>Datos generales</h2>
         
         <p  className={utilStyles.letterProject}>
           <b>Sitio web:     </b>  
@@ -119,7 +119,7 @@ export default function Contact(props) {
           </p>
         </div>
         
-        <h2 align="center"  style={{  marginTop: 100}}>Landing page</h2>
+        <h2 align="center"  className={utilStyles.subtitleProject} style={{  marginTop: 100}}>Landing page</h2>
         
         <VideoContainer src={"/videos/black-telephone-landing.mp4"} alt={"black-telephone-landing"} size={600} />
 
@@ -148,7 +148,7 @@ export default function Contact(props) {
           Leer y tratar de entender el código de los demás fue un principio fundamental en mi aprendizaje que aceleró mucho el proceso de acostumbrarme al framework.
         </p>
 
-        <h2 align="center"  style={{  marginTop: 100}}>Sistema de llamadas</h2>
+        <h2 align="center"  className={utilStyles.subtitleProject} style={{  marginTop: 100}}>Sistema de llamadas</h2>
         
         <p  className={utilStyles.letterProject}  >
           Esta empresa ficticia tiene un problema que se soluciona con el sistema que creé.
@@ -259,7 +259,7 @@ export default function Contact(props) {
           > "React Beautiful dnd"</a>.
         </p>
         
-        <h2 align="center"  style={{  marginTop: 100}}>Sistema de informes de trabajo</h2>
+        <h2 align="center" className={utilStyles.subtitleProject}  style={{  marginTop: 100}}>Sistema de informes de trabajo</h2>
 
         <p  className={utilStyles.letterProject}  >
           Debido a una cuestión estadística, a esta empresa ficticia le gustaría contar con un formulario que permita encuestar a cada uno de sus empleados todos los meses y poder registrar sus respuestas de forma ordenada.
@@ -340,7 +340,7 @@ export default function Contact(props) {
           De esta manera completamos el <b>CRUD</b> de todo el sistema de informes de trabajo. 
         </p>
 
-        <h2 align="center"  style={{  marginTop: 100}}>Otras características de Black Telephone</h2>
+        <h2 align="center" className={utilStyles.subtitleProject}  style={{  marginTop: 100}}>Otras características de Black Telephone</h2>
 
         <p  className={utilStyles.letterProject}  >
           Algunos detalles extras sobre cómo utilizo React en todo este proyecto es el uso de los <a 

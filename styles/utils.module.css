@@ -248,6 +248,16 @@
 
 .letterProject {
   font-size: 22px;
+  font-family: Blinker ;
+  /* font-family: Mukta Malar ; */
+  /* font-family: Sintony ; */ /*Letra demasiado grande*/
+  /* font-family: Mukta ; */
+  /* font-family: Ruda ; */ /*Muy violenta. No se diferencian las negritas*/
+  /* font-family: Rajdhani ; */ /*No se diferencia la negrita muy bien, la "a" y la "o" cuesta difenciar*/
+}
+
+.subtitleProject {
+  font-family: Blinker ;
 }
 
 @media(max-width: 715px)   {

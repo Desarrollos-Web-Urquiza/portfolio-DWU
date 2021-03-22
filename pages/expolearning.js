@@ -62,7 +62,7 @@ export default function Contact(props) {
       
       <div className={utilStyles.container}>
        
-        <h2 align="center">Datos generales</h2>
+        <h2 align="center" className={utilStyles.subtitleProject}>Datos generales</h2>
         
         <p  className={utilStyles.letterProject}>
           <b>APK:     </b>  
@@ -114,7 +114,7 @@ export default function Contact(props) {
 
         <br />
         
-        <h2 align="center">Registro, inicio de sesión y navegación</h2>
+        <h2 align="center" className={utilStyles.subtitleProject}>Registro, inicio de sesión y navegación</h2>
         
         <br />
        
@@ -176,7 +176,7 @@ export default function Contact(props) {
 
         <br />
         
-        <h2 align="center">Gestión de las notas</h2>
+        <h2 align="center" className={utilStyles.subtitleProject}>Gestión de las notas</h2>
         
         <br />
               
@@ -217,7 +217,7 @@ export default function Contact(props) {
 
         <br /> 
 
-        <h2 align="center">Otros datos sobre Expolearning</h2>     
+        <h2 align="center" className={utilStyles.subtitleProject}>Otros datos sobre Expolearning</h2>     
         
         <p  className={utilStyles.letterProject}>
           No tenemos que olvidar que esta APP me sirvió como mi primera experiencia en React y que, como ya expliqué antes, está hecha solo para aprender. 
@@ -237,7 +237,7 @@ export default function Contact(props) {
 
 
 
-        <h2 align="center"  style={{  marginTop: 100}}></h2>
+        <h2 align="center"  className={utilStyles.subtitleProject} style={{  marginTop: 100}}></h2>
               
       </div>
 
