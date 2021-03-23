@@ -1,3 +1,8 @@
+.blueScreen {
+  max-width: 60em;
+}
+
+
 .heading2Xl {
   font-size: 2rem;
   line-height: 1.2;
@@ -162,9 +167,10 @@
 .headingX3Education {
   
   float: left;
+  font-family: var(--fontPersonalized) ;
   margin-left: 25px;
   margin-top: 45px;
-   line-height: 2.3;
+  line-height: 2.3;
   font-weight: 100;
   letter-spacing: -0.05rem;
   text-decoration: none;
@@ -248,7 +254,7 @@
 
 .letterProject {
   font-size: 22px;
-  font-family: Blinker ;
+  font-family: var(--fontPersonalized) ;/*Definida en _app.js*/
   /* font-family: Mukta Malar ; */
   /* font-family: Sintony ; */ /*Letra demasiado grande*/
   /* font-family: Mukta ; */
@@ -257,7 +263,7 @@
 }
 
 .subtitleProject {
-  font-family: Blinker ;
+  font-family: var(--fontPersonalized) ;
 }
 
 @media(max-width: 715px)   {

@@ -66,7 +66,7 @@ export default function Home(props) {
 
         <Title>WERNER SCHYMALSKI</Title>   
 
-        <p  className={`${utilStyles.headingMd}`}>Programador web de Argentina</p>
+        <p style={{ fontFamily: "var(--fontPersonalized)" }} className={`${utilStyles.headingMd}`}>Programador web de Argentina</p>
       
       </div>        
 
@@ -78,7 +78,7 @@ export default function Home(props) {
     
       <Section title="" bg>
         
-        <div>
+        <div className={`${utilStyles.blueScreen}`}>
 
           <p className={`${utilStyles.headingXl}`}>:)</p>
           
