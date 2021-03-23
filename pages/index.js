@@ -212,6 +212,8 @@ export default function Home(props) {
       <br />
       <br />
       <br />
+      <br />
+      <br />
       
       <Section title="EXPERIENCIA LABORAL" bg W7 >      
       
