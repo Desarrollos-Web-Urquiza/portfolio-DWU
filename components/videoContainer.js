@@ -6,7 +6,7 @@ const VideoContainer = ({src, alt, size}) => {
   return (
     <div align="center">
       <div style={{  maxWidth: size }}>
-        <Link href= {`/videos/${alt}.mp4`}>
+        <Link href= {`/videos/good-quality/${alt}.mp4`}>
           <a target="_blank">
             <video 
               autoPlay
