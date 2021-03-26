@@ -252,7 +252,7 @@ export default function Contact(props) {
           <b>Trabajos de investigación:</b> en ocasiones tuve que investigar ciertas tecnologías web para copiar alguna de sus funcionalidades y que así podamos implementarlas en nuestro sistema. Otra investigación que me tocó hacer también fue la que le hice al funcionamiento de otras páginas competidoras dentro de nuestro rubro analizando algunos de sus detalles técnicos.   
           <br />
           <br />
-          <b>Categorías de Mercado Libre:</b> fue una ejecución de acciones recursivas que implicaban copiar algunos datos del frontend de la página de Mercado Libre inspeccionando su código a fin de obtener determinada información sobre marcas, especialmente de motos y autos, que luego serían procesadas para poder incluirlas en la sección de “categorías” de productos de nuestro sitio web.
+          <b>Categorías de productos:</b> fue una ejecución de acciones recursivas que implicaban copiar algunos datos del frontend de otra página inspeccionando su código a fin de obtener determinada información sobre marcas, especialmente de motos y autos. Esto sirvió de fuente de inspiración para luego incluir esas marcas a la sección de “categorías” de productos de nuestro sitio web.
           <br />
           <br />
           <b>Implementación de Logs:</b> tuve que analizar los métodos (Post, Put, Delete, etc.) de ciertas APIs y en base a eso agregarle algunas funciones que se encargaban de registrar <a 

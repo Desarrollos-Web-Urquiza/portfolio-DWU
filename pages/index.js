@@ -78,51 +78,55 @@ export default function Home(props) {
     
       <Section title="" bg>
         
-        <div className={`${utilStyles.blueScreen}`}>
+        <div align="center">
+          
+          <div className={`${utilStyles.blueScreen}`} align="left" >
 
-          <p className={`${utilStyles.headingXl}`}>:)</p>
-          
-          <br />
-          <br />
-          
-          <p className={`${utilStyles.headingX2}`}>Soy un programador y diseñador web con mucha curiosidad y ganas de aprender cosas nuevas. </p>
-          
-          <br />
-          <br />
-          
-          <p className={`${utilStyles.headingX2}`}>Día a día busco conocer más y más información del backend y frontend de las páginas web y me gusta crear proyectos personales con lo que aprendo. A lo largo del tiempo he experimentado con varias tecnologías y lenguajes distintos y si bien algunos me gustan más que otros, no me caso con ninguno.</p>
-          
-          <br />
-          <br /> 
+            <p className={`${utilStyles.headingXl}`}>:)</p>
+            
+            <br />
+            <br />
+            
+            <p className={`${utilStyles.headingX2}`}>Soy un programador y diseñador web con mucha curiosidad y ganas de aprender cosas nuevas. </p>
+            
+            <br />
+            <br />
+            
+            <p className={`${utilStyles.headingX2}`}>Día a día busco conocer más y más información del backend y frontend de las páginas web y me gusta crear proyectos personales con lo que aprendo. A lo largo del tiempo he experimentado con varias tecnologías y lenguajes distintos y si bien algunos me gustan más que otros, no me caso con ninguno.</p>
+            
+            <br />
+            <br /> 
 
+          
+            <CountUp
+              end={100}
+              duration={45}
+              className={`${utilStyles.headingX2}`}
+              style={{float: "left"}}
+            />
+            
+            <p className={`${utilStyles.headingX2}`}>% curiosidad</p>
+            
+            <br />
+            <br />
+                    
+            <img
+              src="/images/QR GitHub.png"
+              className={`${utilStyles.imgQR}`}
+              alt={"QR"}
+            />
+            
+            <p className={`${utilStyles.headingX3}`}>Para obtener más información de este programador y ver todos sus proyectos, visita
+            
+              <br />
+              <br />
+                
+              <a className={`${utilStyles.headingX3}`} target="_blank" href= "https://github.com/Desarrollos-Web-Urquiza">https://github.com/Desarrollos-Web-Urquiza</a>
+            
+            </p>
+            
+          </div>
         
-          <CountUp
-            end={100}
-            duration={45}
-            className={`${utilStyles.headingX2}`}
-            style={{float: "left"}}
-          />
-          
-          <p className={`${utilStyles.headingX2}`}>% curiosidad</p>
-          
-          <br />
-          <br />
-                  
-          <img
-            src="/images/QR GitHub.png"
-            className={`${utilStyles.imgQR}`}
-            alt={"QR"}
-          />
-          
-          <p className={`${utilStyles.headingX3}`}>Para obtener más información de este programador y ver todos sus proyectos, visita
-          
-            <br />
-            <br />
-              
-            <a className={`${utilStyles.headingX3}`} target="_blank" href= "https://github.com/Desarrollos-Web-Urquiza">https://github.com/Desarrollos-Web-Urquiza</a>
-          
-          </p>
-          
         </div>
 
       </Section>
@@ -165,27 +169,31 @@ export default function Home(props) {
       <div  className={`${utilStyles.separatorSmall}`}/>
 
       <Section title="LENGUAJES Y TECNOLOGÍAS QUE USO" bg bgMirror W7> 
-
-        <div className={`${utilStyles.flexProject}`} >
         
-          {DevTools.map(row=>
-                
-            <div style={{ flex: "auto" , flexWrap: "wrap", alignSelf: "space-around", marginRight:"15px"}} className={`${utilStyles.cardProjectMto}`}  >
+        <div align="center">
+          
+          <div className={`${utilStyles.flexProject}`}    style={{ maxWidth: 2180}}>
+          
+            {DevTools.map(row=>
+                  
+              <div style={{ flex: "auto" , flexWrap: "wrap", alignSelf: "space-around", marginRight:"15px" }} className={`${utilStyles.cardProjectMto}`}  >
 
-              <DevToolContainer
+                <DevToolContainer
 
-                title={row.title}
-                icon={row.icon}
-                alt={row.alt}
-                link={row.link}
-                description={row.description}
-                                    
-              />
-            
-            </div>   
-                            
-          )}
-            
+                  title={row.title}
+                  icon={row.icon}
+                  alt={row.alt}
+                  link={row.link}
+                  description={row.description}
+                                      
+                />
+              
+              </div>   
+                              
+            )}
+              
+          </div>          
+        
         </div>          
       
       </Section>

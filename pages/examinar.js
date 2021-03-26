@@ -209,7 +209,7 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}>
-          Para probarlo, podemos usar como ejemplo el usuario "Profesor1" cuya contraseña es "1234".
+          Para probarlo, podemos usar como ejemplo el usuario <b>"Profesor1"</b> cuya contraseña es <b>"1234"</b> .
         </p>
         
         <br/>
