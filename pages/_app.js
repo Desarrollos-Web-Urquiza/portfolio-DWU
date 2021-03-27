@@ -21,6 +21,22 @@ function MyApp({ Component, pageProps }) {
           content="Portfolio personal de Desarrollos Web Urquiza"
         />
 
+        <script 
+          async 
+          src="https://www.googletagmanager.com/gtag/js?id=G-58D8E0QPWP">
+
+        </script>
+        <script
+          dangerouslySetInnerHTML={
+            { __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){window.dataLayer.push(arguments)}
+                gtag("js", new Date());
+                gtag("config", "G-58D8E0QPWP");
+            `}
+        }>
+        </script>
+
         <link rel="preconnect" href="https://fonts.gstatic.com" />
 
         <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300&display=swap" rel="stylesheet" />

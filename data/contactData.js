@@ -11,7 +11,7 @@ export default [
       title:"Stack Overflow ES",
       img: "/images/stackoverflowES.png",
       alt:"SO-ES",
-      link: "https://es.stackoverflow.com/desarrollos-web-urquiza",
+      link: "https://es.stackoverflow.com/users/212265",
       href: "https://es.stackoverflow.com/users/212265/desarrollos-web-urquiza",
       styleClass: "contactStackOverflow"
     }, 
