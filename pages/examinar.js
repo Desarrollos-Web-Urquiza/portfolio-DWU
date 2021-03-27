@@ -5,6 +5,7 @@ import ProfileImage from '../components/profileImage'
 import Drawer from '../components/drawer'
 import Footer from '../components/footer'
 import VideoContainer from '../components/videoContainer'
+import {Helmet} from "react-helmet";
 
 export default function Contact(props) {
   
@@ -21,6 +22,12 @@ export default function Contact(props) {
   return (
      
     <div className={`${utilStyles.mainDivContainer}`}>    
+
+    <Helmet>
+            
+      <title>DWU - Examin.ar</title>
+              
+    </Helmet>
 
       <div 
         align= "center" 
@@ -68,30 +75,29 @@ export default function Contact(props) {
       <div className={utilStyles.container}>
        
         <h2 align="center" className={utilStyles.subtitleProject}>Datos generales</h2>
-        
-        <p  className={utilStyles.letterProject}>
-          <b>Sitio web:     </b>  
-          <a 
-            style={{ textDecoration: "none"}}
-            href={"http://examinar.mipropia.com/"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className={`${utilStyles.pContact}`}>http://examinar.mipropia.com/</p>
-          </a>
-        </p>
-       
-        <p  className={utilStyles.letterProject}>
-          <b>GitHub:</b> 
-          <a 
-            style={{ textDecoration: "none"}}
-            href={"https://github.com/Desarrollos-Web-Urquiza/EXAMIN.AR"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className={`${utilStyles.pContact}`}>https://github.com/Desarrollos-Web-Urquiza/EXAMIN.AR</p>
-          </a>
-        </p>
+      
+        <p className={`${utilStyles.letterProject}`}><b>Sitio web:</b></p>
+        <a 
+          style={{ textDecoration: "none"}}
+          href={"http://examinar.mipropia.com/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>http://examinar.mipropia.com/</p>
+        </a>
+      
+      
+      
+        <p className={`${utilStyles.letterProject}`}><b>GitHub:</b> </p>
+        <a 
+          style={{ textDecoration: "none"}}
+          href={"https://github.com/Desarrollos-Web-Urquiza/EXAMIN.AR"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>https://github.com/Desarrollos-Web-Urquiza/EXAMIN.AR</p>
+        </a>
+    
         
         <p  className={utilStyles.letterProject}>
           <b>Tecnologías utilizadas:   </b> 

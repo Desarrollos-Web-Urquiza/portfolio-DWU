@@ -5,7 +5,7 @@ import Link from 'next/link'
 import TopBar from '../components/topBar.js'
 import Drawer from '../components/drawer'
 import Footer from '../components/footer'
-import VideoContainer from '../components/videoContainer'
+import {Helmet} from "react-helmet";
 
 export default function Contact(props) {
   
@@ -21,7 +21,13 @@ export default function Contact(props) {
   
   return (
      
-    <div className={`${utilStyles.mainDivContainer}`}>    
+    <div className={`${utilStyles.mainDivContainer}`}>  
+    	
+      <Helmet>
+        
+        <title>DWU - OkNube</title>
+                
+      </Helmet>		  
 
       <div 
         align= "center" 
@@ -70,17 +76,17 @@ export default function Contact(props) {
        
         <h2 align="center" className={utilStyles.subtitleProject} >Datos generales</h2>
         
-        <p  className={utilStyles.letterProject}>
-          <b>Sitio web:     </b>  
+        
+          <p  className={utilStyles.letterProject}><b>Sitio web:</b></p>
           <a 
             style={{ textDecoration: "none"}}
             href={"https://oknube.com/"}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className={`${utilStyles.pContact}`}>https://oknube.com/</p>
+            <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>https://oknube.com/</p>
           </a>
-        </p>
+       
 
         <br />
        

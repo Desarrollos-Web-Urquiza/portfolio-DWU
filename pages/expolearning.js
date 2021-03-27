@@ -5,6 +5,7 @@ import ProfileImage from '../components/profileImage'
 import Drawer from '../components/drawer'
 import Footer from '../components/footer'
 import ExpoVideo from '../components/ExpoVideo'
+import {Helmet} from "react-helmet";
 
 export default function Contact(props) {
   
@@ -21,6 +22,12 @@ export default function Contact(props) {
   return (
      
     <div className={`${utilStyles.mainDivContainer}`}>    
+
+    <Helmet>
+      
+      <title>DWU - Expolearning</title>
+              
+    </Helmet>		 
 
       <div 
         align= "center" 
@@ -64,29 +71,29 @@ export default function Contact(props) {
        
         <h2 align="center" className={utilStyles.subtitleProject}>Datos generales</h2>
         
-        <p  className={utilStyles.letterProject}>
-          <b>APK:     </b>  
+        
+          <p  className={utilStyles.letterProject}> <b>APK:</b> </p>
           <a 
             style={{ textDecoration: "none"}}
             href={"https://drive.google.com/file/d/1jRyagCF5wYWwDA-tdtWNo2TBW2qUqaGY/view"}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className={`${utilStyles.pContact}`}>Descargar expolearning</p>
+            <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>Descargar expolearning</p>
           </a>
-        </p>
+        
        
-        <p  className={utilStyles.letterProject}>
-          <b>GitHub:</b> 
+        
+          <p  className={utilStyles.letterProject}> <b>GitHub:</b> </p>
           <a 
             style={{ textDecoration: "none"}}
             href={"https://github.com/Desarrollos-Web-Urquiza/expolearning"}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className={`${utilStyles.pContact}`}>https://github.com/Desarrollos-Web-Urquiza/expolearning</p>
+            <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>https://github.com/Desarrollos-Web-Urquiza/expolearning</p>
           </a>
-        </p>
+        
         
         <p  className={utilStyles.letterProject}>
           <b>Tecnologías utilizadas:   </b> 

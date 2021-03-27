@@ -7,6 +7,7 @@ import ProfileImage from '../components/profileImage'
 import Section from '../components/section'
 import Drawer from '../components/drawer'
 import Footer from '../components/footer'
+import {Helmet} from "react-helmet";
 
 export default function Contact(props) {
   
@@ -23,6 +24,13 @@ export default function Contact(props) {
   return (
      
     <div className={`${utilStyles.mainDivContainer}`}>    
+
+      <Helmet>
+              
+        <title>DWU - Contacto</title>
+                
+      </Helmet>		  
+    
       <div 
           align= "center" 
           className={`${utilStyles.header}`}

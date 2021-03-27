@@ -5,6 +5,7 @@ import ProfileImage from '../components/profileImage'
 import Drawer from '../components/drawer'
 import Footer from '../components/footer'
 import VideoContainer from '../components/videoContainer'
+import {Helmet} from "react-helmet";
 
 export default function Contact(props) {
   
@@ -21,6 +22,12 @@ export default function Contact(props) {
   return (
      
     <div className={`${utilStyles.mainDivContainer}`}>    
+
+    <Helmet>
+      
+      <title>DWU - Black Telephone</title>
+              
+    </Helmet>	
 
       <div 
         align= "center" 
@@ -64,29 +71,25 @@ export default function Contact(props) {
        
         <h2 align="center" className={utilStyles.subtitleProject}>Datos generales</h2>
         
-        <p  className={utilStyles.letterProject}>
-          <b>Sitio web:     </b>  
-          <a 
-            style={{ textDecoration: "none"}}
-            href={"https://black-telephone.vercel.app/"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className={`${utilStyles.pContact}`}>https://black-telephone.vercel.app/</p>
-          </a>
-        </p>
-       
-        <p  className={utilStyles.letterProject}>
-          <b>GitHub:</b> 
-          <a 
-            style={{ textDecoration: "none"}}
-            href={"https://github.com/Desarrollos-Web-Urquiza/black-telephone"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className={`${utilStyles.pContact}`}>https://github.com/Desarrollos-Web-Urquiza/black-telephone</p>
-          </a>
-        </p>
+        <p  className={utilStyles.letterProject}><b>Sitio web:     </b>   </p>
+        <a 
+          style={{ textDecoration: "none"}}
+          href={"https://black-telephone.vercel.app/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>https://black-telephone.vercel.app/</p>
+        </a>
+      
+        <p  className={utilStyles.letterProject}><b>GitHub:</b> </p>
+        <a 
+          style={{ textDecoration: "none"}}
+          href={"https://github.com/Desarrollos-Web-Urquiza/black-telephone"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>https://github.com/Desarrollos-Web-Urquiza/black-telephone</p>
+        </a> 
         
         <p  className={utilStyles.letterProject}>
           <b>Tecnologías utilizadas:   </b> 
@@ -225,16 +228,13 @@ export default function Contact(props) {
           Si tocamos ese botón, se nos agregarán los datos de la persona a otra tabla también llamada "No en casa". Esa lista servirá para tener un registro organizado de todos los números telefónicos que no atendieron la primera vez y posibilitará descargarlos en un nueva hoja de cálculo para volver a llamarlos en otra ocasión.
         </p>
         
-        <p  className={utilStyles.letterProject}  >
-         <div style={{ float: "left", marginTop: 15 }}> Finalmente, el sistema de llamadas también nos provee el botón  </div>
-          <img
-            src="/images/shifts-button.png"
-            // style={{width: 120, height: 50, marginLeft: 10 }}
-            className={utilStyles.shiftsButton}
-            alt={"shifts-button"}
-          />        
-        </p>
-        
+        <p  className={utilStyles.letterProject} style={{ float: "left", marginTop: 15 }}  >Finalmente, el sistema de llamadas también nos provee el botón</p>
+        <img
+          src="/images/shifts-button.png"
+          // style={{width: 120, height: 50, marginLeft: 10 }}
+          className={utilStyles.shiftsButton}
+          alt={"shifts-button"}
+        />               
 
         <br />
 
