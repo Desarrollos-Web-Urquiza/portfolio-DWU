@@ -19,8 +19,10 @@ const DevToolContainer = ({title, icon, alt, description, link}) => {
         
         </a>
         
-        {description && <div className={utilStyles.caption} style={{ color: "#c3c3c3", fontSize: 22, marginTop: -15   }}>{description}</div>}
-      
+        <div align="left">
+          {description && <div className={utilStyles.caption} style={{ color: "#c3c3c3", fontSize: 22, marginTop: -15   }}>{description}</div>}
+        </div>
+
       </div>
 
     </div>
