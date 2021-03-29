@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){window.dataLayer.push(arguments)}
                 gtag("js", new Date());
-                gtag("config", "G-58D8E0QPWP");
+                gtag("config", "UA-193155479-1");
             `}
         }>
         </script>
