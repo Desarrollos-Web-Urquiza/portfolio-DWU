@@ -67,6 +67,9 @@ function MyApp({ Component, pageProps }) {
           :root {
             --fontPersonalized:  Blinker ;
           }
+          html { 
+            height: 100% 
+          }
         `}
       </style>
             

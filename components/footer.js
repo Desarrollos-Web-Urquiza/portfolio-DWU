@@ -16,7 +16,7 @@ const Footer = ({profileImage, contactLink, name}) => {
               <ProfileImage img={"/images/Logo.png"}/>
             </div>
             <div>
-              <h3 className={utilStyles.headingLg} style={{lineHeight: 1}}>Desarrollos Web Urquiza</h3>
+              <h3 className={utilStyles.headingLg}>Desarrollos Web Urquiza</h3>
               {/* <p style={{lineHeight: 0, }}>Programador web de Argentina</p> */}
               {contactLink}
             </div>
