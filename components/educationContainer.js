@@ -3,7 +3,7 @@ import utilStyles from '../styles/utils.module.css'
 const EducationContainer = ({title, src, alt, description, link}) => {
   
   return (
-    <div >
+    <div style={{ marginTop: "4.5rem"}}>
         
       <div  align= "center"  className={`${utilStyles.titleEducation}`}><b>Analista de Sistemas de Computación - Escuela Sup. N° 49 Cap. Justo José de Urquiza</b></div>
       
@@ -33,7 +33,7 @@ const EducationContainer = ({title, src, alt, description, link}) => {
       <br />
       <br />
       <br />
-      
+            
       <div  align= "center"  className={`${utilStyles.titleEducation} ${utilStyles.titleNASA}`} ><b>Diseñador Web Site  -  Nasa Computación</b></div>
      
       <br />

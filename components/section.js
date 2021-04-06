@@ -1,6 +1,6 @@
 import utilStyles from '../styles/utils.module.css'
 
-const Section = ({children, title, bg, bgMirror, style = {},  W7, className = ''}) => {
+const Section = ({children, title, bg, bgMirror, style = {},  W7, className = '', mTop}) => {
   
   let bgClassNames
   let h2Style
@@ -17,9 +17,9 @@ const Section = ({children, title, bg, bgMirror, style = {},  W7, className = ''
     if(bgMirror) bgClassNames += ` ${utilStyles.sectionBgMirrorW7}`
     h2Style = utilStyles.headingLgGrey
   }
-  
+ 
   return (
-    <div  style={{ marginLeft:  10}}>
+    <div style={{ marginLeft:  10, marginTop: mTop}}  >
       
       <section 
         style={style}

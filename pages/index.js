@@ -70,12 +70,6 @@ export default function Home(props) {
       
       </div>        
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-    
       <Section title="" bg>
         
         <div align="center">
@@ -97,7 +91,6 @@ export default function Home(props) {
             <br />
             <br /> 
 
-          
             <CountUp
               end={100}
               duration={45}
@@ -133,14 +126,9 @@ export default function Home(props) {
            
       <div className={`${utilStyles.separatorSmall}`}/>
      
-      <div id="projects"/>
-     
-      <br />
-      <br />
-      <br />
-      <br />
-     
-      <Section title="PROYECTOS PERSONALES" >      
+      <div id="projects" />
+          
+      <Section title="PROYECTOS PERSONALES" mTop={315} >      
       
         <div  className={`${utilStyles.flexProject}`} align="center">
             
@@ -172,7 +160,7 @@ export default function Home(props) {
         
         <div align="center">
           
-          <div className={`${utilStyles.flexProject}`}    style={{ maxWidth: 2180}}>
+          <div className={`${utilStyles.flexProject}`} style={{ maxWidth: 2180}}>
           
             {DevTools.map(row=>
                   
@@ -198,41 +186,19 @@ export default function Home(props) {
       
       </Section>
 
-      <br />
-      <br />
-      <br />
-      
-      <Section title="EDUCACIÓN Y CERTIFICACIONES" >      
-      
-        <br />
-        <br />
+      <Section title="EDUCACIÓN Y CERTIFICACIONES" mTop={90}>      
 
         <EducationContainer />
-        
+
       </Section>      
 
-      <div  className={`${utilStyles.separatorSmall}`}/>
+      <div  className={`${utilStyles.separator}`}/>
       
-      <div id="experience"/>
-     
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <div id="experience" />
       
-      <Section title="EXPERIENCIA LABORAL" bg W7 >      
-      
-        <br />
-        <br />
+      <Section title="EXPERIENCIA LABORAL" bg W7 mTop={"15em"}>      
+        
         <WorkContainer /> 
-
-        <br />
-        <br />
-        <br />
-        <br /> <br />
        
       </Section> 
 

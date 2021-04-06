@@ -8,11 +8,11 @@ import utilStyles from '../styles/utils.module.css'
 const WorkContainer = ({title, src, alt, description, link}) => {
   
   return (
-    <div align="center">
+    <div align="center" style={{ }}>
               
-      <div >
+      <div style={{ marginTop: "3em", paddingBottom: 130 }} >
       
-        <div style={{ backgroundColor: "#ffffff", width: 200}}>
+        <div style={{ backgroundColor: "#ffffff", width: 200 }}>
           
           <a 
             style={{ textDecoration: "none"}}
@@ -51,9 +51,14 @@ const WorkContainer = ({title, src, alt, description, link}) => {
             +MÁS INFO.
           </Button>
         </Link>      
-      
+        {/* <br />
+        <br />
+        <br />
+        <br /> 
+        <br /> */}
+        
       </div>
-   
+      
     </div>
   )
 }
