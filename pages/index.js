@@ -134,8 +134,8 @@ export default function Home(props) {
             
           {Projects.map(row=>
             
-            <div style={{ flex: "auto" , flexWrap: "wrap", alignSelf: "space-around", marginRight:"15px"}} className={`${utilStyles.cardProjectMto}`}  >
-
+            <div style={{ flex: "auto" , flexWrap: "wrap"}} className={`${utilStyles.cardProjectMto}`}  >
+              
               <ProjectContainer
 
                 title={row.title}
