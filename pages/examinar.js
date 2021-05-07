@@ -337,7 +337,12 @@ export default function Contact(props) {
         </p>
         
         <p  className={utilStyles.letterProject}>
-          Además, en vez de usar solo PHP puro como en este proyecto, hubiera sido mucho mejor integrar frameworks como por ejemplo Laravel. Actualmente me encuentro aprendiéndolo y considerando su posible implementación en este proyecto. 
+          Además, en vez de usar solo PHP puro como en este proyecto, hubiera sido mucho mejor integrar frameworks como por ejemplo Laravel. Actualmente me encuentro aprendiéndolo e implementándolo en este proyecto, mis progresos se pueden ver <a 
+              style={{ textDecoration: "none", color: "#0070f2"}}
+              href={"https://github.com/Desarrollos-Web-Urquiza/examin-laravel"}
+              target="_blank"
+              rel="noopener noreferrer"
+            > aquí</a>. 
         </p>
 
         <p  className={utilStyles.letterProject}>
