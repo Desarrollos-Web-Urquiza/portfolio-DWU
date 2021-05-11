@@ -71,7 +71,7 @@ function MyApp({ Component, pageProps }) {
             height: 100%
           }
           body { 
-            height: 100% 
+            height: 100% ;
           }
         `}
       </style>
