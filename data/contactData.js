@@ -8,6 +8,14 @@ export default [
       styleClass: "contactMailGithub"
     },
     {
+      title:"Medium ES",
+      img: "/images/medium.png",
+      alt:"M-ES",
+      link: "https://desarrollos-web-urquiza.medium.com/",
+      href: "https://desarrollos-web-urquiza.medium.com/",
+      styleClass: "contactLinkedin"
+    }, 
+    {
       title:"Stack Overflow ES",
       img: "/images/stackoverflowES.png",
       alt:"SO-ES",
