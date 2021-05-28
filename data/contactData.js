@@ -13,7 +13,7 @@ export default [
       alt:"M-ES",
       link: "https://desarrollos-web-urquiza.medium.com/",
       href: "https://desarrollos-web-urquiza.medium.com/",
-      styleClass: "contactLinkedin"
+      styleClass: "contactMedium"
     }, 
     {
       title:"Stack Overflow ES",
