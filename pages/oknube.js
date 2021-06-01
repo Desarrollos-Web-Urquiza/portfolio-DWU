@@ -1,3 +1,4 @@
+import React, {useEffect, useState} from 'react';
 import utilStyles from '../styles/utils.module.css'
 
 import Link from 'next/link'
@@ -9,7 +10,8 @@ import {Helmet} from "react-helmet";
 
 export default function Contact(props) {
   
-  const [drawerOpened, setDrawerOpened] = React.useState(false)
+  const [drawerOpened, setDrawerOpened] = useState(false)
+  const [highlightPolymer, setHighlightPolymer] = useState(false)
 
   const handleDrawerOpen = () => {
     setDrawerOpened(true);
@@ -19,9 +21,25 @@ export default function Contact(props) {
     setDrawerOpened(false)
   }
   
+  useEffect(() => {
+    let semiParams = window.location.href.split('/')
+    semiParams =  semiParams[3]
+    let highlightElemnt = semiParams.split('#')
+    highlightElemnt = highlightElemnt[1]
+
+    if(highlightElemnt == "Polymer")  {
+      setHighlightPolymer(true)
+    }
+	},[]);
+ 
+  const restartHighlightElemnt = () =>{
+    setHighlightPolymer(false)
+    console.log("Click restartHighlightElemnt")
+  }
+  
   return (
      
-    <div className={`${utilStyles.mainDivContainer}`}>  
+    <div className={`${utilStyles.mainDivContainer}`} onClick={restartHighlightElemnt} >  
     	
       <Helmet>
         
@@ -110,7 +128,7 @@ export default function Contact(props) {
             rel="noopener noreferrer"
           > AWS Cloud9.</a> De esa forma trabajábamos juntos de manera remota estando a kilómetros de distancia.
         </p>
-
+        
         <p  className={utilStyles.letterProject}>
           A continuación explicaré algunas de las tareas que me fueron asignadas dentro de este trabajo.
         </p>
@@ -201,7 +219,9 @@ export default function Contact(props) {
         </p>
 
         <br />
-
+        
+      <div id="Polymer"> 
+        
         <div align="center"> 
           <Link href= {"/images/error-oknube.png"}>
             <a target="_blank" >
@@ -214,23 +234,25 @@ export default function Contact(props) {
             </a>
           </Link>
         </div>
+      </div>
 
         <br />
-
-        <p  className={utilStyles.letterProject}>
-          Como se puede ver, en este caso el error tenía que ver con el componente <a 
-            style={{ textDecoration: "none", color: "#0070f2"}}
-            href={"https://www.webcomponents.org/element/@polymer/iron-icon"}
-            target="_blank"
-            rel="noopener noreferrer"
-            > "iron-icon"</a> que era parte de un framework llamado <a 
-            style={{ textDecoration: "none", color: "#0070f2"}}
-            href={"https://www.polymer-project.org/"}
-            target="_blank"
-            rel="noopener noreferrer"
-          > Polymer</a> que usábamos en el sistema para manejar el frontend.
-        </p>
-
+        <div className={`${ highlightPolymer ? utilStyles.highlightElement : ""}`}>
+          <p  className={utilStyles.letterProject}>
+            Como se puede ver, en este caso el error tenía que ver con el componente <a 
+              style={{ textDecoration: "none", color: "#0070f2"}}
+              href={"https://www.webcomponents.org/element/@polymer/iron-icon"}
+              target="_blank"
+              rel="noopener noreferrer"
+              > "iron-icon"</a> que era parte de un framework llamado   <a 
+              style={{ textDecoration: "none", color: "#0070f2"}}
+              href={"https://www.polymer-project.org/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            > Polymer</a>  que usábamos en el sistema para manejar el frontend.
+          </p>
+        </div>
+                  
         <p  className={utilStyles.letterProject}>
           Si bien la mayoría de las veces me encargaba de la parte del backend, también aprendí algo muy básico de Polymer. Así que a veces aportaba pistas para resolver errores relacionados a eso.
         </p>

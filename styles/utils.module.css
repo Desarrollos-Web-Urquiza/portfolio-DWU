@@ -44,6 +44,10 @@
 
 }
 
+.highlightElement {
+  background-color: yellow;
+}
+
 .mainDivContainer{
 
   overflow-x: hidden;
