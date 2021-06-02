@@ -8,10 +8,13 @@ import Drawer from '../components/drawer'
 import Footer from '../components/footer'
 import {Helmet} from "react-helmet";
 
+import filterURL from "../lib/filterURL";
+
 export default function Contact(props) {
   
   const [drawerOpened, setDrawerOpened] = useState(false)
   const [highlightPolymer, setHighlightPolymer] = useState(false)
+  const [highlightAWS, setHighlightAWS] = useState(false)
 
   const handleDrawerOpen = () => {
     setDrawerOpened(true);
@@ -20,23 +23,18 @@ export default function Contact(props) {
   const handleDrawerClose = () => {
     setDrawerOpened(false)
   }
+
+  const restartHighlightElemnt = () =>{
+    setHighlightPolymer(false)
+  }
   
   useEffect(() => {
-    let semiParams = window.location.href.split('/')
-    semiParams =  semiParams[3]
-    let highlightElemnt = semiParams.split('#')
-    highlightElemnt = highlightElemnt[1]
-
+    let highlightElemnt = filterURL(window.location.href)
     if(highlightElemnt == "Polymer")  {
       setHighlightPolymer(true)
     }
 	},[]);
  
-  const restartHighlightElemnt = () =>{
-    setHighlightPolymer(false)
-    console.log("Click restartHighlightElemnt")
-  }
-  
   return (
      
     <div className={`${utilStyles.mainDivContainer}`} onClick={restartHighlightElemnt} >  
@@ -179,7 +177,7 @@ export default function Contact(props) {
             rel="noopener noreferrer"
           > aquí</a>.
         </p>
-
+        
         <br />
         
         <h2 align="center" className={utilStyles.subtitleProject} >Subir archivos a AWS S3</h2>
@@ -220,9 +218,8 @@ export default function Contact(props) {
 
         <br />
         
-      <div id="Polymer"> 
         
-        <div align="center"> 
+        <div align="center" style={{  marginBottom: 50}}> 
           <Link href= {"/images/error-oknube.png"}>
             <a target="_blank" >
               <img
@@ -231,11 +228,11 @@ export default function Contact(props) {
                 style={{  maxWidth: 650, border: "solid", borderColor: "black" }}
                 alt={"e-mail-template"}
               />
+              <div id="Polymer" /> 
             </a>
           </Link>
         </div>
-      </div>
-
+      
         <br />
         <div className={`${ highlightPolymer ? utilStyles.highlightElement : ""}`}>
           <p  className={utilStyles.letterProject}>
