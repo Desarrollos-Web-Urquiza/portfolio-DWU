@@ -26,12 +26,16 @@ export default function Contact(props) {
 
   const restartHighlightElemnt = () =>{
     setHighlightPolymer(false)
+    setHighlightAWS(false)
   }
   
   useEffect(() => {
     let highlightElemnt = filterURL(window.location.href)
     if(highlightElemnt == "Polymer")  {
       setHighlightPolymer(true)
+    }
+    if(highlightElemnt == "AWS")  {
+      setHighlightAWS(true)
     }
 	},[]);
  
@@ -73,7 +77,7 @@ export default function Contact(props) {
           rel="noopener noreferrer"
         >
           {/* <ProfileImage img={"/images/logos/oknube.svg"}  /> */}
-           <img
+          <img
             src={"/images/logos/oknube.svg"}
             style={{  height: 125}}
             alt={"examin.ar"}
@@ -169,6 +173,8 @@ export default function Contact(props) {
         
         <br />
         
+        <div id="AWS" /> 
+
         <p  className={utilStyles.letterProject}>
           El código de MJML se puede ver <a 
             style={{ textDecoration: "none", color: "#0070f2"}}
@@ -177,20 +183,20 @@ export default function Contact(props) {
             rel="noopener noreferrer"
           > aquí</a>.
         </p>
-        
         <br />
         
         <h2 align="center" className={utilStyles.subtitleProject} >Subir archivos a AWS S3</h2>
-
-        <p  className={utilStyles.letterProject}>
-          Otra cosa que también me pidieron hacer, fue investigar cómo funciona el servicio de <a 
-            style={{ textDecoration: "none", color: "#0070f2"}}
-            href={"https://aws.amazon.com/es/s3/"}
-            target="_blank"
-            rel="noopener noreferrer"
-          > AWS S3</a>.
-        </p>
-
+      
+        <div className={highlightAWS ? utilStyles.highlightElement : ""}>
+          <p  className={utilStyles.letterProject}>
+            Otra cosa que también me pidieron hacer, fue investigar cómo funciona el servicio de <a 
+              style={{ textDecoration: "none", color: "#0070f2"}}
+              href={"https://aws.amazon.com/es/s3/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            > AWS S3</a>.
+          </p>
+        </div>
         <p  className={utilStyles.letterProject}>
           Si bien hasta hoy desconozco los detalles de su integración completa, basado en información que encontré en internet hice una muy simple API que permitiría hacer copias de seguridad de nuestro sistema mediante el servicio que provee AWS S3.
         </p>
@@ -291,8 +297,10 @@ export default function Contact(props) {
       </div>
 
       <div style={{  marginTop: 300}} />
-          
-      <Footer />     
+      <div style={{  backgroundColor: "#0078d7", height: 265, width: "100%" }}>
+        <Footer />     
+      </div>
+      {/* <div style={{  marginTop: 50}} /> */}
      
     </div>
   )

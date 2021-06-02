@@ -51,10 +51,11 @@
 .mainDivContainer{
 
   overflow-x: hidden;
-  overflow: hidden; 
+  overflow-y: hidden; 
   position: relative;
   margin-left: -8px;
   margin-right: -8px;
+  /* height: calc(100% + 600px); */
   
 }
 
