@@ -297,7 +297,7 @@ export default function Contact(props) {
       </div>
 
       <div style={{  marginTop: 300}} />
-      <div style={{  backgroundColor: "#0078d7", height: 265, width: "100%" }}>
+      <div className={`${ highlightPolymer || highlightAWS ? utilStyles.footerConditional  : ""}`}  >
         <Footer />     
       </div>
       {/* <div style={{  marginTop: 50}} /> */}

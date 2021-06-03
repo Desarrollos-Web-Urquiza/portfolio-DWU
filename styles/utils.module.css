@@ -11,6 +11,12 @@
   margin: 1rem 0;
 }
 
+.footerConditional { 
+  background-color: #0078d7; 
+  height: 265px;
+  width: 100%; 
+}
+
 .headingXl {
   font-size: 10rem;
   color: #fefefe;
