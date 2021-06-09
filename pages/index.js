@@ -18,12 +18,15 @@ import WorkContainer from '../components/workContainer'
 import Footer from '../components/footer'
 
 import filterURL from "../lib/filterURL";
+import { ContactlessOutlined } from '@material-ui/icons';
 
 export default function Home(props) {
   
   const [drawerOpened, setDrawerOpened] = useState(false)
 
   const [anchorPoint, setAnchorPoint] = useState(false)
+
+  // const [handlerURL, setHandlerURL] = useState(window.location.href)
 
   const handleDrawerOpen = () => {
   
@@ -37,16 +40,21 @@ export default function Home(props) {
 
   }
 
-  useEffect(() => {
+  const verifyExitsAnchorPoint = () => {
+    console.log("Se llama a verifyExitsAnchorPoint")
     let exitsAnchorPoint = filterURL(window.location.href)
     if(exitsAnchorPoint)  {
       setAnchorPoint(true)//footer patch
     }
-  },[window.location.href]);
+  }
 
+  useEffect(() => {
+    verifyExitsAnchorPoint()
+  },[anchorPoint]);
+  
   return (
      
-    <div className={`${utilStyles.mainDivContainer}`}>    
+    <div className={`${utilStyles.mainDivContainer}`}  >    
      
       <div 
         
@@ -55,22 +63,20 @@ export default function Home(props) {
       
       >
         
-        <TopBar
-          
-          page={"home"} 
-          onOpenDrawer={handleDrawerOpen}
-          history={props.history}
-          
-        />
+        <div onClick={verifyExitsAnchorPoint}>
+          <TopBar
+            page={"home"} 
+            onOpenDrawer={handleDrawerOpen}
+            history={props.history}
+          />
 
-        <Drawer
-
-          onClose={handleDrawerClose}
-          open={drawerOpened}
-          history={props.history}
-        
-        />
-              
+          <Drawer
+            onClose={handleDrawerClose}
+            open={drawerOpened}
+            history={props.history} 
+          />
+        </div>
+                    
         <ProfileImage img={"/images/Perfil.png"} />
 
         <Title>WERNER SCHYMALSKI</Title>   
