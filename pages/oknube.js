@@ -37,6 +37,20 @@ export default function Contact(props) {
     if(highlightElemnt == "AWS")  {
       setHighlightAWS(true)
     }
+  //   window.addEventListener('scroll', function() {
+  //     // console.log(window.innerHeight)
+  //     var limit = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
+  //       document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
+  //     console.log(limit)
+  //     console.log(window.scrollY)
+  //     // console.log(document.body.offsetHeight)
+  //     // console.log(document.body.scrollHeight)
+  //     if (window.scrollY >= 3358) {
+  //       //  console.log("you're at the bottom of the page");
+  //       //  restartHighlightElemnt()
+  //        // Show loading spinner and make fetch request to api
+  //     }
+  //  });
 	},[]);
  
   return (
@@ -95,21 +109,27 @@ export default function Contact(props) {
       <div className={utilStyles.container}>
        
         <h2 align="center" className={utilStyles.subtitleProject} >Datos generales</h2>
+               
+        <p  className={utilStyles.letterProject}><b>Sitio web:</b></p>
+        <a 
+          style={{ textDecoration: "none"}}
+          href={"https://oknube.com/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>https://oknube.com/</p>
+        </a>
         
-        
-          <p  className={utilStyles.letterProject}><b>Sitio web:</b></p>
-          <a 
-            style={{ textDecoration: "none"}}
-            href={"https://oknube.com/"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>https://oknube.com/</p>
-          </a>
-       
-
+        <p  className={utilStyles.letterProject}><b>Tecnologías usadas en el proyecto:  </b> 
+          <i>
+            Polymer, SPA, PWA, HTML, CSS, Stripo, 
+            JavaScript, Node.js, Microservices, Express.js, JWT, Socket.io, Cloud Pub/Sub, Odoo, Firebase, MySQL, API-REST, Bash Script, 
+            AWS, Docker, Nginx, etc.  
+          </i>
+        </p>
+              
         <br />
-       
+      
         <p  className={utilStyles.letterProject}>
           Mi primer trabajo real como programador fue colaborando para un proyecto llamado <b>OkNube</b>.   
         </p>
@@ -297,11 +317,9 @@ export default function Contact(props) {
       </div>
 
       <div style={{  marginTop: 300}} />
-      <div className={`${ highlightPolymer || highlightAWS ? utilStyles.footerConditional  : ""}`}  >
-        <Footer />     
-      </div>
-      {/* <div style={{  marginTop: 50}} /> */}
      
+      <Footer coditionalClass={`${ highlightPolymer || highlightAWS ? utilStyles.footerConditional  : ""}`}  />     
+           
     </div>
   )
 }

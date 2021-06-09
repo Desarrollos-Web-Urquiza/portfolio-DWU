@@ -17,11 +17,13 @@ import EducationContainer from '../components/educationContainer'
 import WorkContainer from '../components/workContainer'
 import Footer from '../components/footer'
 
+import filterURL from "../lib/filterURL";
+
 export default function Home(props) {
   
   const [drawerOpened, setDrawerOpened] = useState(false)
 
-  const [count, setCount] = useState(0)
+  const [anchorPoint, setAnchorPoint] = useState(false)
 
   const handleDrawerOpen = () => {
   
@@ -34,6 +36,13 @@ export default function Home(props) {
     setDrawerOpened(false)
 
   }
+
+  useEffect(() => {
+    let exitsAnchorPoint = filterURL(window.location.href)
+    if(exitsAnchorPoint)  {
+      setAnchorPoint(true)//footer patch
+    }
+  },[window.location.href]);
 
   return (
      
@@ -204,7 +213,7 @@ export default function Home(props) {
 
       <div  className={`${utilStyles.separatorSmall}`}/>
 
-      <Footer />     
+      <Footer coditionalClass={`${ anchorPoint ? utilStyles.footerConditional  : ""}`} />     
      
     </div>
   )
