@@ -24,7 +24,7 @@ export default function Home(props) {
   
   const [drawerOpened, setDrawerOpened] = useState(false)
 
-  const [anchorPoint, setAnchorPoint] = useState(false)
+  // const [anchorPoint, setAnchorPoint] = useState(false)
 
   // const [handlerURL, setHandlerURL] = useState(window.location.href)
 
@@ -40,17 +40,17 @@ export default function Home(props) {
 
   }
 
-  const verifyExitsAnchorPoint = () => {
-    console.log("Se llama a verifyExitsAnchorPoint")
-    let exitsAnchorPoint = filterURL(window.location.href)
-    if(exitsAnchorPoint)  {
-      setAnchorPoint(true)//footer patch
-    }
-  }
+  // const verifyExitsAnchorPoint = () => {
+  //   console.log("Se llama a verifyExitsAnchorPoint")
+  //   let exitsAnchorPoint = filterURL(window.location.href)
+  //   if(exitsAnchorPoint)  {
+  //     setAnchorPoint(true)//footer patch
+  //   }
+  // }
 
-  useEffect(() => {
-    verifyExitsAnchorPoint()
-  },[anchorPoint]);
+  // useEffect(() => {
+  //   verifyExitsAnchorPoint()
+  // },[anchorPoint]);
   
   return (
      
@@ -63,7 +63,7 @@ export default function Home(props) {
       
       >
         
-        <div onClick={verifyExitsAnchorPoint}>
+        {/* <div onClick={verifyExitsAnchorPoint}> */}
           <TopBar
             page={"home"} 
             onOpenDrawer={handleDrawerOpen}
@@ -75,7 +75,7 @@ export default function Home(props) {
             open={drawerOpened}
             history={props.history} 
           />
-        </div>
+        {/* </div> */}
                     
         <ProfileImage img={"/images/Perfil.png"} />
 
@@ -219,7 +219,8 @@ export default function Home(props) {
 
       <div  className={`${utilStyles.separatorSmall}`}/>
 
-      <Footer coditionalClass={`${ anchorPoint ? utilStyles.footerConditional  : ""}`} />     
+      {/* <Footer coditionalClass={`${ anchorPoint ? utilStyles.footerConditional  : ""}`} />      */}
+      <Footer  />     
      
     </div>
   )

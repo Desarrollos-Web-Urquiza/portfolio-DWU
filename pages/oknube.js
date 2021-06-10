@@ -318,7 +318,8 @@ export default function Contact(props) {
 
       <div style={{  marginTop: 300}} />
      
-      <Footer coditionalClass={`${ highlightPolymer || highlightAWS ? utilStyles.footerConditional  : ""}`}  />     
+      {/* <Footer coditionalClass={`${ highlightPolymer || highlightAWS ? utilStyles.footerConditional  : ""}`}  />      */}
+      <Footer   />     
            
     </div>
   )

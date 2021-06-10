@@ -11,10 +11,11 @@
   margin: 1rem 0;
 }
 
-.footerConditional { 
+.patchFooter { 
   background-color: #0078d7; 
-  height: 280px;
-  width: 100%; 
+  height: 120px;
+  width: 100%;  
+  bottom: 0;
 }
 
 .headingXl {
@@ -57,7 +58,7 @@
 .mainDivContainer{
 
   overflow-x: hidden;
-  overflow-y: hidden; 
+  /* overflow-y: hidden;  */
   position: relative;
   margin-left: -8px;
   margin-right: -8px;

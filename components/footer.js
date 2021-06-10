@@ -6,7 +6,7 @@ import ProfileImage from '../components/profileImage'
 const Footer = ({coditionalClass}) => {
   console.log(coditionalClass)
   return(
-    <div className={coditionalClass}  >
+    <>
       <div className={`${styles.footer}`} >
         <div  className={`${styles.footerContent} ${utilStyles.sectionFooter}`}>
           <div className={styles.container} >
@@ -21,7 +21,9 @@ const Footer = ({coditionalClass}) => {
           </div>
         </div>
       </div>
-    </div>
+      <div className={utilStyles.patchFooter}  >
+      </div>
+    </>
   )
 }
 export default Footer
