@@ -219,7 +219,6 @@ export default function Home(props) {
 
       <div  className={`${utilStyles.separatorSmall}`}/>
 
-      {/* <Footer coditionalClass={`${ anchorPoint ? utilStyles.footerConditional  : ""}`} />      */}
       <Footer  />     
      
     </div>

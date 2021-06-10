@@ -11,15 +11,6 @@
   margin: 1rem 0;
 }
 
-.patchFooter { 
-  /*background-color: #0078d7; */
-  height: 310px;
-  width: 100%;  
-  bottom: 0;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
 .headingXl {
   font-size: 10rem;
   color: #fefefe;
@@ -473,25 +464,6 @@
   transform: rotateZ(-1.5deg);
   }  
 
-.sectionFooter {
-  position: relative;
-}
-  
-.sectionFooter::before {
-  content: '';
-  position: absolute;
-  left: -60%;
-  right: -13%;
-  top: -5%;
-  /* width: 160%; */
-  height: 146%;
-  z-index: -1;
-  background: #0078d7;
-  transform: rotateZ(-1.5deg);
-  bottom: 0;
-  
-  }  
-
 .containerSection{
 
   max-width: 100%;
@@ -502,7 +474,6 @@
   top: 0%;
   transform: rotateZ(1.5deg);
 }
-
 
 .sectionBgW7 {
   position: relative;

@@ -15,6 +15,7 @@ export default function Contact(props) {
   const [drawerOpened, setDrawerOpened] = useState(false)
   const [highlightPolymer, setHighlightPolymer] = useState(false)
   const [highlightAWS, setHighlightAWS] = useState(false)
+  const [highlightMJML, setHighlightMJML] = useState(false)
 
   const handleDrawerOpen = () => {
     setDrawerOpened(true);
@@ -27,6 +28,7 @@ export default function Contact(props) {
   const restartHighlightElemnt = () =>{
     setHighlightPolymer(false)
     setHighlightAWS(false)
+    setHighlightMJML(false)
   }
   
   useEffect(() => {
@@ -37,20 +39,9 @@ export default function Contact(props) {
     if(highlightElemnt == "AWS")  {
       setHighlightAWS(true)
     }
-  //   window.addEventListener('scroll', function() {
-  //     // console.log(window.innerHeight)
-  //     var limit = Math.max( document.body.scrollHeight, document.body.offsetHeight, 
-  //       document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight );
-  //     console.log(limit)
-  //     console.log(window.scrollY)
-  //     // console.log(document.body.offsetHeight)
-  //     // console.log(document.body.scrollHeight)
-  //     if (window.scrollY >= 3358) {
-  //       //  console.log("you're at the bottom of the page");
-  //       //  restartHighlightElemnt()
-  //        // Show loading spinner and make fetch request to api
-  //     }
-  //  });
+    if(highlightElemnt == "MJML")  {
+      setHighlightMJML(true)
+    }
 	},[]);
  
   return (
@@ -157,20 +148,23 @@ export default function Contact(props) {
 
         <br />
 
+        <div id="MJML" /> 
+
         <h2 align="center" className={utilStyles.subtitleProject} >Plantilla para e-mails</h2>
 
         <p  className={utilStyles.letterProject}>
           Se me pidió que diseñara un template para los correos electrónicos que recibirían los usuarios que soliciten tener una cuenta en el sistema.
         </p>
-
-        <p  className={utilStyles.letterProject}>
-          Me pidieron que lo haga con un pequeño framework  llamado <a 
-            style={{ textDecoration: "none", color: "#0070f2"}}
-            href={"https://mjml.io/"}
-            target="_blank"
-            rel="noopener noreferrer"
-          > MJML</a> que sirve para hacer ese tipo de cosas mendiante HTML y CSS.
-        </p>
+        <div className={highlightMJML ? utilStyles.highlightElement : ""}>    
+          <p  className={utilStyles.letterProject}>
+            Me pidieron que lo haga con un pequeño framework  llamado <a 
+              style={{ textDecoration: "none", color: "#0070f2"}}
+              href={"https://mjml.io/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            > MJML</a> que sirve para hacer ese tipo de cosas mendiante HTML y CSS.
+          </p>
+        </div>   
 
         <p  className={utilStyles.letterProject}>
           El resultado fue el siguiente
