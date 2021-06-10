@@ -12,10 +12,12 @@
 }
 
 .patchFooter { 
-  background-color: #0078d7; 
-  height: 120px;
+  /*background-color: #0078d7; */
+  height: 310px;
   width: 100%;  
   bottom: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .headingXl {
