@@ -254,6 +254,7 @@ export default function Contact(props) {
         </div>
       
         <br />
+        
         <div className={`${ highlightPolymer ? utilStyles.highlightElement : ""}`}>
           <p  className={utilStyles.letterProject}>
             Como se puede ver, en este caso el error tenía que ver con el componente <a 

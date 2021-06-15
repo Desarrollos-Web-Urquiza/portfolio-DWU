@@ -1,3 +1,5 @@
+import React, {useEffect, useState} from 'react';
+
 import utilStyles from '../styles/utils.module.css'
 
 import TopBar from '../components/topBar.js'
@@ -7,9 +9,12 @@ import Footer from '../components/footer'
 import VideoContainer from '../components/videoContainer'
 import {Helmet} from "react-helmet";
 
+import filterURL from "../lib/filterURL";
+
 export default function Contact(props) {
   
-  const [drawerOpened, setDrawerOpened] = React.useState(false)
+  const [drawerOpened, setDrawerOpened] = useState(false)
+  const [highlightPHPMyAdmin, setHighlightPHPMyAdmin] = useState(false)
 
   const handleDrawerOpen = () => {
     setDrawerOpened(true);
@@ -18,10 +23,22 @@ export default function Contact(props) {
   const handleDrawerClose = () => {
     setDrawerOpened(false)
   }
+
+  const restartHighlightElemnt = () =>{
+    setHighlightPHPMyAdmin(false)
+  }
+
+  useEffect(() => {
+    let highlightElemnt = filterURL(window.location.href)
+    if(highlightElemnt == "PHPMyAdmin")  {
+      setHighlightPHPMyAdmin(true)
+    }
+    
+	},[]);
   
   return (
      
-    <div className={`${utilStyles.mainDivContainer}`}>    
+    <div className={`${utilStyles.mainDivContainer}`}  onClick={restartHighlightElemnt}>    
 
     <Helmet>
             
@@ -311,9 +328,11 @@ export default function Contact(props) {
         </p>
         
         <br />
+        
+        <div id="PHPMyAdmin" /> 
 
         <h2 align="center" className={utilStyles.subtitleProject}>Otras características de Examin.ar</h2>
-
+        
         <p  className={utilStyles.letterProject}>
          La versión de PHP que utilicé en este proyecto en un principio fue la 5, pero después la actualicé a la 7. Aunque los cambios fueron solamente algunos detalles menores como llamar a MySQL con <a 
             style={{ textDecoration: "none", color: "#0070f2"}}
@@ -322,15 +341,17 @@ export default function Contact(props) {
             rel="noopener noreferrer"
           > "mysqli"</a>.
         </p>
-
-        <p  className={utilStyles.letterProject}>
-         La base de datos MySQL que usé para guardar los datos de usuario y todo lo referente a evaluaciones y alumnos usa como SGBD a <a 
-            style={{ textDecoration: "none", color: "#0070f2"}}
-            href={"https://www.phpmyadmin.net/"}
-            target="_blank"
-            rel="noopener noreferrer"
-          > phpMyAdmin</a>. 
-        </p>
+        
+        <div className={`${ highlightPHPMyAdmin ? utilStyles.highlightElement : ""}`}>
+          <p  className={utilStyles.letterProject}>
+          La base de datos MySQL que usé para guardar los datos de usuario y todo lo referente a evaluaciones y alumnos usa como SGBD a <a 
+              style={{ textDecoration: "none", color: "#0070f2"}}
+              href={"https://www.phpmyadmin.net/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            > phpMyAdmin</a>. 
+          </p>
+        </div>
 
         <p  className={utilStyles.letterProject}>
           Como este fue mi primer proyecto, hay varias cosas que se podrían mejorar. Como por ejemplo, la duplicación de código, la falta de estructura en los archivos, mala indentación, etc.
