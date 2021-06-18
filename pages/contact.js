@@ -55,7 +55,19 @@ export default function Contact(props) {
         <ProfileImage img={"/images/Perfil.png"} />
 
         <h2>WERNER SCHYMALSKI</h2>   
-
+        
+        <a 
+          style={{ textDecoration: "none"}}
+          href={"https://es.stackoverflow.com/users/212265/desarrollos-web-urquiza"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={"https://es.stackoverflow.com/users/flair/212265.png"}
+            alt={"Stack OverFlow ES profile"}
+          />  
+        </a>
+        
       </div>
 
       <br />

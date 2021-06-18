@@ -80,7 +80,6 @@ export default function Home(props) {
         <ProfileImage img={"/images/Perfil.png"} />
 
         <Title>WERNER SCHYMALSKI</Title>   
-
         <p style={{ fontFamily: "var(--fontPersonalized)" }} className={`${utilStyles.headingMd}`}>Programador web de Argentina</p>
       
       </div>        
