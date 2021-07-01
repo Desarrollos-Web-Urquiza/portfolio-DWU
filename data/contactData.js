@@ -7,6 +7,14 @@ export default [
       href: "https://github.com/Desarrollos-Web-Urquiza",
       styleClass: "contactMailGithub"
     },
+    { 
+      title:"GitLab",
+      img: "/images/gitlab.png",
+      alt:"GitLab",
+      link: "https://gitlab.com/Desarrollos-Web-Urquiza",
+      href: "https://gitlab.com/Desarrollos-Web-Urquiza",
+      styleClass: "contactMailGithub"
+    },
     {
       title:"Medium ES",
       img: "/images/medium.png",
