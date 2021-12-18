@@ -24,10 +24,6 @@ export default function Home(props) {
   
   const [drawerOpened, setDrawerOpened] = useState(false)
 
-  // const [anchorPoint, setAnchorPoint] = useState(false)
-
-  // const [handlerURL, setHandlerURL] = useState(window.location.href)
-
   const handleDrawerOpen = () => {
   
     setDrawerOpened(true);
@@ -40,43 +36,26 @@ export default function Home(props) {
 
   }
 
-  // const verifyExitsAnchorPoint = () => {
-  //   console.log("Se llama a verifyExitsAnchorPoint")
-  //   let exitsAnchorPoint = filterURL(window.location.href)
-  //   if(exitsAnchorPoint)  {
-  //     setAnchorPoint(true)//footer patch
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   verifyExitsAnchorPoint()
-  // },[anchorPoint]);
-  
   return (
      
     <div className={`${utilStyles.mainDivContainer}`}  >    
      
       <div 
-        
         align= "center" 
         className={`${utilStyles.header}`}
-      
       >
-        
-        {/* <div onClick={verifyExitsAnchorPoint}> */}
-          <TopBar
-            page={"home"} 
-            onOpenDrawer={handleDrawerOpen}
-            history={props.history}
-          />
+        <TopBar
+          page={"home"} 
+          onOpenDrawer={handleDrawerOpen}
+          history={props.history}
+        />
 
-          <Drawer
-            onClose={handleDrawerClose}
-            open={drawerOpened}
-            history={props.history} 
-          />
-        {/* </div> */}
-                    
+        <Drawer
+          onClose={handleDrawerClose}
+          open={drawerOpened}
+          history={props.history} 
+        />
+                  
         <ProfileImage img={"/images/Perfil.png"} />
 
         <Title>WERNER SCHYMALSKI</Title>   
@@ -137,9 +116,9 @@ export default function Home(props) {
         </div>
 
       </Section>
-           
-      <div className={`${utilStyles.separatorSmall}`}/>
-     
+
+      <div  className={`${utilStyles.separator}`}/>
+      
       <div id="projects" />
           
       <Section title="PROYECTOS PERSONALES" mTop={315} >      
@@ -167,8 +146,27 @@ export default function Home(props) {
         </div>
       
       </Section>   
+
+      <div id="experience" />
       
+      <div  className={`${utilStyles.separator}`}/>
+      
+      <Section title="EXPERIENCIA LABORAL" bg W7 mTop={"15em"}>      
+        
+        <WorkContainer /> 
+       
+      </Section> 
+                 
       <div  className={`${utilStyles.separatorSmall}`}/>
+
+
+      <Section title="EDUCACIÓN Y CERTIFICACIONES" mTop={90}>      
+
+        <EducationContainer />
+
+      </Section>      
+
+      <div  className={`${utilStyles.separator}`}/>
 
       <Section title="LENGUAJES Y TECNOLOGÍAS QUE USO" bg bgMirror W7> 
         
@@ -199,25 +197,9 @@ export default function Home(props) {
         </div>          
       
       </Section>
-
-      <Section title="EDUCACIÓN Y CERTIFICACIONES" mTop={90}>      
-
-        <EducationContainer />
-
-      </Section>      
-
+      
       <div  className={`${utilStyles.separator}`}/>
       
-      <div id="experience" />
-      
-      <Section title="EXPERIENCIA LABORAL" bg W7 mTop={"15em"}>      
-        
-        <WorkContainer /> 
-       
-      </Section> 
-
-      <div  className={`${utilStyles.separatorSmall}`}/>
-
       <Footer  />     
      
     </div>

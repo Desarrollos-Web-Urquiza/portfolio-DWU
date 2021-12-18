@@ -46,6 +46,22 @@ export default [
       description:"Si bien casi siempre opto por usar JavaScript en el backend, PHP siempre está ahí para mí desde que lo aprendí hace ya mucho tiempo.",
       
     },
+    {
+      title:"Vue",
+      icon:"https://vuejs.org/images/logo.svg",
+      alt:"Vue",
+      link: "https://vuejs.org/",
+      description:"El segundo framework SPA que aprendí. Me gusta la simpleza y el orden que logra Vue con respecto a los otros frameworks de su tipo.",
+      
+    },
+     {
+      title:"Jest",
+      icon:"https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png",
+      alt:"Jest",
+      link: "https://jestjs.io/",
+      description:"Me adentré al mundo QA aprendiendo Jest. Gracias a Jest pude realizar unit tests de componentes del frontend que desarrollo.",
+      
+    },
 
     
     
