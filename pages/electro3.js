@@ -50,7 +50,7 @@ export default function Contact(props) {
     	
       <Helmet>
         
-        <title>DWU - OkNube</title>
+        <title>DWU - Electro 3</title>
                 
       </Helmet>		  
 
@@ -83,13 +83,13 @@ export default function Contact(props) {
         >
           {/* <ProfileImage img={"/images/logos/oknube.svg"}  /> */}
           <img
-            src={"/images/logos/oknube.svg"}
+            src={"https://media-exp1.licdn.com/dms/image/C4E0BAQHO_ykVLNqoXQ/company-logo_200_200/0/1618489974852?e=1648684800&v=beta&t=Eq0NBbMrbzZ9lfI2FuUgoV5IyKJrhoHjlguMYmXr4ng"}
             style={{  height: 125}}
             alt={"examin.ar"}
           />
         </a>
         
-        <h1>OkNube</h1>   
+        <h1>Electro 3</h1>   
 
       </div>
 
@@ -110,16 +110,6 @@ export default function Contact(props) {
         >
           <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>https://oknube.com/</p>
         </a>
-
-        <p  className={utilStyles.letterProject}><b>Facebook:</b></p>
-        <a 
-          style={{ textDecoration: "none"}}
-          href={"https://www.facebook.com/pages/category/Shopping---Retail/Oksanjuan-114329279943530/"}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>OkSanJuan</p>
-        </a>
         
         <p  className={utilStyles.letterProject}><b>Tecnologías usadas en el proyecto:  </b> 
           <i>
@@ -132,7 +122,7 @@ export default function Contact(props) {
         <br />
       
         <p  className={utilStyles.letterProject}>
-          Mi primer trabajo real como programador fue colaborando para un proyecto llamado <b>OkNube</b>, también conocido como <b>OkSanJuan</b>.   
+          Mi primer trabajo real como programador fue colaborando para un proyecto llamado <b>OkNube</b>.   
         </p>
 
         <p  className={utilStyles.letterProject}>
