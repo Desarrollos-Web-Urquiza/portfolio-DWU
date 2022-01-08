@@ -10,6 +10,8 @@ import {Helmet} from "react-helmet";
 
 import filterURL from "../lib/filterURL";
 
+import Iframe from 'react-iframe'
+
 export default function Contact(props) {
   
   const [drawerOpened, setDrawerOpened] = useState(false)
@@ -77,7 +79,7 @@ export default function Contact(props) {
         
         <a 
           style={{ textDecoration: "none"}}
-          href={"https://oknube.com/"}
+          href={"http://www.electro3.com.ar/"}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -85,7 +87,7 @@ export default function Contact(props) {
           <img
             src={"https://media-exp1.licdn.com/dms/image/C4E0BAQHO_ykVLNqoXQ/company-logo_200_200/0/1618489974852?e=1648684800&v=beta&t=Eq0NBbMrbzZ9lfI2FuUgoV5IyKJrhoHjlguMYmXr4ng"}
             style={{  height: 125}}
-            alt={"examin.ar"}
+            alt={"Electro 3"}
           />
         </a>
         
@@ -104,211 +106,122 @@ export default function Contact(props) {
         <p  className={utilStyles.letterProject}><b>Sitio web:</b></p>
         <a 
           style={{ textDecoration: "none"}}
-          href={"https://oknube.com/"}
+          href={"http://www.electro3.com.ar/"}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>https://oknube.com/</p>
+          <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>http://www.electro3.com.ar/</p>
         </a>
         
         <p  className={utilStyles.letterProject}><b>Tecnologías usadas en el proyecto:  </b> 
           <i>
-            Polymer, SPA, PWA, HTML, CSS, Stripo, 
-            JavaScript, Node.js, Microservices, Express.js, JWT, Socket.io, Cloud Pub/Sub, Odoo, Firebase, MySQL, API-REST, Bash Script, 
-            AWS, Docker, Nginx, etc.  
+            Vue, Vuex, Vue Test Utils, PrimeVue, JavaScript, Cypress, Jest, CSS, Node.js, Express.js, Cloud Firestore, PHP y Codeigniter 2  
           </i>
         </p>
+
+        <p  className={utilStyles.letterProject}><b>LinkedIn:</b></p>
+        <a 
+          style={{ textDecoration: "none"}}
+          href={"https://www.linkedin.com/company/electro3/mycompany/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>Electro3</p>
+        </a>
               
         <br />
       
         <p  className={utilStyles.letterProject}>
-          Mi primer trabajo real como programador fue colaborando para un proyecto llamado <b>OkNube</b>.   
+          Actualmente trabajo para la empresa llamada Electro3 que también es de San Juan (Argentina).  Esta empresa se dedica a varios rubros distintos entre lo cuales
+          figuran el desarrollo de software.
+        </p>    
+
+        <p  className={utilStyles.letterProject}>
+          Me encuentro participando en el desarrollo de una plataforma web para un organismo público de la provincia de San Juan. Esta plataforma sirve para realizar una
+          serie de registros de tipo administrativo.
         </p>
 
         <p  className={utilStyles.letterProject}>
-          OkNube es una startup que se propuso la creación de un sistema que te permita diseñar tu propia tienda online con la que puedas comercializar principalmente en la ciudad de San Juan, Argentina.
+          En este proyecto adopto distintos cargos, por ejemplo trabajando como frontend o backend o también como QA, según la
+          necesidad.      
         </p>
+
+        <br />
+
+        <h2 align="center" className={utilStyles.subtitleProject} >Frontend developer en Electro3</h2>
 
         <p  className={utilStyles.letterProject}>
-          Dentro de OkNube trabajé en un principio como un asistente en la parte del backend, pero al final terminé participando en muchos otros aspectos del proyecto.
+          El principal stack que domino en la empresa Electro3 es el <b>frontend</b>.
         </p>
-
-         <p  className={utilStyles.letterProject}>
-          Si bien en el equipo de trabajo usábamos GitHub, lo que de verdad utilizábamos para mezclar el código era el servicio <a 
+       
+        <p  className={utilStyles.letterProject}>
+          El frontend que manejo se desarrolla con el framework Vue. Cuando llegué a esta empresa lo desconocía completamente, ya que yo venía acostumbrado a trabajar con React y algo tocaba de oído con el framework  <a 
             style={{ textDecoration: "none", color: "#0070f2"}}
-            href={"https://aws.amazon.com/es/cloud9/"}
+            href={"https://www.desarrollos-web-urquiza.tk/oknube#Polymer"}
             target="_blank"
             rel="noopener noreferrer"
-          > AWS Cloud9.</a> De esa forma trabajábamos juntos de manera remota estando a kilómetros de distancia.
-        </p>
-        
-        <p  className={utilStyles.letterProject}>
-          A continuación explicaré algunas de las tareas que me fueron asignadas dentro de este trabajo.
+          > Polymer.</a>
         </p>
 
-        <br />
-
-        <div id="MJML" /> 
-
-        <h2 align="center" className={utilStyles.subtitleProject} >Plantilla para e-mails</h2>
-
         <p  className={utilStyles.letterProject}>
-          Se me pidió que diseñara un template para los correos electrónicos que recibirían los usuarios que soliciten tener una cuenta en el sistema.
-        </p>
-        <div className={highlightMJML ? utilStyles.highlightElement : ""}>    
-          <p  className={utilStyles.letterProject}>
-            Me pidieron que lo haga con un pequeño framework  llamado <a 
-              style={{ textDecoration: "none", color: "#0070f2"}}
-              href={"https://mjml.io/"}
-              target="_blank"
-              rel="noopener noreferrer"
-            > MJML</a> que sirve para hacer ese tipo de cosas mendiante HTML y CSS.
-          </p>
-        </div>   
-
-        <p  className={utilStyles.letterProject}>
-          El resultado fue el siguiente
+          Sin embargo no fue un gran reto para mí aprender Vue, ya que React es bastante parecido. Además, ya veía bastante acostumbrado a trabajar con JavaScript. 
         </p>
 
-        <br />
-        
-        <div align="center"> 
-          <Link href= {"/images/e-mail-template.png"}>
-            <a target="_blank" >
-              <img
-                src="/images/e-mail-template.png"
-                className={utilStyles.projectVideo}
-                style={{  maxWidth: 500, border: "solid", borderColor: "black" }}
-                alt={"e-mail-template"}
-              />
-            </a>
-          </Link>
-        </div>
-        
-        <br />
-        
-        <div id="AWS" /> 
-
         <p  className={utilStyles.letterProject}>
-          El código de MJML se puede ver <a 
+          Por lo que el proceso de adaptación fue bastante rápido, y ahí fue cuando llegué a aprender otra librería que era nueva para mí: <a 
             style={{ textDecoration: "none", color: "#0070f2"}}
-            href={"https://mjml.io/try-it-live/B1thzjtCV"}
+            href={"https://www.primefaces.org/primevue/showcase-v2/#/"}
             target="_blank"
             rel="noopener noreferrer"
-          > aquí</a>.
-        </p>
-        <br />
-        
-        <h2 align="center" className={utilStyles.subtitleProject} >Subir archivos a AWS S3</h2>
-      
-        <div className={highlightAWS ? utilStyles.highlightElement : ""}>
-          <p  className={utilStyles.letterProject}>
-            Otra cosa que también me pidieron hacer, fue investigar cómo funciona el servicio de <a 
-              style={{ textDecoration: "none", color: "#0070f2"}}
-              href={"https://aws.amazon.com/es/s3/"}
-              target="_blank"
-              rel="noopener noreferrer"
-            > AWS S3</a>.
-          </p>
-        </div>
-        <p  className={utilStyles.letterProject}>
-          Si bien hasta hoy desconozco los detalles de su integración completa, basado en información que encontré en internet hice una muy simple API que permitiría hacer copias de seguridad de nuestro sistema mediante el servicio que provee AWS S3.
+          > PrimeVue.</a>
         </p>
 
         <p  className={utilStyles.letterProject}>
-          Al terminarla la subí a <a 
+          Esta librería que está disponible tanto para React y Angular como para Vue, es bastante útil ya que aporta muchísimos componentes hechos y listos para cutomizar a nuestra comodidad.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Una de las tareas que me asignaron con esta libería, fue traducir su componente calendario a español ya que este venía por defecto en inglés. Eso fue un desafío para mí, ya que mi poca experiencia con Vue me dificultó completar esta tarea. 
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Tenía que traducir lo siguiente: 
+        </p>
+
+        {/* <iframe src="https://codesandbox.io/embed/sharp-swartz-eqqgw?fontsize=14&hidenavigation=1&theme=dark"
+          styles={{width: 400, height: 400}}
+          title="sharp-swartz-eqqgw"
+          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+        ></iframe> */}
+
+        <Iframe 
+          url={"https://codesandbox.io/embed/sharp-swartz-eqqgw?fontsize=14&hidenavigation=1&theme=dark"}
+          position="relative"
+          width="100%"
+          height="500px"
+          id="myId"
+          className="myClassname"
+          styles={{height: "25px"}}
+        />
+        
+        <br />   
+
+        <p  className={utilStyles.letterProject}>
+          Y como me costó lograrlo, publiqué la siguiente pregunta en <a 
             style={{ textDecoration: "none", color: "#0070f2"}}
-            href={"https://github.com/Desarrollos-Web-Urquiza/Subir-Archivos-a-AWS-S3/blob/master/index.js"}
+            href={"https://es.stackoverflow.com/questions/470035/c%c3%b3mo-poner-en-espa%c3%b1ol-el-calendario-de-primevue"}
             target="_blank"
             rel="noopener noreferrer"
-          > GitHub</a>, obviamente sin las credenciales correspondientes.
-        </p>
-
-        <br />
-        
-        <h2 align="center" className={utilStyles.subtitleProject} >Tareas de testeo y depuración de errores</h2>
-
-        <p  className={utilStyles.letterProject}>
-          También tuve la tarea de evaluar la experiencia de usuario del sistema, detectando errores y proponiendo posibles mejoras.
-        </p>
-
-        <p  className={utilStyles.letterProject}>
-          Cuando detectaba un bug mi trabajo era tratar de arreglarlo en caso de que pudiera, y si no podía como mínimo debía realizar un informe del error como el que se ve en la siguiente imagen.
-        </p>
-
-        <br />
-        
-        
-        <div align="center" style={{  marginBottom: 50}}> 
-          <Link href= {"/images/error-oknube.png"}>
-            <a target="_blank" >
-              <img
-                src="/images/error-oknube.png"
-                className={utilStyles.projectVideo}
-                style={{  maxWidth: 650, border: "solid", borderColor: "black" }}
-                alt={"e-mail-template"}
-              />
-              <div id="Polymer" /> 
-            </a>
-          </Link>
-        </div>
-      
-        <br />
-        
-        <div className={`${ highlightPolymer ? utilStyles.highlightElement : ""}`}>
-          <p  className={utilStyles.letterProject}>
-            Como se puede ver, en este caso el error tenía que ver con el componente <a 
-              style={{ textDecoration: "none", color: "#0070f2"}}
-              href={"https://www.webcomponents.org/element/@polymer/iron-icon"}
-              target="_blank"
-              rel="noopener noreferrer"
-              > "iron-icon"</a> que era parte de un framework llamado   <a 
-              style={{ textDecoration: "none", color: "#0070f2"}}
-              href={"https://www.polymer-project.org/"}
-              target="_blank"
-              rel="noopener noreferrer"
-            > Polymer</a>  que usábamos en el sistema para manejar el frontend.
-          </p>
-        </div>
-                  
-        <p  className={utilStyles.letterProject}>
-          Si bien la mayoría de las veces me encargaba de la parte del backend, también aprendí algo muy básico de Polymer. Así que a veces aportaba pistas para resolver errores relacionados a eso.
-        </p>
-
-        <p  className={utilStyles.letterProject}>
-          Pero igual no sería hasta mucho tiempo después cuando aprendí React que empecé a especializarme más en el frontend.
+          > StackOverflow.</a>        
         </p>
         
-        <br />
-        
-        <h2 align="center" className={utilStyles.subtitleProject}>Mis otros trabajos en OkNube</h2>
-
         <p  className={utilStyles.letterProject}>
-          Además de los trabajos ya mencionados también tuve muchos otros más. Pero no es fácil explicarlos todos en esta página.
+          Finalmente gracias a una respuesta recibida en esa pregunta y también a bastante tiempo de investigación pude completar la que fue una de mis primeras tareas que tuve asignadas como frontend de esta empresa. 
         </p>
 
-        <p  className={utilStyles.letterProject}>
-          De todas formas, mencionaré algunos de ellos de forma breve:
-        </p>
-
-        <p  className={utilStyles.letterProject}>
-          <b>Documentar el sistema:</b> se me encargó la tarea de crear un "manual para el usuario". Tuve que explicar paso a paso cómo usar el sistema para despejar cualquier pregunta frecuente que el usuario pudiera llegar a tener.  
-          <br />
-          <br />
-          <b>Trabajos de investigación:</b> en ocasiones tuve que investigar ciertas tecnologías web para copiar alguna de sus funcionalidades y que así podamos implementarlas en nuestro sistema. Otra investigación que me tocó hacer también fue la que le hice al funcionamiento de otras páginas competidoras dentro de nuestro rubro analizando algunos de sus detalles técnicos.   
-          <br />
-          <br />
-          <b>Categorías de productos:</b> fue una ejecución de acciones recursivas que implicaban copiar algunos datos del frontend de otra página inspeccionando su código a fin de obtener determinada información sobre marcas, especialmente de motos y autos. Esto sirvió de fuente de inspiración para luego incluir esas marcas a la sección de “categorías” de productos de nuestro sitio web.
-          <br />
-          <br />
-          <b>Implementación de Logs:</b> tuve que analizar los métodos (Post, Put, Delete, etc.) de ciertas APIs y en base a eso agregarle algunas funciones que se encargaban de registrar <a 
-            style={{ textDecoration: "none", color: "#0070f2"}}
-            href={"https://es.wikipedia.org/wiki/Log_(inform%C3%A1tica)"}
-            target="_blank"
-            rel="noopener noreferrer"
-          > logs</a>.
-        </p>
-    
+        <br />        
+          
       </div>
 
       <div style={{  marginTop: 300}} />
