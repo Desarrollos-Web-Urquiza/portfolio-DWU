@@ -196,7 +196,7 @@ export default function Contact(props) {
         ></iframe> */}
 
         <Iframe 
-          url={"https://codesandbox.io/embed/sharp-swartz-eqqgw?fontsize=14&hidenavigation=1&theme=dark"}
+          url={"https://codesandbox.io/embed/sharp-swartz-eqqgw?fontsize=14&hidenavigation=1&module=%2Fsrc%2FCalendarDemo.vue&theme=dark"}
           position="relative"
           width="100%"
           height="500px"
@@ -220,7 +220,37 @@ export default function Contact(props) {
           Finalmente gracias a una respuesta recibida en esa pregunta y también a bastante tiempo de investigación pude completar la que fue una de mis primeras tareas que tuve asignadas como frontend de esta empresa. 
         </p>
 
-        <br />        
+        <br />      
+
+        <h2 align="center" className={utilStyles.subtitleProject} >Tareas de QA en Electro3</h2>  
+
+        <p  className={utilStyles.letterProject}>
+          Una de la cosas completamente nuevas que tuve que aprender en Electro3, fue hacer <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://es.wikipedia.org/wiki/Prueba_unitaria"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >unit testing.</a>
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          En pricipio lo que se querían era que lo hiciera con el backend escrito en PHP, pero esa fue una idea que Finalmente se descartó. 
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Por lo que terminamos testeando nuestros componente de Vue con la ayuda de librerías como <a 
+              style={{ textDecoration: "none", color: "#0070f2"}}
+              href={"https://vue-test-utils.vuejs.org/"}
+              target="_blank"
+              rel="noopener noreferrer"
+          >Vue Test Utils</a> y <a 
+          style={{ textDecoration: "none", color: "#0070f2"}}
+          href={"https://jestjs.io/"}
+          target="_blank"
+          rel="noopener noreferrer"
+          >Jest.</a>
+        </p>
+
           
       </div>
 
