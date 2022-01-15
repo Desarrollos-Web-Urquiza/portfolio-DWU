@@ -177,7 +177,7 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}>
-          Esta librería que está disponible tanto para React y Angular como para Vue, es bastante útil ya que aporta muchísimos componentes hechos y listos para cutomizar a nuestra comodidad.
+          Esta librería que está disponible tanto para React y Angular como para Vue, es bastante útil ya que aporta muchísimos componentes hechos y listos para customizar a nuestra comodidad.
         </p>
 
         <p  className={utilStyles.letterProject}>
@@ -234,23 +234,94 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}>
-          En pricipio lo que se querían era que lo hiciera con el backend escrito en PHP, pero esa fue una idea que Finalmente se descartó. 
+          En pricipio lo que querían era que lo hiciera con el backend escrito en PHP, pero esa fue una idea que finalmente se descartó. 
         </p>
 
         <p  className={utilStyles.letterProject}>
-          Por lo que terminamos testeando nuestros componente de Vue con la ayuda de librerías como <a 
-              style={{ textDecoration: "none", color: "#0070f2"}}
-              href={"https://vue-test-utils.vuejs.org/"}
-              target="_blank"
-              rel="noopener noreferrer"
-          >Vue Test Utils</a> y <a 
+          Así que lo que terminamos testeando fueron nuestros componentes de Vue con la ayuda de librerías como  
+          <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://vue-test-utils.vuejs.org/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >  Vue Test Utils</a> y <a 
           style={{ textDecoration: "none", color: "#0070f2"}}
           href={"https://jestjs.io/"}
           target="_blank"
           rel="noopener noreferrer"
           >Jest.</a>
+
+        </p>
+        <p  className={utilStyles.letterProject}>
+          Lamentablemente, dejamos de hacer pruebas unitarias debido a que esto retrasaba demasiado los tiempos del proyecto. Por lo que descontinuamos el uso de las librerías que tenían este propósito. 
         </p>
 
+        <br />      
+        
+        <h2 align="center" className={utilStyles.subtitleProject} >Breves encuentros con el backend</h2>
+
+        <p  className={utilStyles.letterProject}>
+          En el proyecto de Electro3 con el que comencé, teníamos 2 versiones distintas de backend.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Como en esta empresa se tomó un proyecto que venía hecho desde un principio, pero que era necesario rehacerlo, ya contaba con un backend armado. El mismo estaba creado con PHP usando el framework <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://codeigniter.com/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >  Codeigniter</a>.
+        </p>
+        
+        <p  className={utilStyles.letterProject}>
+          Pero al igual que el resto del proyecto, al backend debían hacérseles varios cambios. Así que para salir del paso logramos contar con un backend improvisado hecho en <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://nodejs.org/es/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >  Node.js</a> con <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://expressjs.com/es/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >  Express.js</a>  y usando como base de datos a <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://firebase.google.com/"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >  Firebase</a>.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Eso fue algo muy positivo para mí, porque ya tenía experiencia en esas tecnologías. Así que pude colaborar en la adaptación de ese backend a nuestro sistema, volviendo a armar APIs otra vez como solía hacer cuando trabaja en <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://www.desarrollos-web-urquiza.tk/oknube"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >  OkNube</a>.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          La API más destacada en la que colaboré fue una que utilizaba la librería <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://www.npmjs.com/package/multer"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >  Multer</a> para poder subir archivos que necesitábamos guardar en el servidor. Un compañero fue el que la desarrolló pero yo lo ayudé para hacerle algunos ajustes y que así podamos adaptarla mejor a nuestro frontend.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Desde el frontend, mediante un endpoint le enviábamos los archivos al backend. Utilizámos el componente <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://www.npmjs.com/package/multer"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >  FileUpload</a> de PrimeVue para hacerlo.
+        </p>
+
+        <p  className={utilStyles.letterProject}>
+          Al final, reemplazamos el backend por el anterior de Codeigniter y MySQL. Llegué a hacer un curso de este framework y practicarlo, pero al estar tan abocado al frontend no se han dado muchas oportunidades para experimentar con él en el proyecto.
+        </p>
           
       </div>
 
