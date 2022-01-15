@@ -110,6 +110,16 @@ export default function Contact(props) {
         >
           <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>https://oknube.com/</p>
         </a>
+
+        <p  className={utilStyles.letterProject}><b>Facebook:</b></p>
+        <a 
+          style={{ textDecoration: "none"}}
+          href={"https://www.facebook.com/pages/category/Shopping---Retail/Oksanjuan-114329279943530/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>OkSanJuan</p>
+        </a>
         
         <p  className={utilStyles.letterProject}><b>Tecnologías usadas en el proyecto:  </b> 
           <i>
@@ -122,7 +132,7 @@ export default function Contact(props) {
         <br />
       
         <p  className={utilStyles.letterProject}>
-          Mi primer trabajo real como programador fue colaborando para un proyecto llamado <b>OkNube</b>.   
+          Mi primer trabajo real como programador fue colaborando para un proyecto llamado <b>OkNube</b>, también conocido como <b>OkSanJuan</b>.   
         </p>
 
         <p  className={utilStyles.letterProject}>
