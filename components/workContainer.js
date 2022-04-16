@@ -62,7 +62,7 @@ const WorkContainer = ({title, src, alt, description, link}) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <ProfileImage big={true} img={"https://media-exp1.licdn.com/dms/image/C4E0BAQHO_ykVLNqoXQ/company-logo_200_200/0/1618489974852?e=1648684800&v=beta&t=Eq0NBbMrbzZ9lfI2FuUgoV5IyKJrhoHjlguMYmXr4ng"} />
+          <ProfileImage big={true} img={"/images/logos/electro3-logo.jpg"} />
         </a>
       
         <h2 style={{ color: "#c3c3c3"}}>Electro 3</h2>
