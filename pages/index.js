@@ -59,7 +59,7 @@ export default function Home(props) {
         <ProfileImage img={"/images/Perfil.png"} />
 
         <Title>WERNER SCHYMALSKI</Title>   
-        <p style={{ fontFamily: "var(--fontPersonalized)" }} className={`${utilStyles.headingMd}`}>Programador web de Argentina</p>
+        <p style={{ fontFamily: "var(--fontPersonalized)" }} className={`${utilStyles.headingMd}`}>Programador web con más de 3 años de experiencia laboral</p>
       
       </div>        
 
@@ -74,12 +74,12 @@ export default function Home(props) {
             <br />
             <br />
             
-            <p className={`${utilStyles.headingX2}`}>Soy un programador y diseñador web con mucha curiosidad y ganas de aprender cosas nuevas. </p>
+            <p className={`${utilStyles.headingX2}`}>Soy Programador web con más de 3 años de experiencia laboral en el área del desarrollo de software y también Analista de Sistemas titulado.</p>
             
             <br />
             <br />
             
-            <p className={`${utilStyles.headingX2}`}>Día a día busco conocer más y más información del backend y frontend de las páginas web y me gusta crear proyectos personales con lo que aprendo. A lo largo del tiempo he experimentado con varias tecnologías y lenguajes distintos y si bien algunos me gustan más que otros, no me caso con ninguno.</p>
+            <p className={`${utilStyles.headingX2}`}>Llevo ya varios años en contacto con la programación. Gran parte de ese tiempo trabajé laboralmente pero otra también la pasé trabajando en diversos proyectos personales. Gracias a eso obtuve toda la experiencia que hoy tengo como programador.</p>
             
             <br />
             <br /> 
@@ -118,10 +118,18 @@ export default function Home(props) {
       </Section>
 
       <div  className={`${utilStyles.separator}`}/>
+
+      <Section title="EXPERIENCIA LABORAL" mTop={"15em"}>      
+        
+        <WorkContainer /> 
+       
+      </Section> 
+
+      <div  className={`${utilStyles.separator}`}/>
       
       <div id="projects" />
           
-      <Section title="PROYECTOS PERSONALES" mTop={315} >      
+      <Section title="PROYECTOS PERSONALES" bg W7 mTop={315} >      
       
         <div  className={`${utilStyles.flexProject}`} align="center">
             
@@ -149,13 +157,6 @@ export default function Home(props) {
 
       <div id="experience" />
       
-      <div  className={`${utilStyles.separator}`}/>
-      
-      <Section title="EXPERIENCIA LABORAL" bg W7 mTop={"15em"}>      
-        
-        <WorkContainer /> 
-       
-      </Section> 
                  
       <div  className={`${utilStyles.separatorSmall}`}/>
 
