@@ -50,7 +50,7 @@ export default function Contact(props) {
     	
       <Helmet>
         
-        <title>DWU - OkNube</title>
+        <title>DWU - OkNube (OkSanJuan)</title>
                 
       </Helmet>		  
 
@@ -77,7 +77,7 @@ export default function Contact(props) {
         
         <a 
           style={{ textDecoration: "none"}}
-          href={"https://oknube.com/"}
+          href={"https://www.facebook.com/pages/category/Shopping---Retail/Oksanjuan-114329279943530/"}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -89,7 +89,7 @@ export default function Contact(props) {
           />
         </a>
         
-        <h1>OkNube</h1>   
+        <h1>OkNube (OkSanJuan)</h1>   
 
       </div>
 
@@ -100,16 +100,6 @@ export default function Contact(props) {
       <div className={utilStyles.container}>
        
         <h2 align="center" className={utilStyles.subtitleProject} >Datos generales</h2>
-               
-        <p  className={utilStyles.letterProject}><b>Sitio web:</b></p>
-        <a 
-          style={{ textDecoration: "none"}}
-          href={"https://oknube.com/"}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>https://oknube.com/</p>
-        </a>
 
         <p  className={utilStyles.letterProject}><b>Facebook:</b></p>
         <a 
@@ -121,7 +111,7 @@ export default function Contact(props) {
           <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>OkSanJuan</p>
         </a>
         
-        <p  className={utilStyles.letterProject}><b>Tecnologías usadas en el proyecto:  </b> 
+        <p  className={utilStyles.letterProject}><b>Tecnologías usadas en la empresa:  </b> 
           <i>
             Polymer, SPA, PWA, HTML, CSS, Stripo, 
             JavaScript, Node.js, Microservices, Express.js, JWT, Socket.io, Cloud Pub/Sub, Odoo, Firebase, MySQL, API-REST, Bash Script, 

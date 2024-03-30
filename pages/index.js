@@ -129,7 +129,7 @@ export default function Home(props) {
       
       <div id="projects" />
           
-      <Section title="PROYECTOS PERSONALES" bg W7 mTop={315} >      
+      <Section title="PROYECTOS PERSONALES" bg bgMirror W7 mTop={315} >      
       
         <div  className={`${utilStyles.flexProject}`} align="center">
             
@@ -169,7 +169,7 @@ export default function Home(props) {
 
       <div  className={`${utilStyles.separator}`}/>
 
-      <Section title="LENGUAJES Y TECNOLOGÍAS QUE USO" bg bgMirror W7> 
+      <Section title="LENGUAJES Y TECNOLOGÍAS QUE USO" bg W7> 
         
         <div align="center">
           

@@ -33,15 +33,15 @@ const WorkContainer = () => {
         
         </div>
         
-        <h2 >OkNube</h2>
+        <h2 >OkNube (OkSanJuan) </h2>
 
         <p className={utilStyles.caption} style={{ fontFamily: "var(--fontPersonalized)", fontSize: 22, marginRight: 35, maxWidth: "60em",  padding: "0 1rem"   }}>
           
-          Fui backend developer trabajando en la startup <a style={{ textDecoration: "none",  fontSize: 22}} target="_blank" href= "https://www.facebook.com/people/Oksanjuan/100067236159997/">"OkNube"</a>. La cuál se dedicaba a desarrollar un sistema para crear tiendas online. 
+          Fui backend developer trabajando en la startup <a style={{ textDecoration: "none",  fontSize: 22}} target="_blank" href= "https://www.facebook.com/people/Oksanjuan/100067236159997/">"OkNube"</a> (más tarde conocida como "OkSanJuan"). La cuál se dedicaba a desarrollar un sistema para crear tiendas online. 
           
           <br /><br />
         
-          En dicho trabajo obtuve experiencia utilizando varias tecnologías como por ejemplo Node.js y Express.js. También sesarrollé APIs, trabajé con la base de datos y realizé tareas de testeo y debuggeo de gran parte de las funciones del sistema tanto del frontend como del backend.
+          En dicho trabajo obtuve experiencia utilizando varias tecnologías como por ejemplo <b>Node.js</b> y <b>Express.js</b>. También sesarrollé APIs, trabajé con la base de datos y realizé tareas de testeo y debuggeo de gran parte de las funciones del sistema tanto del frontend como del backend.
           
         </p>
         
@@ -73,7 +73,7 @@ const WorkContainer = () => {
 
           <br /><br />
 
-          Si bien mis principales tareas como desarrollador en esta empresa se relacionan con el frontend, también he participado en etapas del desarrollo del backend y además me ha tocado ser QA. Utilicé tecnologías como Vue, Jest o Cypress, entre muchas otras más.
+          Si bien mis principales tareas como desarrollador en esta empresa se relacionan con el frontend, también he participado en etapas del desarrollo del backend y además me ha tocado ser QA. Utilicé tecnologías como <b>Vue</b>, <b>Jest</b> o <b>Cypress</b>, entre muchas otras más.
 
         </p>
         
