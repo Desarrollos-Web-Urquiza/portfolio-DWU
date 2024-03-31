@@ -85,7 +85,7 @@ export default function Contact(props) {
         >
           {/* <ProfileImage img={"/images/logos/oknube.svg"}  /> */}
           <img
-            src={"https://media-exp1.licdn.com/dms/image/C4E0BAQHO_ykVLNqoXQ/company-logo_200_200/0/1618489974852?e=1648684800&v=beta&t=Eq0NBbMrbzZ9lfI2FuUgoV5IyKJrhoHjlguMYmXr4ng"}
+            src={"/images/logos/electro3-logo.jpg"}
             style={{  height: 125}}
             alt={"Electro 3"}
           />
@@ -113,7 +113,7 @@ export default function Contact(props) {
           <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>http://www.electro3.com.ar/</p>
         </a>
         
-        <p  className={utilStyles.letterProject}><b>Tecnologías usadas en el proyecto:  </b> 
+        <p  className={utilStyles.letterProject}><b>Tecnologías usadas en la empresa:  </b> 
           <i>
             Vue, Vuex, Vue Test Utils, PrimeVue, JavaScript, Cypress, Jest, CSS, Node.js, Express.js, Cloud Firestore, PHP y Codeigniter 2  
           </i>
@@ -185,7 +185,13 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}>
-          Tenía que traducir lo siguiente: 
+          Tenía que traducir al español el componente 
+          <a 
+            style={{ textDecoration: "none", color: "#0070f2"}}
+            href={"https://www.primefaces.org/primevue-v2/#/calendar"}
+            target="_blank"
+            rel="noopener noreferrer"
+          > Calendar</a> de PrimeVue 
         </p>
 
         {/* <iframe src="https://codesandbox.io/embed/sharp-swartz-eqqgw?fontsize=14&hidenavigation=1&theme=dark"
@@ -195,7 +201,7 @@ export default function Contact(props) {
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
         ></iframe> */}
 
-        <Iframe 
+        {/* <Iframe 
           url={"https://codesandbox.io/embed/sharp-swartz-eqqgw?fontsize=14&hidenavigation=1&module=%2Fsrc%2FCalendarDemo.vue&theme=dark"}
           position="relative"
           width="100%"
@@ -203,7 +209,7 @@ export default function Contact(props) {
           id="myId"
           className="myClassname"
           styles={{height: "25px"}}
-        />
+        /> */}
         
         <br />   
 
@@ -313,7 +319,7 @@ export default function Contact(props) {
         <p  className={utilStyles.letterProject}>
           Desde el frontend, mediante un endpoint le enviábamos los archivos al backend. Utilizámos el componente <a 
             style={{ textDecoration: "none", color: "#0070f2"}}
-            href={"https://www.npmjs.com/package/multer"}
+            href={"https://www.primefaces.org/primevue-v2/#/fileupload"}
             target="_blank"
             rel="noopener noreferrer"
           >  FileUpload</a> de PrimeVue para hacerlo.
