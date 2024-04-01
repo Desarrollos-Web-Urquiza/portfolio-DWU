@@ -93,7 +93,7 @@ export default function Contact(props) {
        
         <h2 align="center" className={utilStyles.subtitleProject}>Datos generales</h2>
       
-        <p className={`${utilStyles.letterProject}`}><b>Sitio web:</b></p>
+        {/* <p className={`${utilStyles.letterProject}`}><b>Sitio web:</b></p>
         <a 
           style={{ textDecoration: "none"}}
           href={"http://examinar.mipropia.com/"}
@@ -101,7 +101,7 @@ export default function Contact(props) {
           rel="noopener noreferrer"
         >
           <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>http://examinar.mipropia.com/</p>
-        </a>
+        </a> */}
       
       
       
@@ -358,7 +358,7 @@ export default function Contact(props) {
         </p>
         
         <p  className={utilStyles.letterProject}>
-          Además, en vez de usar solo PHP puro como en este proyecto, hubiera sido mucho mejor integrar frameworks como por ejemplo Laravel. Actualmente me encuentro aprendiéndolo e implementándolo en este proyecto, mis progresos se pueden ver <a 
+          Además, en vez de usar solo PHP puro como en este proyecto, hubiera sido mucho mejor integrar frameworks como por ejemplo Laravel. Y de hecho he esado aprendiéndolo e implementándolo en este proyecto, mis progresos se pueden ver <a 
               style={{ textDecoration: "none", color: "#0070f2"}}
               href={"https://github.com/Desarrollos-Web-Urquiza/examin-laravel"}
               target="_blank"
@@ -367,7 +367,7 @@ export default function Contact(props) {
         </p>
 
         <p  className={utilStyles.letterProject}>
-          Como se puede ver, hoy por hoy no cuento con un conocimiento muy avanzado en PHP. Pero conozco lo más básico del lenguaje y gracias a mi estudio de Laravel estoy intentando aprender más.
+          Como se puede ver, hoy por hoy no cuento con un conocimiento muy avanzado en PHP. Pero conozco lo más básico del lenguaje y gracias a mi estudio de Laravel fui conociendo más y más.
         </p>
 
       </div>

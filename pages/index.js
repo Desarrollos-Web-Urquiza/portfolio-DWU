@@ -91,7 +91,7 @@ export default function Home(props) {
               style={{float: "left"}}
             />
             
-            <p className={`${utilStyles.headingX2}`}>% curiosidad</p>
+            <p className={`${utilStyles.headingX2}`}>% responsabilidad</p>
             
             <br />
             <br />
@@ -117,8 +117,11 @@ export default function Home(props) {
 
       </Section>
 
+
       <div  className={`${utilStyles.separator}`}/>
 
+      <div id="experience" />
+      
       <Section title="EXPERIENCIA LABORAL" mTop={"15em"}>      
         
         <WorkContainer /> 
@@ -155,9 +158,6 @@ export default function Home(props) {
       
       </Section>   
 
-      <div id="experience" />
-      
-                 
       <div  className={`${utilStyles.separatorSmall}`}/>
 
 

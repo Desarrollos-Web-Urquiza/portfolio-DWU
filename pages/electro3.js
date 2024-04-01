@@ -157,7 +157,7 @@ export default function Contact(props) {
         <p  className={utilStyles.letterProject}>
           El frontend que manejo se desarrolla con el framework Vue. Cuando llegué a esta empresa lo desconocía completamente, ya que yo venía acostumbrado a trabajar con React y algo tocaba de oído con el framework  <a 
             style={{ textDecoration: "none", color: "#0070f2"}}
-            href={"https://www.desarrollos-web-urquiza.tk/oknube#Polymer"}
+            href={"https://desarrollos-web-urquiza.vercel.app/oknube#Polymer"}
             target="_blank"
             rel="noopener noreferrer"
           > Polymer.</a>
@@ -301,7 +301,7 @@ export default function Contact(props) {
         <p  className={utilStyles.letterProject}>
           Eso fue algo muy positivo para mí, porque ya tenía experiencia en esas tecnologías. Así que pude colaborar en la adaptación de ese backend a nuestro sistema, volviendo a armar APIs otra vez como solía hacer cuando trabaja en <a 
             style={{ textDecoration: "none", color: "#0070f2"}}
-            href={"https://www.desarrollos-web-urquiza.tk/oknube"}
+            href={"https://desarrollos-web-urquiza.vercel.app/oknube"}
             target="_blank"
             rel="noopener noreferrer"
           >  OkNube</a>.
