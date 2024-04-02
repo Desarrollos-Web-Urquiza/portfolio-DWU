@@ -79,7 +79,7 @@ export default function Contact(props) {
         
         <a 
           style={{ textDecoration: "none"}}
-          href={"http://www.electro3.com.ar/"}
+          href={"http://electro3.com.ar/"}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -106,11 +106,11 @@ export default function Contact(props) {
         <p  className={utilStyles.letterProject}><b>Sitio web:</b></p>
         <a 
           style={{ textDecoration: "none"}}
-          href={"http://www.electro3.com.ar/"}
+          href={"http://electro3.com.ar/"}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>http://www.electro3.com.ar/</p>
+          <p className={`${utilStyles.pContact} ${utilStyles.letterProject}`}>http://electro3.com.ar/</p>
         </a>
         
         <p  className={utilStyles.letterProject}><b>Tecnologías usadas en la empresa:  </b> 

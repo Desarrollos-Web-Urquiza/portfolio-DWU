@@ -3,7 +3,7 @@ export default [
       title:"React",
       icon: "/images/logos/react.svg",
       alt:"React",
-      link: "https://es.reactjs.org/",
+      link: "https://es.wikipedia.org/wiki/React",
       description:'Mi framework SPA favorito. Me es muy útil con las librerías "create-react-app" y "Next.js". También tuve un breve encuentro con React Native.',
     },
      {

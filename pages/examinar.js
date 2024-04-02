@@ -69,7 +69,7 @@ export default function Contact(props) {
         
         <a 
           style={{ textDecoration: "none"}}
-          href={"http://examinar.mipropia.com/"}
+          href={"https://github.com/Desarrollos-Web-Urquiza/EXAMIN.AR"}
           target="_blank"
           rel="noopener noreferrer"
         >

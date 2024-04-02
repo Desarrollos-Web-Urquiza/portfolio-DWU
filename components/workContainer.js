@@ -58,7 +58,7 @@ const WorkContainer = () => {
       <div style={{ marginTop: "3em", paddingBottom: 130 }} >
         <a 
           style={{ textDecoration: "none"}}
-          href={"http://www.electro3.com.ar/"}
+          href={"http://electro3.com.ar/"}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -69,7 +69,7 @@ const WorkContainer = () => {
         
         <p className={utilStyles.caption} style={{ fontFamily: "var(--fontPersonalized)", fontSize: 22, marginRight: 35, maxWidth: "60em",  padding: "0 1rem"   }}>
           
-          Ahora soy frontend developer en la empresa <a style={{ textDecoration: "none",  fontSize: 22}} target="_blank" href= "http://www.electro3.com.ar/">"Electro 3"</a>. Dicha empresa se dedica a varios rubros entre los cuales figura el desarrollo de software.
+          Ahora soy frontend developer en la empresa <a style={{ textDecoration: "none",  fontSize: 22}} target="_blank" href= "http://electro3.com.ar/">"Electro 3"</a>. Dicha empresa se dedica a varios rubros entre los cuales figura el desarrollo de software.
 
           <br /><br />
 
