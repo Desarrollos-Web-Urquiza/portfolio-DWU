@@ -53,6 +53,14 @@ export default [
       
     },
     {
+      title:"PrimeVue",
+      icon:"/images/logos/primevue-logo.png",
+      alt:"PrimeVue",
+      link: "https://www.primefaces.org/primevue-v2/#/",
+      description:"Llevo años trabajando con esta librería UI. La he modificado y utilizado para múltiples objetivos, y tengo un conocimiento profundo de su funcionamiento.",
+      
+    },
+    {
       title:"Jest",
       icon:"https://seeklogo.com/images/J/jest-logo-F9901EBBF7-seeklogo.com.png",
       alt:"Jest",
