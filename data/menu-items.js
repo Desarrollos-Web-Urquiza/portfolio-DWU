@@ -6,15 +6,15 @@ export default [
     id: '0'
   },
   {
-    name: 'Proyectos',
-    link: '/#projects',
-    alt: 'Proyectos personales',
-    id: '1'
-  },
-  {
     name: 'Experiencia',
     link: '/#experience',
     alt: 'Experiencia laboral',
+    id: '1'
+  },
+  {
+    name: 'Proyectos',
+    link: '/#projects',
+    alt: 'Proyectos personales',
     id: '2'
   },
   {

@@ -170,7 +170,7 @@ export default function Contact(props) {
         <p  className={utilStyles.letterProject}>
           Por lo que el proceso de adaptación fue bastante rápido, y ahí fue cuando llegué a aprender otra librería que era nueva para mí: <a 
             style={{ textDecoration: "none", color: "#0070f2"}}
-            href={"https://www.primefaces.org/primevue/showcase-v2/#/"}
+            href={"https://www.primefaces.org/primevue-v2/#/"}
             target="_blank"
             rel="noopener noreferrer"
           > PrimeVue.</a>
@@ -194,23 +194,6 @@ export default function Contact(props) {
           > Calendar</a> de PrimeVue 
         </p>
 
-        {/* <iframe src="https://codesandbox.io/embed/sharp-swartz-eqqgw?fontsize=14&hidenavigation=1&theme=dark"
-          styles={{width: 400, height: 400}}
-          title="sharp-swartz-eqqgw"
-          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-        ></iframe> */}
-
-        {/* <Iframe 
-          url={"https://codesandbox.io/embed/sharp-swartz-eqqgw?fontsize=14&hidenavigation=1&module=%2Fsrc%2FCalendarDemo.vue&theme=dark"}
-          position="relative"
-          width="100%"
-          height="500px"
-          id="myId"
-          className="myClassname"
-          styles={{height: "25px"}}
-        /> */}
-        
         <br />   
 
         <p  className={utilStyles.letterProject}>
@@ -250,12 +233,18 @@ export default function Contact(props) {
             href={"https://vue-test-utils.vuejs.org/"}
             target="_blank"
             rel="noopener noreferrer"
-          >  Vue Test Utils</a> y <a 
+          >  Vue Test Utils</a>, <a 
           style={{ textDecoration: "none", color: "#0070f2"}}
           href={"https://jestjs.io/"}
           target="_blank"
           rel="noopener noreferrer"
-          >Jest.</a>
+          >Jest.</a> y 
+          <a 
+          style={{ textDecoration: "none", color: "#0070f2"}}
+          href={"https://docs.cypress.io/guides/overview/why-cypress"}
+          target="_blank"
+          rel="noopener noreferrer"
+          > Cypress.</a> 
 
         </p>
         <p  className={utilStyles.letterProject}>
