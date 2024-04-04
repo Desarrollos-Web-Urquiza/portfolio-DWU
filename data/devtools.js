@@ -3,7 +3,7 @@ export default [
       title:"React",
       icon: "/images/logos/react.svg",
       alt:"React",
-      link: "https://es.reactjs.org/",
+      link: "https://es.wikipedia.org/wiki/React",
       description:'Mi framework SPA favorito. Me es muy útil con las librerías "create-react-app" y "Next.js". También tuve un breve encuentro con React Native.',
     },
      {
@@ -50,6 +50,14 @@ export default [
       alt:"Vue",
       link: "https://vuejs.org/",
       description:"El segundo framework SPA que aprendí. Me gusta la simpleza y el orden que logra Vue con respecto a los otros frameworks de su tipo.",
+      
+    },
+    {
+      title:"PrimeVue",
+      icon:"/images/logos/primevue-logo.png",
+      alt:"PrimeVue",
+      link: "https://www.primefaces.org/primevue-v2/#/",
+      description:"Llevo años trabajando con esta librería UI. La he modificado y utilizado para múltiples objetivos, y tengo un conocimiento profundo de su funcionamiento.",
       
     },
     {

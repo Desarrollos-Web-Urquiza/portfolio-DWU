@@ -25,7 +25,7 @@ const ProjectContainer = ({title, src, alt, description, link}) => {
       <br />
       <br />
       
-      <CardProject className={utilStyles.cardProject} style={{ backgroundColor: 'rgb(0,0,170, 1)' }}>
+      <CardProject className={utilStyles.cardProject} style={{ backgroundColor: "#c3c3c3" }}>
               
         <div align="center">
           
@@ -48,7 +48,7 @@ const ProjectContainer = ({title, src, alt, description, link}) => {
         </div>
         
         <div style={{ height:  150 }}>
-          <p style={{color: "#c3c3c3", marginLeft: 5, fontSize: 20, marginTop: 20 }}>{description} </p>
+          <p style={{color: 'rgb(0,0,170, 1)', marginLeft: 5, fontSize: 20, marginTop: 20 }}>{description} </p>
         </div>
         
         <div style={{float: "right", marginRight: 10, marginTop: 10,}}>
