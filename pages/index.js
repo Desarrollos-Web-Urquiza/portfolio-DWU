@@ -59,7 +59,7 @@ export default function Home(props) {
         <ProfileImage img={"/images/Perfil.png"} />
 
         <Title>WERNER SCHYMALSKI</Title>   
-        <p style={{ fontFamily: "var(--fontPersonalized)" }} className={`${utilStyles.headingMd}`}>Programador web con más de 3 años de experiencia laboral</p>
+        <p style={{ fontFamily: "var(--fontPersonalized)" }} className={`${utilStyles.headingMd}`}>Programador web con más de 5 años de experiencia laboral</p>
       
       </div>        
 
@@ -74,7 +74,7 @@ export default function Home(props) {
             <br />
             <br />
             
-            <p className={`${utilStyles.headingX2}`}>Soy Programador web con más de 3 años de experiencia laboral en el área del desarrollo de software y también Analista de Sistemas titulado.</p>
+            <p className={`${utilStyles.headingX2}`}>Soy Programador web con más de 5 años de experiencia laboral en el área del desarrollo de software y también Analista de Sistemas titulado.</p>
             
             <br />
             <br />
