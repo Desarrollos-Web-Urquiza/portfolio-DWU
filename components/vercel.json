@@ -1,4 +1,8 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false
+  "rewrites": [
+    {
+      "source": "/((?!_next/|static/|api/).*)",
+      "destination": "/$1.html"
+    }
+  ]
 }
